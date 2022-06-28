@@ -1,6 +1,6 @@
 .Footer{
     background-color: lightskyblue;
-    border-radius: 10px;
+    
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -13,9 +13,22 @@
 .Footer .boxes ul li{
     list-style-type: none;
 }
+.Footer .boxes ul li:hover{
+    color: white;
+}
 .Footer .boxes ul li:first-of-type{
     font-weight: bolder;
     font-size: 20px;
+}
+.Footer .boxes ul li:first-of-type:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: black;
+}
+
+.Footer .contact-box{
+    vertical-align: middle;
+    margin-top: 5px;
 }
 .Footer .contact-box form legend{
     font-weight: bolder;
@@ -33,6 +46,8 @@
 
 .Footer .contact-box form input:focus{
     background-color: whitesmoke;
+    
+
 }
 .Footer .contact-box form input[type='submit']{
     font-size: large;
@@ -44,10 +59,23 @@
     margin-right: auto;
     
 }
-.Footer .mobile-app ul .bx{
+.Footer .contact-box form input[type='submit']:hover{
+    transform: scale(1.1);
+}
+.Footer .contact-box form input[type='submit']:focus{
+    background-color: lightskyblue;
+    color: blue;
+}
+.Footer .mobile-app  .bx{
     font-size: 100px;
+}
+
+.Footer .mobile-app  .bx:hover{
+    transform: scale(1.1);
+    color: grey;
 }
 .Footer .mobile-app p{
     text-align: center;
     padding: 5px;
+    font-weight: bolder;
 }

@@ -6,10 +6,8 @@ const Footer = () => {
     <footer className="Footer">
         <div className="mobile-app">
             <p>Download CetusFood app</p>
-            <ul>
-                <i className='bx bxl-apple'></i>
-                <i className='bx bxl-play-store'></i>
-            </ul>
+            <i className='bx bxl-apple'></i>
+            <i className='bx bxl-play-store'></i>
         </div>
         <div className="boxes">
             <ul>
