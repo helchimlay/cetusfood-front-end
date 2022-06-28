@@ -9,7 +9,7 @@ const AdminPnl = () => {
 
   return (
     <div className='AdminPnl'>
-      {Ctx.userIsAdmin ? (<>
+      {Ctx.userData.admin ? (<>
         <h3>Panel admina</h3>
         <div className="shops-list" style={{backgroundColor: 'GrayText', border: '3px solid black', color: 'lightgrey'}}>
           <ShopsList />

@@ -5,17 +5,18 @@ import AdminPnl from './components/AdminPnl/AdminPnl';
 import HomeContent from './components/HomeContent/HomeContent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OrderPnl from './components/OrderPnl/OrderPnl';
+import LogIn from './components/LogIn/LogIn';
 
 export const MainCtx = createContext(null);
 
 function App() {
-  const [userIsAdmin, setUserIsAdmin] = useState(false);
+  const [userData, setUserData] = useState({loggedIn: false, admin: true})
 
 
   return (
     <Router>
       <MainCtx.Provider value={{
-        userIsAdmin: userIsAdmin
+        userData: userData
       }}>
         <div className="App">
           <NavBar />
@@ -23,6 +24,7 @@ function App() {
             <Route path='/' element={<HomeContent />} exact={true} />
             <Route path='/order' element={<OrderPnl />} />
             <Route path='/admin-panel' element={<AdminPnl />} />
+            <Route path='/log-in' element={<LogIn />} />
           </Routes>
         </div>
       </MainCtx.Provider>
