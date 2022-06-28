@@ -6,6 +6,7 @@ import HomeContent from './components/HomeContent/HomeContent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OrderPnl from './components/OrderPnl/OrderPnl';
 import LogIn from './components/LogIn/LogIn';
+import Footer from './components/Footer/Footer';
 
 export const MainCtx = createContext(null);
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='/log-in' element={<LogIn />} />
           </Routes>
         </div>
+        <Footer></Footer>
       </MainCtx.Provider>
     </Router>
   );
