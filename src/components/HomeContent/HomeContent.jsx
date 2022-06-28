@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const HomeContent = () => {
   return (
@@ -8,4 +8,4 @@ const HomeContent = () => {
   )
 }
 
-export default HomeContent
+export default HomeContent;

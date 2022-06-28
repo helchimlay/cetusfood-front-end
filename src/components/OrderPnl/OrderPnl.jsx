@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const OrderPnl = () => {
   return (
@@ -8,4 +8,4 @@ const OrderPnl = () => {
   )
 }
 
-export default OrderPnl
+export default OrderPnl;

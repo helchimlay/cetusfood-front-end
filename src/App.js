@@ -1,3 +1,4 @@
+import React, { createContext } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import AdminPnl from './components/AdminPnl/AdminPnl';
@@ -5,7 +6,7 @@ import HomeContent from './components/HomeContent/HomeContent';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OrderPnl from './components/OrderPnl/OrderPnl';
 
-
+export const MainCtx = createContext(null);
 function App() {
   return (
     <Router>
@@ -16,7 +17,6 @@ function App() {
           <Route path='/order' element={<OrderPnl />} />
           <Route path='/admin-panel' element={<AdminPnl />} />
         </Routes>
-        
       </div>
     </Router>
   );
