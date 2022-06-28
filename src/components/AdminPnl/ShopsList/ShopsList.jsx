@@ -3,8 +3,8 @@ import ShopsListEl from './ShopsListEl';
 
 const ShopsList = () => {
   return (
-    <div className='ShopsList' style={{backgroundColor: 'GrayText', border: '3px solid black'}}>
-        <h3>Lista restauracji</h3>
+    <div className='ShopsList'>
+        <h3><button>odświerz</button> Lista restauracji</h3>
         <ShopsListEl name='kfc' link='kfc.pl' email='email@kfc.pl' />
         <ShopsListEl name='mc donalds' link='mcdonalds.pl' email='email@mcdonalds.pl' />
     </div>
