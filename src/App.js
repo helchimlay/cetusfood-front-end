@@ -12,7 +12,6 @@ export const MainCtx = createContext(null);
 function App() {
   const [userData, setUserData] = useState({loggedIn: false, admin: true})
 
-
   return (
     <Router>
       <MainCtx.Provider value={{
