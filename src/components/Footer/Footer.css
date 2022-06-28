@@ -1,0 +1,53 @@
+.Footer{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.Footer div{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Footer .boxes ul li{
+    list-style-type: none;
+}
+.Footer .boxes ul li:first-of-type{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.Footer .contact-box form legend{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+.Footer .contact-box form input{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid deepskyblue;
+    background-color: rgb(234, 246, 250);
+}
+
+.Footer .contact-box form input:focus{
+    background-color: whitesmoke;
+}
+.Footer .contact-box form input[type='submit']{
+    font-size: large;
+    padding: 10px 20px;
+    background-color: blue;
+    border: 2px solid blue;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.Footer .mobile-app ul .bx{
+    font-size: 100px;
+}
+.Footer .mobile-app p{
+    text-align: center;
+    padding: 5px;
+}
