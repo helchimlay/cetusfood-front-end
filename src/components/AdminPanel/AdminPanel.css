@@ -1,6 +1,6 @@
 .AdminPanel{
     position: relative;
-    min-height: 200vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr;
     background-color: rgb(255, 247, 241);

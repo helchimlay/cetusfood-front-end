@@ -3,15 +3,18 @@
     display: grid;
     grid-template-columns: 1fr 55%;
     color: white;
+    height: 80vh;
 }
 .RestList .list{
-    padding: 10px;
+    padding: 20px;
     background-color: #57687c;
+    overflow-y: scroll;
 }
 .RestList .list table{
     border-collapse: collapse;
     width: 100%;
     text-align: left;
+    font-weight: 300;
 }
 .RestList .list table tr:not(tr:first-of-type) td{
     border-top: 1px solid white;

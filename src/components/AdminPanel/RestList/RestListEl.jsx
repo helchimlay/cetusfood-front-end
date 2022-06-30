@@ -4,7 +4,7 @@ const RestListEl = ({ name, link, email }) => {
   return (
     <tr className='RestListEl'>
         <td>{name}</td>
-        <td><a href={`https://${link}`}>{link}</a></td>
+        <td><a target='_blank' rel="noreferrer" href={`https://${link}`}>{link}</a></td>
         <td>{email}</td>
     </tr>
   )

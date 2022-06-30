@@ -2,3 +2,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: rgb(141, 133, 127);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4099ff;
+}
