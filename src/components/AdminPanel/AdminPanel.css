@@ -1,16 +1,17 @@
 .AdminPanel{
     position: relative;
     min-height: 200vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: rgb(255, 247, 241);
 }
 .AdminPanel nav.navigation{
-    position: sticky;
-    top: 0;
-    left: 0;
-    min-height: 100vh;
     width: 200px;
     background-color: #292c2f;
     color: white;
     padding: 10px 0;
+    position: sticky;
+    top: 0;
 }
 .AdminPanel nav.navigation button{
     outline: none;
@@ -25,11 +26,14 @@
 }.AdminPanel nav.navigation button:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }.AdminPanel nav.navigation button:active{
-    background-color: white;
+    background-color: rgb(255, 247, 241);
+    color: #292c2f;
+}.AdminPanel nav.navigation button.current{
+    background-color: rgb(255, 247, 241);
     color: #292c2f;
 }
 .AdminPanel nav.navigation .title{
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     width: 70%;
     display: block;
@@ -37,4 +41,12 @@
     border-bottom: 1px solid white;
     padding: 5px;
     text-align: center;
+    font-weight: 100;
+}
+.AdminPanel .content{
+    padding: 0 70px;
+}
+.AdminPanel h3.title{
+    font-size: 30px;
+    font-weight: 100;
 }

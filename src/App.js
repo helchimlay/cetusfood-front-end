@@ -5,6 +5,7 @@ import OrderPanel from './components/OrderPanel/OrderPanel';
 import LogIn from './components/LogIn/LogIn';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/log-in' element={<LogIn />} />
           <Route path='/admin-panel' element={<AdminPanel />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
