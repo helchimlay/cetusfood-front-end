@@ -1,4 +1,14 @@
 .RestList{
-    background-color: #57687c;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: white;
+}
+.RestList .list{
+    padding: 10px;
+    background-color: #57687c;
+}
+.RestList .options{
+    padding: 10px;
+    background-color: #8193a8;
 }
