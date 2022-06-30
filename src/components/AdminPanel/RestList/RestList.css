@@ -1,7 +1,7 @@
 .RestList{
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 55%;
+    grid-template-columns: 1fr 35%;
     color: white;
     height: 80vh;
 }
@@ -17,9 +17,9 @@
     font-weight: 300;
 }
 .RestList .list table tr:not(tr:first-of-type) td{
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
-.RestList .list table tr td{
+.RestList .list table tr td:not(td.radio){
     padding: 8px 20px;
 }
 .RestList .list table tr th{
@@ -28,16 +28,65 @@
     font-weight: 300;
     border-bottom: 2px solid white;
 }
-
-.RestList .options{
-    padding: 10px;
-    background-color: #8193a8;
+.RestListEl.selected{
+    background-color: #687d94;
 }
-
-
+.RestListEl:not(.RestListEl.selected):hover{
+    background-color: #60748a;
+}
 .RestListEl p{
     margin: 8px 0;
 }
 .RestListEl a{
     color: rgb(0, 174, 255)
+}
+.RestListEl tr td.radio{
+    padding: 8px 0;
+}
+
+.RestList .options{
+    padding: 30px 10px;
+    background-color: #8193a8;
+}
+.RestList .options h4.title{
+    font-size: 25px;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+}
+.RestList .options .option{
+    padding: 20px 10px;
+}
+.RestList .options .option:not(.option:first-of-type){
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.RestList .options .option > p{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RestList .options .option button{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #57687c;
+    padding: 5px 20px;
+}.RestList .options .option button:hover{
+    background-color: rgb(235, 235, 235);
+}.RestList .options .option button:active{
+    background-color: #57687c;
+    color: white;
+}
+.RestList .options .option input[type=text]{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #57687c;
+    padding: 5px 20px;
+}.RestList .options .option input[type=email]{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #57687c;
+    padding: 5px 20px;
 }

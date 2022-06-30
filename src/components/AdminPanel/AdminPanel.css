@@ -2,11 +2,11 @@
     position: relative;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
     background-color: rgb(255, 247, 241);
 }
 .AdminPanel nav.navigation{
-    width: 200px;
+    width: 250px;
     background-color: #292c2f;
     color: white;
     padding: 10px 0;
@@ -21,8 +21,9 @@
     width: 95%;
     display: block;
     margin: 5px auto;
-    padding: 5px;
+    padding: 5px 15%;
     font-size: 18px;
+    text-align: left;
 }.AdminPanel nav.navigation button:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }.AdminPanel nav.navigation button:active{
@@ -39,8 +40,7 @@
     display: block;
     margin: 5px auto 10px auto;
     border-bottom: 1px solid white;
-    padding: 5px;
-    text-align: center;
+    padding: 5px 15%;
     font-weight: 100;
 }
 .AdminPanel .content{
