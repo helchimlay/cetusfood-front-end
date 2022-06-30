@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.NavBar{
+  background: #292c2f;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: 125px;
+  text-align: center;
+  
+}
+
+.links{
+  position: absolute;
+  top: 50%;
+  left: 51.5%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.links a{
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: auto;
+  margin: 20px;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: #5383d3;
+}
+
+.links .dot {
+  width: 6px;
+  height: 6px;
+  background: #5383d3;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(65px);
+  transform: translateX(65px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.links a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(235px);
+  transform: translateX(235px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.links a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(445px);
+  transform: translateX(445px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.links a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(655px);
+  transform: translateX(655px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.logo h1{
+margin: 0;
+color: lightblue;
+}
+.logo h1 a{
+color:#0059f3;
+font-size: 24px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+}
