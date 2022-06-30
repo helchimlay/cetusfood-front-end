@@ -1,12 +1,40 @@
 .AdminPanel{
     position: relative;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 .AdminPanel nav.navigation{
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 100px;
-    background-color: black;
+    min-height: 100vh;
+    width: 200px;
+    background-color: #292c2f;
+    color: white;
+    padding: 10px 0;
+}
+.AdminPanel nav.navigation button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    width: 95%;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 18px;
+}.AdminPanel nav.navigation button:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}.AdminPanel nav.navigation button:active{
+    background-color: white;
+    color: #292c2f;
+}
+.AdminPanel nav.navigation .title{
+    font-size: 25px;
+    color: white;
+    width: 70%;
+    display: block;
+    margin: 5px auto 10px auto;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    text-align: center;
 }
