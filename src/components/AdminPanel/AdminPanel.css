@@ -1,0 +1,12 @@
+.AdminPanel{
+    position: relative;
+    min-height: 100vh;
+}
+.AdminPanel nav.navigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: black;
+}
