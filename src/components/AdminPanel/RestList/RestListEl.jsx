@@ -2,11 +2,11 @@ import React from 'react';
 
 const RestListEl = ({ name, link, email }) => {
   return (
-    <div className='RestListEl'>
-        <p>Nazwa: {name}</p>
-        <p>Link: <a href={`https://${link}`}>{link}</a></p>
-        <p>Email: {email}</p>
-    </div>
+    <tr className='RestListEl'>
+        <td>{name}</td>
+        <td><a href={`https://${link}`}>{link}</a></td>
+        <td>{email}</td>
+    </tr>
   )
 }
 

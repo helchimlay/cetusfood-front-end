@@ -1,14 +1,40 @@
 .RestList{
     padding: 10px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 55%;
     color: white;
 }
 .RestList .list{
     padding: 10px;
     background-color: #57687c;
 }
+.RestList .list table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+.RestList .list table tr:not(tr:first-of-type) td{
+    border-top: 1px solid white;
+}
+.RestList .list table tr td{
+    padding: 8px 20px;
+}
+.RestList .list table tr th{
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 2px solid white;
+}
+
 .RestList .options{
     padding: 10px;
     background-color: #8193a8;
+}
+
+
+.RestListEl p{
+    margin: 8px 0;
+}
+.RestListEl a{
+    color: rgb(0, 174, 255)
 }
