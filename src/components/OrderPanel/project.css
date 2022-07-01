@@ -2,42 +2,42 @@ body{
     margin: 0;
     padding: 0;
 }
-.header {
+.OrderPanel .header {
     background-color:#292c2f ;
     color: #ffffff;
     height: 60px;
 }
-form,fieldset{
+.OrderPanel form,fieldset{
     border: 0;
     outline: 0;
 }
-.header div{
+.OrderPanel .header div{
     display: inline-block;
 }
-.header img{
+.OrderPanel .header img{
     width: 50px;
     height: 50px;
     position: relative;
     top: 6px;
 }
-.header div:first-of-type{
+.OrderPanel .header div:first-of-type{
     color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0;
     position: relative;
     top: -10px;
 }
-.header div:first-of-type span{
+.OrderPanel .header div:first-of-type span{
     color:#5383d3;
 }
 
-.header div:nth-child(2){
+.OrderPanel .header div:nth-child(2){
     position: relative;
     left: 25%;
     width: 400px;
     top: -8px;
 }
-.header div:nth-child(2) input{
+.OrderPanel .header div:nth-child(2) input{
     position: relative;
     left: -78px;
     top: -7px;
@@ -48,22 +48,22 @@ form,fieldset{
     border-radius: 24px;
     text-align: center;
 }
-.header div:last-of-type{
+.OrderPanel .header div:last-of-type{
     position: relative;
     left:50%;
     top: -7px;
 }
-.header div:last-of-type i{
+.OrderPanel .header div:last-of-type i{
     font-size: 36px;
 }
-.header div:last-of-type i:hover{
+.OrderPanel .header div:last-of-type i:hover{
     color: #5383d3;
 }
-input ::placeholder{
+.OrderPanel input ::placeholder{
     text-align: center;
     font-size: 25px;
 }
-button{
+.OrderPanel button{
     width: 430px;
     height:250px;
     padding: 0;
@@ -83,7 +83,7 @@ button{
     transform: translateZ(0);
     margin: 25px;
 }
-button div{
+.OrderPanel button div{
     width: 430px;
     height:200px;
     background-image: url(pizza.jpg);
@@ -105,16 +105,16 @@ button div{
     border-top-left-radius: 25px;
     font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
 }
-fieldset{
+.OrderPanel fieldset{
     text-align: center;
 }
 /* animation studio panel */
-.submit .sign-up-mode p{
+.OrderPanel .submit .sign-up-mode p{
   transform: translateY(-200px);
   background-color: antiquewhite;
 }
 
-button.sign-up-mode div{
+.OrderPanel button.sign-up-mode div{
     font-size: 18px;
 
 }
