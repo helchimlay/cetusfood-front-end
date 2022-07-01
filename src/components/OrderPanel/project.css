@@ -6,6 +6,7 @@ body{
     background-color:#292c2f ;
     color: #ffffff;
     height: 60px;
+    position: relative;
 }
 .OrderPanel form,fieldset{
     border: 0;
@@ -13,6 +14,7 @@ body{
 }
 .OrderPanel .header div{
     display: inline-block;
+    position: relative;
 }
 .OrderPanel .header img{
     width: 50px;
@@ -32,14 +34,13 @@ body{
 }
 
 .OrderPanel .header div:nth-child(2){
-    position: relative;
-    left: 25%;
     width: 400px;
-    top: -8px;
+    position: absolute;
+    right: 280px;
+    top: 15px;
 }
 .OrderPanel .header div:nth-child(2) input{
-    position: relative;
-    left: -78px;
+    position: absolute;
     top: -7px;
     width: 400px;
     border: 0;

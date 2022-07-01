@@ -72,7 +72,7 @@ form.sign-in-form {
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 55px;
-  border-radius: 55px;
+  border-radius: 15px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
@@ -138,8 +138,8 @@ form.sign-in-form {
   border: none;
   outline: none;
   height: 49px;
-  border-radius: 49px;
-  color: #fff;
+  border-radius: 29px;
+  color: rgb(196, 0, 0);
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;

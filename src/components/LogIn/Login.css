@@ -10,7 +10,7 @@ body,
 input {
   font-family: "Poppins", sans-serif;
 }
-.LogIn .container{
+  .LogIn .container{
   position: relative;
   width: 100%;
   background-color: #fff;
@@ -71,7 +71,7 @@ input {
   background-color: #f0f0f0;
   margin: 10px 0;
   height: 55px;
-  border-radius: 55px;
+  border-radius: 25px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
