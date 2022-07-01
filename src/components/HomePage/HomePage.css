@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.HomePage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.HomePage .about-us{
+    background-color: rgb(64, 68, 73);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+    width: 25rem;
+}
+.HomePage .about-us p{
+    padding:10px;
+}
+.HomePage .cetusek img{
+    width: 600px;
+    height: 450px;
+}
+.HomePage .cetusek{
+    padding: 20px;
+}
