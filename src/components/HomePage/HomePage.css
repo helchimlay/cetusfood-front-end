@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .HomePage{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.HomePage section{
+    background-color: aliceblue;
+    border:1px solid aliceblue;
+    margin: 50px 200px;
+    border-radius: 5px;
+   /* box-shadow: 0 0px 2px 0;*/
+}
+.HomePage section .aboutUs{
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    margin: 100px 0;
 }
-.HomePage .about-us{
+.HomePage section .graybox{
     background-color: rgb(64, 68, 73);
     color: white;
     border-radius: 5px;
@@ -13,13 +25,33 @@
     margin: 50px;
     width: 25rem;
 }
-.HomePage .about-us p{
+.HomePage section .aboutUs .about-us p{
     padding:10px;
 }
-.HomePage .cetusek img{
+.HomePage section .aboutUs .cetusek img{
     width: 600px;
     height: 450px;
 }
-.HomePage .cetusek{
+.HomePage section .aboutUs .cetusek{
     padding: 20px;
 }
+.HomePage section .offer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 0;
+}
+.HomePage section .offer .cetKurier img{
+    width: 500px;
+    height: 500px;
+}
+.HomePage section hr{
+    height: 5px;
+    outline: none;
+    background-color: lightblue;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid lightblue;
+}
+
