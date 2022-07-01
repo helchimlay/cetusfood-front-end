@@ -15,7 +15,7 @@ const RestList = () => {
 
     React.useEffect(()=>{
         getRestaurants().then(data => setFetchedData(data.data));
-    }, [])
+    }, [newRestFormOpened])
 
     
     const searchBarRef = React.useRef(null);
