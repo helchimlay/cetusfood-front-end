@@ -10,3 +10,23 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #4099ff;
 }
+
+input[type=text], input[type=email]{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #57687c;
+    padding: 5px 20px;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #57687c;
+    padding: 5px 20px;
+}button:hover{
+    background-color: rgb(235, 235, 235);
+}button:active{
+    background-color: #57687c;
+    color: white;
+}
