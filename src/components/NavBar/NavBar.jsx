@@ -8,9 +8,9 @@ const NavBar = () => {
   return (
     <div className='NavBar'>
         <div className="logo" onClick={handleClick2}>CetusFood </div>
-        <input type="checkbox" id="menu-toggle"/>
-        <label id="trigger" for="menu-toggle"></label>
-        <label id="burger" for="menu-toggle"></label>
+        {/* <input type="checkbox" id="menu-toggle"/>
+        <label id="trigger" htmlFor="menu-toggle"></label>
+        <label id="burger" htmlFor="menu-toggle"></label> */}
         <div className="links" id='link'>
             <Link to='/'>Główna</Link>
             <Link to='/order'>Zamów jedzenie</Link>

@@ -40,8 +40,8 @@
 .RestListEl a{
     color: rgb(0, 174, 255)
 }
-.RestListEl tr td.radio{
-    padding: 8px 0;
+.RestListEl td.radio{
+    padding: 8px 5px;
 }
 
 .RestList .options{
@@ -52,6 +52,7 @@
     font-size: 25px;
     margin: 0 0 10px 0;
     font-weight: 400;
+    color: white;
 }
 .RestList .options .option{
     padding: 20px 10px;
