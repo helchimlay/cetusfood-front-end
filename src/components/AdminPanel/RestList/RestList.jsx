@@ -2,45 +2,20 @@ import React from 'react';
 import NewRestForm from './NewRestForm';
 import './RestList.css';
 import RestListEl from './RestListEl';
+import { getRestaurants, deleteRestaurant } from '../../services/RestaurationsList';
+
 
 export const RestListCtx = React.createContext();
 
 const RestList = () => {
-    const [fetchedData, setFetchedData] = React.useState([
-        { id: 1, name: 'name1', link: 'link1.pl', email: 'email1@gmail.com' },
-        { id: 2, name: 'name2', link: 'link2.pl', email: 'email2@gmail.com' },
-        { id: 3, name: 'name3', link: 'link3.pl', email: 'email3@gmail.com' },
-        { id: 4, name: 'name4', link: 'link4.pl', email: 'email4@gmail.com' },
-        { id: 5, name: 'name5', link: 'link5.pl', email: 'email5@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
-    ])
+    const [fetchedData, setFetchedData] = React.useState([])
     const [selectedElId, setSelectedElId] = React.useState(null);
     const [newRestFormOpened, setNewRestFormOpened] = React.useState(false);
     const [newRestFormData, setNewRestFormData] = React.useState({});
+
+    React.useEffect(()=>{
+        getRestaurants().then(data => setFetchedData(data.data));
+    }, [])
 
     
     const searchBarRef = React.useRef(null);
@@ -51,8 +26,6 @@ const RestList = () => {
             alert('szukam');
         }
     }
-
-    console.log(selectedElId);
 
     return (
         <div className='RestList'>
@@ -80,7 +53,7 @@ const RestList = () => {
                             </thead>
                             <tbody>
                                 {fetchedData?.map((el, i) => (
-                                    <RestListEl key={i} id={el.id} oNum={i + 1} name={el.name} link={el.link} email={el.email} />
+                                    <RestListEl key={i} id={el.id} oNum={i + 1} name={el.name} link={el.url} email={el.email} />
                                 ))}
                             </tbody>
                         </table>
@@ -113,7 +86,7 @@ const RestList = () => {
                         <div className="option">
                             <p>
                                 <span>Usuń element</span>
-                                <button>Usuń</button>
+                                <button onClick={()=>deleteRestaurant(selectedElId)}>Usuń</button>
                             </p>
                         </div>
                     </>) : (newRestFormOpened ? (
