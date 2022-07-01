@@ -9,17 +9,12 @@ body{
     background-color: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-thumb{
-<<<<<<< HEAD
     background-color: lightgray;
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgb(179, 179, 179);
 }
-=======
-    background-color: #4099ff;
-}
-
 input[type=text], input[type=email]{
     outline: none;
     border: none;
@@ -39,4 +34,3 @@ button{
     background-color: #57687c;
     color: white;
 }
->>>>>>> fc284c9fb0c09c4dab9b83a88d67a63fed92dd79
