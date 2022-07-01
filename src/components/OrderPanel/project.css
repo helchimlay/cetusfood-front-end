@@ -105,18 +105,54 @@ button div{
     border-top-left-radius: 25px;
     font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
 }
-button p:not(button div p ){
-     font-size: 18px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-shadow: 0 1px 4px rgb(0 0 0 / 60%);
-    font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;    
-}
 fieldset{
     text-align: center;
 }
-/* input style */
-.wrapper {
+/* animation studio panel */
+.submit .sign-up-mode p{
+  transform: translateY(-200px);
+  background-color: antiquewhite;
+}
+
+button.sign-up-mode div{
+    font-size: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper {
     margin: 8px 0;
   }
   
@@ -184,4 +220,4 @@ fieldset{
   
   .label:hover .text {
     opacity: 1;
-  }
+  } */

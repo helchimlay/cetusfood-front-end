@@ -1,11 +1,18 @@
 import React from 'react';
 import './project.css';
 const OrderPanel = () => {
+     const handleClick2 = () => {
+     document.querySelector(".submit").classList.add('sign-up-mode');
+  }
+    const handleClick1 = () => {
+    console.log('adma jest najlepszy')
+    document.querySelector(".submit").classList.remove("sign-up-mode");
+  }
   return (
     <div className='OrderPanel'>
       <div class="header">
         <div><img src="CetusikKurier.png" alt="" />
-          Cetus<span>Food</span>
+          Cetus<span onClick={handleClick2}>Food</span> 
         </div>
         <div>
           <form action="">
@@ -21,11 +28,11 @@ const OrderPanel = () => {
       <div class="mein">
         <form action="">
           <fieldset>
-            <button type="submit">
-              <div>
+            <button type="submit" class='submit'>
+              <div >
                 <p>Pizza Hut</p>
               </div>
-              <p><i class='bx bx-like'></i> 95%</p>
+              <p ><i class='bx bx-like'></i> 95%</p>
             </button>
             <button type="submit">
               <div>
