@@ -1,0 +1,9 @@
+diff a/src/components/LogIn/Login.css b/src/components/LogIn/Login.css	(rejected hunks)
+@@ -11,6 +11,7 @@
+   font-family: "Poppins", sans-serif;
+ }
+ 
++.container {
+   position: relative;
+   width: 100%;
+   background-color: #fff;

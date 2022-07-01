@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
 }
 
 ::-webkit-scrollbar{
     width: 12px;
-    background-color: rgb(141, 133, 127);
+    background-color: rgba(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #4099ff;
+    background-color: lightgray;
+    border-radius: 10px;
 }
-
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(179, 179, 179);
+}
 input[type=text], input[type=email]{
     outline: none;
     border: none;
