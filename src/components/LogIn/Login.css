@@ -9,6 +9,8 @@
 body,
 input {
   font-family: "Poppins", sans-serif;
+}
+.LogIn .container{
   position: relative;
   width: 100%;
   background-color: #fff;
