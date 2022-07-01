@@ -4,11 +4,11 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className='Footer'>
-        <div className="footer-left">
+        <div class="footer-left">
 
 <h3>Cetus<span>Food</span></h3>
 
-<p className="footer-links">
+<p class="footer-links">
   <a href="#">Home</a>
   ·
   <a href="#">Blog</a>
