@@ -1,7 +1,14 @@
 .NewRestForm h3{
     font-size: 20px;
     font-weight: 300;
+    padding-bottom: 17px;
 }
 .NewRestForm form{
-    padding: 0;
+    padding: 0 10px;
+}
+.NewRestForm form > p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
 }

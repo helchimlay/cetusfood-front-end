@@ -64,7 +64,7 @@ body{
     font-size: 25px;
 }
 .OrderPanel button{
-    width: 430px;
+    width: 400px;
     height:250px;
     padding: 0;
     margin: 0;
@@ -82,6 +82,9 @@ body{
     backface-visibility: hidden;
     transform: translateZ(0);
     margin: 25px;
+}
+.OrderPanel button:hover{
+  transform: scale(1.02);
 }
 .OrderPanel button div{
     width: 430px;

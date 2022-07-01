@@ -23,7 +23,7 @@
   height: 100%;
 }
 .NavBar .logo{
-  display: inline-block;
+  align-items: center;
   display: flex;
   flex-direction: row;
   
