@@ -11,28 +11,24 @@
   background: #292c2f;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  height: 125px;
+  height: 8rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
-.links{
-  position: absolute;
-  top: 50%;
-  left: 51.5%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
 
 .links a{
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
   width: auto;
-  margin: 20px;
+  margin: 1rem;
   margin-bottom: 5px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -48,46 +44,22 @@
   background: #5383d3;
   border-radius: 50%;
   opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.links a:nth-child(1):hover ~ .dot {
-  -webkit-transform: translateX(65px);
-  transform: translateX(65px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.links a:nth-child(2):hover ~ .dot {
-  -webkit-transform: translateX(235px);
-  transform: translateX(235px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.links a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(445px);
-  transform: translateX(445px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.links a:nth-child(4):hover ~ .dot {
-  -webkit-transform: translateX(655px);
-  transform: translateX(655px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
+  margin: 0 auto;
+  margin-top: 1rem;
+  opacity: 0;
 }
 .logo h1{
 margin: 0;
 color: lightblue;
+}
+@keyframes animaton {
+  0% {opacity: 0;}
+  50% {opacity: 0.5; transform: translateY(5px);}
+  100% {opacity: 1; transform: translateY(-5px);}
+} 
+.links a:hover .dot{
+  opacity: 1;
+  animation: animaton 1s ease-in-out;
 }
 .logo h1 a{
 color:#0059f3;
