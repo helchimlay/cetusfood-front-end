@@ -1,4 +1,5 @@
 import React from 'react';
+import NewRestForm from './NewRestForm';
 import './RestList.css';
 import RestListEl from './RestListEl';
 
@@ -12,8 +13,42 @@ const RestList = () => {
         { id: 4, name: 'name4', link: 'link4.pl', email: 'email4@gmail.com' },
         { id: 5, name: 'name5', link: 'link5.pl', email: 'email5@gmail.com' },
         { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
+        { id: 6, name: 'name6', link: 'link6.pl', email: 'email6@gmail.com' },
     ])
     const [selectedElId, setSelectedElId] = React.useState(null);
+    const [newRestFormOpened, setNewRestFormOpened] = React.useState(false);
+    
+    const searchBarRef = React.useRef(null);
+
+    const handleSearch = ()=>{
+        // fechuj i wepchaj do fetchedData z searchBarRef
+        if(searchBarRef.current.value !== ''){
+            alert('szukam');
+        }
+    }
 
     console.log(selectedElId);
 
@@ -23,22 +58,33 @@ const RestList = () => {
                 selectedElId: selectedElId, setSelectedElId: setSelectedElId
             }}>
                 <div className="list">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Lp.</th>
-                                <th>Nazwa</th>
-                                <th>Link</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {fetchedData?.map((el, i) => (
-                                <RestListEl key={i} id={el.id} oNum={i + 1} name={el.name} link={el.link} email={el.email} />
-                            ))}
-                        </tbody>
-                    </table>
+                    <div className='filtres'>
+                        <div className='search-field'>
+                            <input ref={searchBarRef} type="text" placeholder='Szukaj po nazwie' />
+                            <i className='bx bx-search' onClick={handleSearch}></i>
+                        </div>
+                    </div>
+                    <div className="table" style={{height: '65vh'}}>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Lp.</th>
+                                    <th>Nazwa</th>
+                                    <th>Link</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {fetchedData?.map((el, i) => (
+                                    <RestListEl key={i} id={el.id} oNum={i + 1} name={el.name} link={el.link} email={el.email} />
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className="add-new-form">  
+                        <button onClick={()=>{setNewRestFormOpened(true); setSelectedElId(null)}}>Dodaj nowy element</button>
+                    </div>
                 </div>
                 <div className="options">
                     {selectedElId ? (<>
@@ -67,9 +113,11 @@ const RestList = () => {
                                 <button>Usuń</button>
                             </p>
                         </div>
-                    </>) : (
+                    </>) : (newRestFormOpened ? (
+                        <NewRestForm />
+                    ) : (
                         <><h4 className='title'>Nie wybrano elementu</h4></>
-                    )}
+                    ))}
                 </div>
             </RestListCtx.Provider>
         </div>
