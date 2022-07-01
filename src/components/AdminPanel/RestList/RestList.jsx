@@ -40,6 +40,8 @@ const RestList = () => {
     ])
     const [selectedElId, setSelectedElId] = React.useState(null);
     const [newRestFormOpened, setNewRestFormOpened] = React.useState(false);
+    const [newRestFormData, setNewRestFormData] = React.useState({});
+
     
     const searchBarRef = React.useRef(null);
 
@@ -55,7 +57,8 @@ const RestList = () => {
     return (
         <div className='RestList'>
             <RestListCtx.Provider value={{
-                selectedElId: selectedElId, setSelectedElId: setSelectedElId
+                selectedElId: selectedElId, setSelectedElId: setSelectedElId,
+                newRestFormData: newRestFormData, setNewRestFormData: setNewRestFormData
             }}>
                 <div className="list">
                     <div className='filtres'>
