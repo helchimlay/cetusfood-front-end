@@ -1,69 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .NavBar{
-  background: #292c2f;
+  background: rgb(64, 68, 73);
   font-family: "Montserrat", sans-serif;
   position: relative;
-  height: 8rem;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 90px;
+  color: white;
+  align-content: center;
+}
+
+.NavBar .links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 20px;
+  font-size: 20px;
+  position: relative;
+  bottom: 2rem;
+  height: 100%;
+}
+.NavBar .logo{
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
   
 }
+.NavBar .logo h1{
+  
+  font-family: 'Prompt', sans-serif;
+  height: 100%;
+  color: deepskyblue;
+  font-size: 40px;
 
+}
+.NavBar .logo img{
+  width: 100px;
+  height: 100px;
 
-.links a{
-  color: #f6f4e6;
+}
+.NavBar .links a{
+  color: white;
+  position: relative;
   text-decoration: none;
-  font-size: 1.4em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: auto;
-  margin: 1rem;
-  margin-bottom: 5px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 0.5em;
+}.NavBar .links a:hover{
+  color: rgb(0, 174, 255);
+  
 }
-
-.links a:hover {
-  color: #5383d3;
-}
-
-.links .dot {
-  width: 6px;
-  height: 6px;
-  background: #5383d3;
+.NavBar .links a:hover::before{
+  content: '';
+  background-color: rgb(0, 174, 255);
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  opacity: 0;
-  margin: 0 auto;
-  margin-top: 1rem;
-  opacity: 0;
-}
-.logo h1{
-margin: 0;
-color: lightblue;
-}
-@keyframes animaton {
-  0% {opacity: 0;}
-  50% {opacity: 0.5; transform: translateY(5px);}
-  100% {opacity: 1; transform: translateY(-5px);}
-} 
-.links a:hover .dot{
-  opacity: 1;
-  animation: animaton 1s ease-in-out;
-}
-.logo h1 a{
-color:#0059f3;
-font-size: 24px;
-font-weight: 700;
-font-family: 'Poppins', sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 140%);
 }

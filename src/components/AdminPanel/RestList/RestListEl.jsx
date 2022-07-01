@@ -1,12 +1,26 @@
 import React from 'react';
+import { RestListCtx } from './RestList';
 
-const RestListEl = ({ name, link, email }) => {
+const RestListEl = ({ id, oNum, name, link, email }) => {
+  const Ctx = React.useContext(RestListCtx);
+  const radioRef = React.useRef(null);
+
+  const handleRadioChange = ()=>{
+    Ctx.setSelectedElId(id);
+  }
+  const handleElDblClick = ()=>{
+    Ctx.setSelectedElId(id);
+    radioRef.current.click();
+  }
+
   return (
-    <div className='RestListEl'>
-        <p>Nazwa: {name}</p>
-        <p>Link: <a href={`https://${link}`}>{link}</a></p>
-        <p>Email: {email}</p>
-    </div>
+    <tr className={`RestListEl ${Ctx.selectedElId===id?'selected':null}`} onDoubleClick={handleElDblClick}>
+        <td className='radio'><input type="radio" name='list-item' ref={radioRef} onChange={handleRadioChange} /></td>
+        <td className='o-num'>{oNum}.</td>
+        <td>{name}</td>
+        <td><a target='_blank' rel="noreferrer" href={`https://${link}`}>{link}</a></td>
+        <td>{email}</td>
+    </tr>
   )
 }
 
