@@ -36,17 +36,19 @@
 .AdminPanel nav.navigation .title{
     font-size: 23px;
     color: white;
-    width: 70%;
+    width: 80%;
     display: block;
     margin: 5px auto 10px auto;
     border-bottom: 1px solid white;
     padding: 5px 15%;
     font-weight: 100;
+    white-space: nowrap;
+    text-align: center;
 }
 .AdminPanel .content{
     padding: 0 70px;
 }
 .AdminPanel h3.title{
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 300;
 }
