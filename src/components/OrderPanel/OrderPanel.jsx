@@ -1,6 +1,7 @@
 import React from 'react';
 import './project.css';
-import './Footer copy.css'
+import './Footer copy.css';
+import Order from './Order.jsx';
 const OrderPanel = () => {
      const handleClick2 = () => {
      document.querySelector(".submit").classList.add('sign-up-mode');
@@ -29,49 +30,13 @@ const OrderPanel = () => {
       <div class="mein">
         <form action="">
           <fieldset>
-            <button type="submit" class='submit'>
-              <div >
-                <p>Pizza Hut</p>
-              </div>
-              <p ><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i> 95%</p>
-            </button>
-            <button type="submit">
-              <div>
-                <p>Pizza Hut</p>
-              </div>
-              <p><i class='bx bx-like'></i>95%</p>
-            </button>
-
+                  <Order/>
+                  <Order/>
+                  <Order/>
+                  <Order/>
+                  <Order/>
+                  <Order/>
+                  <Order/>
           </fieldset>
         </form>
       </div>
