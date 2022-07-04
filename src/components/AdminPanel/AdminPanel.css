@@ -54,3 +54,27 @@
     font-weight: 300;
     margin: 10px 0 20px 0;
 }
+
+.AdminPanelStart{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 60px 20px;
+    gap: 70px;
+}
+.AdminPanelStart a{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #292c2f;
+    border: 1px solid #292c2f0c;
+}.AdminPanelStart a:hover{
+    background-color: #292c2f2a;
+    border: 1px solid #292c2f2d;
+}
+.AdminPanelStart a i{
+    font-size: 150px;
+}

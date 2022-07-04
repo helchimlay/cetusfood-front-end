@@ -44,3 +44,6 @@
 .RestListEl a{
     color: rgb(0, 140, 255);
 }
+.RestListEl button{
+    background-color: rgba(255, 255, 255, 0.35);
+}

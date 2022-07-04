@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import RestList from './components/AdminPanel/RestList/RestList';
 import NotFound404 from './components/NotFound404/NotFound404';
 import React from 'react';
+import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
             </>} />
             <Route path='users' element={<>
               <h3 className="title">Lista użytkowników</h3>
+            </>} />
+            <Route path='' element={<>
+              <h3 className="title">Start</h3>
+              <AdminPanelStart />
             </>} />
           </Route>
           <Route exact path='*' element={<NotFound404 />} />
