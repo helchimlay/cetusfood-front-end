@@ -39,17 +39,13 @@ const RestList = () => {
                 <table className='main-table'>
                     <thead>
                         <tr>
-                            <th>Lp.</th><th></th>
-                            {Object.keys(fetchedData[0]).map((key, i)=><th key={i}>{key}</th>)}
+                            <th>Lp.</th><th></th><th>nazwa</th><th>email</th><th>Url</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {fetchedData?.map((el, i)=>(
-                            <RestListEl data={el} key={i} i={i+1} />
-                        ))}
+                        {fetchedData?.map((el, i) => <RestListEl data={el} key={i} i={i+1} />)}
                     </tbody>
                 </table>
-                
             </RestListCtx.Provider>
         </div>
     )

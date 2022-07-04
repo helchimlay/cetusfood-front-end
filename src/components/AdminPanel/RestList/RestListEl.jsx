@@ -5,11 +5,11 @@ const RestListEl = ({ data, i }) => {
     const Ctx = React.useContext(RestListCtx);
     const checkboxRef = React.useRef();
 
-    const handleCheckboxChange = e=>{
-        if(e.target.checked){
+    const handleCheckboxChange = ()=>{
+        if(checkboxRef.current.checked){
             Ctx.setSelectedIds(prev => [...prev, data.id]);
         }else{
-            Ctx.setSelectedIds(prev => prev.filter((val, i, arr)=>{
+            Ctx.setSelectedIds(prev => prev.filter(val=>{
                 return val !== data.id
             }))
         }
