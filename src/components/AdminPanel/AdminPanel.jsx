@@ -1,6 +1,6 @@
 import React from 'react';
 import './AdminPanel.css';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, Navigate } from 'react-router-dom';
 
 const AdminPanel = () => {
   return (

@@ -7,6 +7,8 @@ import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
 import RestList from './components/AdminPanel/RestList/RestList';
+import NotFound404 from './components/NotFound404/NotFound404';
+import React from 'react';
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path='/' element={<HomePage />} exact />
+          <Route exact path='/' element={<HomePage />} />
           <Route path='/order' element={<OrderPanel />} />
           <Route path='/log-in' element={<LogIn />} />
           <Route path='/admin-panel' element={<AdminPanel />}>
@@ -24,9 +26,9 @@ function App() {
             </>} />
             <Route path='users' element={<>
               <h3 className="title">Lista użytkowników</h3>
-              {/* <RestList /> */}
             </>} />
           </Route>
+          <Route exact path='*' element={<NotFound404 />} />
         </Routes>
         <Footer />
       </div>
