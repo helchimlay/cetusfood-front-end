@@ -1,0 +1,43 @@
+.RestList .main-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+.RestList .main-table td, .RestList .main-table th{
+    padding: 6px 15px;
+    text-align: left;
+    font-size: .6em;
+    font-weight: 300;
+}
+.RestList .main-table tr:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.RestList .main-table tr:not(tr:first-of-type) td{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.RestList .main-table th{
+    text-transform: capitalize;
+    font-size: 0.7em;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.RestListEl .edit-btn{
+    color: rgb(0, 140, 255);
+    font-size: .9   em;
+    border-radius: 2px;
+}.RestListEl .edit-btn:hover{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+.RestListEl .del-btn{
+    color: rgb(255, 0, 0);
+    font-size: .9em;
+    border-radius: 2px;
+}.RestListEl .del-btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.RestListEl a{
+    color: rgb(0, 140, 255);
+}
