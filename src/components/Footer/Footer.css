@@ -39,14 +39,24 @@ body {
 .Footer  .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
-	padding: 0;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
 }
  
 .Footer .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+	list-style: none;
+	width: 70px;
+	height: 50px;
+	text-align: center;
+}
+.Footer .footer-links a:hover{
+	font-size: 1.1em;
+	color: #0080ff;
+	display: inline-block;
+	
 }
  
 .Footer  .footer-company-name{
@@ -163,5 +173,17 @@ body {
 		line-height: normal;
 		font-size: auto;
 	}
+	 
+    .Footer  .footer-links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2em;
+   }
+   .Footer  .footer-links a{
+     text-align: center;
+	 width: 170px;
+   }
+   
  
 }
