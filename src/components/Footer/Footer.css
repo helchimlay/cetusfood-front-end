@@ -9,9 +9,7 @@ body {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
- 
 	padding: 55px 50px;
-	margin-top: 80px;
 }
  
 .Footer .footer-left,
@@ -144,8 +142,6 @@ body {
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
- 
-	margin-right: 3px;
 	margin-bottom: 5px;
 }
  
