@@ -27,9 +27,30 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 420px){
+  .NavBar{
+    width: 100vw;
+  }
+  .NavBar .logo img{
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .logo  h3{
+    font-size: 20px;
+  }
+  #trigger, #burger, #burger:before, #burger:after{
+    max-width: 30px;
+    position: relative;
+    left: 20px;
+  }
+  
+}
 .logo  h3{
 	color:  #ffffff;
 	font: normal 2.5em 'Cookie', cursive;
+  /* font-size: 2.5em;
+  font-family: 'Prompt', sans-serif; */
+
 	margin: 0;
 }
  
@@ -202,6 +223,7 @@
   left: 50%;
   animation: 0.5s dot ease-in-out;
   animation-direction: alternate;
+  background-color: rgb(0, 174, 255);
 }
 @keyframes dot {
   0%{
