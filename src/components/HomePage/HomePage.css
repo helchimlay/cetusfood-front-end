@@ -99,6 +99,14 @@
     }
 
 }
+@media (max-width: 420px){
+    .HomePage section{
+        max-width: 100vw;
+    }
+    .HomePage section .graybox{
+        max-width: 100vw;
+    }
+}
 .HomePage section .aboutUs{
     display: flex;
     flex-direction: row;
