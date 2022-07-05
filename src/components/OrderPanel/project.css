@@ -138,10 +138,9 @@ body{
     justify-content: center;
   }
   .OrderPanel .header div:nth-child(2){
-    height: 10px;
+    height: 10px; 
     width: 100px;
     background-color: rebeccapurple;
-    margin: 0;
 }
 /* do lekkich poprawek środkowanie tego panelu^^ */
 .OrderPanel .header{

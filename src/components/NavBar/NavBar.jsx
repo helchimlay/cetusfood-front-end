@@ -15,7 +15,7 @@ const NavBar = () => {
             <Link to='/order'>Zamów jedzenie</Link>
             <Link to='/log-in'>Zaloguj się</Link>
             <Link to='/admin-panel'>Panel administratora</Link>
-        </div>
+        </div> 
     </div>
   )
 } 
