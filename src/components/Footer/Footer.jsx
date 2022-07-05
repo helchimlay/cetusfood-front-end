@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,12 +10,9 @@ const Footer = () => {
 <h3>Cetus<span>Food</span></h3>
 
 <p className='footer-links'>
-  <a href="#">Home</a>
-  <a href="#">Blog </a>
-  <a href="#">Pricing </a>
-  <a href="#">About </a>
-  <a href="#">Faq </a>   
-  <a href="#">Contact </a>
+  <Link to='/'>Główna</Link>
+  <Link to='/order'>Zamów jedzenie</Link>
+  <Link to='/log-in'>Zaloguj się</Link>
 </p>
 
 <p className='footer-company-name'>CetusFood &copy; 2022</p>
@@ -34,7 +32,7 @@ const Footer = () => {
 
 <div>
   <i className='fa fa-envelope'></i>
-  <p><a href="mailto:support@company.com">fantacydesignss@gmail.com
+  <p><a href="mailto:contact@cetuspro.com">support@cetuspro.com
   </a></p>
 </div>
 
@@ -43,8 +41,8 @@ const Footer = () => {
 <div className='footer-right'>
 
 <p className='footer-company-about'>
-  <span>About the company</span>
-  we are the company through which you order food.
+  <span>Kim jesteśmy</span>
+  jesteśmy firmą u której zamówisz swoje ulubione jedzenie
 </p>
 
 <div className='footer-icons'>

@@ -26,6 +26,9 @@ body {
 .Footer  h3{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
+	/* font-size: 36px;
+  	font-family: 'Prompt', sans-serif; */
+
 	margin: 0;
 }
  
@@ -142,8 +145,6 @@ body {
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
- 
-	margin-right: 3px;
 	margin-bottom: 5px;
 }
  
@@ -180,7 +181,10 @@ body {
    }
    .Footer  .footer-links a{
      text-align: center;
-	 width: 170px;
+	 width: 300px;
+   }
+   .Footer  h3{
+	font-size: 45px;
    }
    
  

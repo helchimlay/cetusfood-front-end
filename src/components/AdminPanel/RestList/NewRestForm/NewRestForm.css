@@ -1,0 +1,32 @@
+.NewRestForm p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.NewRestForm form{
+    width: 50%;
+}
+.NewRestForm input{
+    background-color: rgb(231, 226, 216);
+    font-size: .9em;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+}.NewRestForm input:focus{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(231, 226, 216);
+}
+.NewRestForm button, .NewRestForm a{
+    background-color: rgb(231, 226, 216);
+    font-size: .9em;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+    margin-right: 5px;
+}.NewRestForm button:active, .NewRestForm a:active{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(231, 226, 216);
+}

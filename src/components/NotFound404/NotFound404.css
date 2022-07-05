@@ -1,0 +1,20 @@
+.NotFound404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 70vh;
+}
+.NotFound404 *{
+    margin: 0;
+    padding: 0;
+}
+.NotFound404 h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.NotFound404 p{
+    font-size: 20px;
+    font-weight: 300;
+}

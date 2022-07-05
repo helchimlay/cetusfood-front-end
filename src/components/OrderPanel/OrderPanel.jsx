@@ -3,6 +3,7 @@ import './project.css';
 import './Footer copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
+<<<<<<< HEAD
      const handleClick2 = () => {
      document.querySelector(".submit").classList.add('sign-up-mode');
   }
@@ -11,11 +12,13 @@ const OrderPanel = () => {
     document.querySelector(".submit").classList.remove("sign-up-mode");
   }
 
+=======
+>>>>>>> a4a70943ac99b44102ec1eb7c0bbb2539f973b66
   return (
     <div className='OrderPanel'>
-      <div class="header">
+      <div className="header">
         <div><img src="CetusikKurier.png" alt="" />
-          Cetus<span onClick={handleClick2}>Food</span> 
+          Cetus<span >Food</span> 
         </div>
         <div>
           <form action="">
@@ -25,10 +28,10 @@ const OrderPanel = () => {
           </form>
         </div>
         <div>
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
       </div>
-      <div class="mein">
+      <div className="mein">
         <form action="">
           <fieldset>
                   <Order/>
