@@ -9,6 +9,6 @@ const Order = () => {
               <p ><i class='bx bx-like'></i> 95%</p>
             </button>
   )
-}
+} 
 
 export default Order 

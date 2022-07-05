@@ -15,7 +15,7 @@ const OrderPanel = () => {
               <input type="text" placeholder="Wyszukaj restauracje" />
             </fieldset>
           </form> 
-        </div>
+        </div> 
         <div>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
