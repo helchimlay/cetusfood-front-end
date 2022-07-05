@@ -1,13 +1,15 @@
 import React from 'react';
 import './NewRestForm.css';
 import { addRestaurant } from '../../../services/RestaurationsList.js';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const AddNewRestForm = () => {
   const [formData, setFormData] = React.useState({});
+  const navigate = useNavigate();
   const handleSubmit = e => {
     console.log(formData);
     addRestaurant(formData);
+    navigate('../restaurants');
     e.preventDefault();
   }
   const handleInputChange = e => {

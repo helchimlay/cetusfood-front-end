@@ -1,8 +1,10 @@
 import React from 'react';
 import { RestListCtx } from './RestList';
+import { deleteRestaurant } from '../../services/RestaurationsList';
 
 const RestListEl = ({ data, i }) => {
     const Ctx = React.useContext(RestListCtx);
+
     const checkboxRef = React.useRef();
 
     const handleCheckboxChange = ()=>{
@@ -25,6 +27,10 @@ const RestListEl = ({ data, i }) => {
             checkboxRef.current.click();
         }
     }
+    const handleDelBtnClick = () => {
+        deleteRestaurant(data?.id);
+        Ctx.setForceFetch(prev => prev + 1);
+    }
 
     return (
     <tr className={`RestListEl ${Ctx.selectedIds.includes(data.id)?'checked':null}`} onDoubleClick={handleElDblClick}>
@@ -35,7 +41,7 @@ const RestListEl = ({ data, i }) => {
         <td><a target='_blank' rel='noreferrer' href={`https://${data.url}`}>{data.url}</a></td>
         <td className='actions'>
             <button className='edit-btn'><i className='bx bxs-edit'></i></button>
-            <button className='del-btn'><i className='bx bx-trash-alt' ></i></button>
+            <button className='del-btn' onClick={handleDelBtnClick}><i className='bx bx-trash-alt' ></i></button>
         </td>
     </tr>
   )

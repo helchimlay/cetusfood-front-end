@@ -42,6 +42,10 @@
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(231, 226, 216);
 }
+.RestList .opt-bar button i, .RestList .opt-bar a i{
+    font-size: 15px;
+    transform: translateY(1px);
+}
 
 .RestListEl.checked{
     background-color: rgba(0, 0, 0, 0.08);

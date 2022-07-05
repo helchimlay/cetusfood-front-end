@@ -7,6 +7,7 @@ body{
     color: #ffffff;
     height: 60px;
     position: relative;
+    display: flex;
 }
 .OrderPanel form,fieldset{
     border: 0;
@@ -121,6 +122,39 @@ body{
 .OrderPanel button.sign-up-mode div{
     font-size: 18px;
 
+}
+@media (max-width:610px) {
+  .OrderPanel button{
+    width: 90%;
+    height: 50vw;
+  }
+  .OrderPanel button div{
+    width: 100%;
+    height: 80%;
+    background-color: #5383d3;
+  }
+  .OrderPanel .header{
+    display: flex;
+    justify-content: center;
+  }
+  .OrderPanel .header div:nth-child(2){
+    height: 10px;
+    width: 100px;
+    background-color: rebeccapurple;
+    margin: 0;
+}
+/* do lekkich poprawek środkowanie tego panelu^^ */
+.OrderPanel .header{
+  width: 100%;
+} 
+.OrderPanel .header div:nth-child(1){
+  display: none;
+}
+.OrderPanel .header div:nth-child(3){
+  display: none;
+}
+.OrderPanel .header div:nth-child(2) input{
+ display: none;}
 }
 
 

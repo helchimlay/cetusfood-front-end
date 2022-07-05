@@ -46,4 +46,9 @@
 .Order fieldset{
     text-align: center;
 }
-
+@media (max-width:610px) {
+  .Order button div{
+    width: 90%;
+    height: 20%;
+  }
+}
