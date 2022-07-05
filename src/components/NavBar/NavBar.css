@@ -47,9 +47,9 @@
 }
 .logo  h3{
 	color:  #ffffff;
-	/* font: normal 2.5em 'Cookie', cursive; */
-  font-size: 2.5em;
-  font-family: 'Prompt', sans-serif;
+	font: normal 2.5em 'Cookie', cursive;
+  /* font-size: 2.5em;
+  font-family: 'Prompt', sans-serif; */
 
 	margin: 0;
 }
