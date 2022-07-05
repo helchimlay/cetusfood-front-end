@@ -29,7 +29,7 @@ const RestListEl = ({ data, i }) => {
     }
     const handleDelBtnClick = () => {
         deleteRestaurant(data?.id);
-        Ctx.setForceFetch(prev => prev + 1);
+        Ctx.setForceFetch(Ctx.forceFetch + 1);
     }
 
     return (

@@ -25,7 +25,7 @@ const RestList = () => {
             deleteRestaurant(el);
         })
         setSelectedIds([]);
-        setForceFetch(prev => prev + 1);
+        setForceFetch(forceFetch + 1);
     }
 
     return (<>
