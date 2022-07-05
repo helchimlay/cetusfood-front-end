@@ -8,8 +8,8 @@ const NavBar = () => {
     <div className='NavBar'>
         <div className="logo"><img src={cetusik} alt="cetusik" /><h3>Cetus<span>Food</span></h3></div>
         <input type="checkbox" id="menu-toggle"/>
-        <label id="trigger" for="menu-toggle"></label>
-        <label id="burger" for="menu-toggle"></label>
+        <label id="trigger" htmlFor="menu-toggle"></label>
+        <label id="burger" htmlFor="menu-toggle"></label>
         <div className="links">
             <Link to='/'>Główna</Link>
             <Link to='/order'>Zamów jedzenie</Link>
