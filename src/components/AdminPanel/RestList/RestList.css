@@ -51,6 +51,8 @@
     font-size: 1em;
     border-radius: 2px;
 }.RestListEl .edit-btn:hover{
+    background-color: rgb(233, 225, 214);
+}.RestListEl .edit-btn:active{
     background-color: rgb(0, 140, 255);
     color: white;
 }
@@ -59,6 +61,8 @@
     font-size: 1em;
     border-radius: 2px;
 }.RestListEl .del-btn:hover{
+    background-color: rgb(233, 225, 214);
+}.RestListEl .del-btn:active{
     background-color: rgb(255, 0, 0);
     color: white;
 }
@@ -67,4 +71,11 @@
 }
 .RestListEl button{
     background-color: rgba(255, 255, 255, 0.35);
+}
+.RestListEl .actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 5px;
 }
