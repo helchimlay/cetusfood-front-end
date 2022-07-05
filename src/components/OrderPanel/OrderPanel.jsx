@@ -16,9 +16,9 @@ const OrderPanel = () => {
             </fieldset>
           </form>
         </div>
-        {/* <div>
+        <div>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
-        </div> */}
+        </div>
       </div>
       <div className="mein">
         <form action="">
