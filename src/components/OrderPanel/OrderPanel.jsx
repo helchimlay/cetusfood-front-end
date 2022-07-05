@@ -5,7 +5,7 @@ import Order from './Order.jsx';
 const OrderPanel = () => {
   return (
     <div className='OrderPanel'>
-      <div class="header">
+      <div className="header">
         <div><img src="CetusikKurier.png" alt="" />
           Cetus<span >Food</span> 
         </div>
@@ -17,10 +17,10 @@ const OrderPanel = () => {
           </form>
         </div>
         <div>
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
       </div>
-      <div class="mein">
+      <div className="mein">
         <form action="">
           <fieldset>
                   <Order/>
