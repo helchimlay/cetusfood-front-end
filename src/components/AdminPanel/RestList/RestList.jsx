@@ -9,22 +9,15 @@ export const RestListCtx = React.createContext();
 
 const RestList = () => {
     const [fetchedData, setFetchedData] = React.useState([
-        {id: 1, name: 'mcdonalds', email: 'contact@mcdonalds.com', url: 'mcdonalds.com'},
-        {id: 2, name: 'kfc', email: 'contact@kfc.com', url: 'kfc.com'},
-        {id: 3, name: 'subway', email: 'contact@subway.com', url: 'subway.com'}
+        {id: 1, name: 'example1', email: 'contact@example1.com', url: 'example1.com'},
+        {id: 2, name: 'example2', email: 'contact@example2.com', url: 'example2.com'},
+        {id: 3, name: 'example3', email: 'contact@example3.com', url: 'example3.com'}
     ]);
     const [selectedIds, setSelectedIds] = React.useState([]);
 
-    // React.useEffect(()=>{
-    //     getRestaurants().then(data => setFetchedData(data.data));
-    // }, [newRestFormOpened])
-    // const searchBarRef = React.useRef(null);
-    // const handleSearch = ()=>{
-    //     if(searchBarRef.current.value !== ''){
-    //         getRestaurantsByName(searchBarRef.current.value).then(data => setFetchedData(data.data));
-    //     }
-    // }
-    console.log(selectedIds);
+    React.useEffect(() => {
+        getRestaurants().then(res => console.log(res))
+    }, [])
 
 
     return (<>
