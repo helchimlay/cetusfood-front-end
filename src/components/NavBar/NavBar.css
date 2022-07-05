@@ -27,6 +27,92 @@
     margin-bottom: 30px;
   }
 }
+.logo  h3{
+	color:  #ffffff;
+	font: normal 2.5em 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.logo  h3 span{
+	color:  #5383d3;
+}
+
+/* burger menu */
+/* BURGER MENU */
+#trigger, #burger, #burger:before, #burger:after {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background: #03A9F4;
+  width: 50px;
+  height: 5px;
+  transition: .2s ease;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgb(0, 126, 126);
+}
+#trigger {
+  height: 25px;
+  background: none;
+  
+}
+#burger:before {
+  content: " ";
+  top: 13px;
+  left: 0px;
+
+}
+#burger:after {
+  content: " ";
+  top: 25px;
+  left: 0px;
+
+}
+#menu-toggle:checked + #trigger + #burger {
+  transition: transform .2s ease;
+  transform: rotate(45deg);
+  top: 35px;
+  right: 20px;
+  height: 7px;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+  transform: rotate(-45deg);
+  transition: transform 2s ease;
+  display: none;
+}
+#menu-toggle:checked + #trigger + #burger:after {
+  transform: rotate(-90deg);
+  transition: transform .2s ease;
+  height: 7px;
+  top: 0px;
+}
+#menu {
+  position: absolute;
+  margin: 0; padding: 0;
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  animation: not-checked-anim .2s both;
+  transition: .2s;
+}
+#menu-toggle:checked + #trigger + #burger + #menu {
+  animation: checked-anim 1s ease both;
+}
+#menu-toggle:checked + #trigger ~ .links > a {
+  display: block;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+  display: none;
+}
+
+
+
+
+
 @media (max-width: 610px){
   .NavBar{
     display: flex;
@@ -37,8 +123,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    display: none;
   }
+  .NavBar .links a{
+    display: none;
+  }
+  #trigger, #burger, #burger:before, #burger:after {
+    display: block;
+  }
+  .NavBar .logo{
+    left: 65%;
+  }
+  
+
+
+
+
 }
 
 .NavBar .links{
@@ -104,3 +204,6 @@
   
   
 }
+
+
+

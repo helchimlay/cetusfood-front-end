@@ -6,7 +6,10 @@ import cetusik from '../../images/cetusFood2.png';
 const NavBar = () => {
   return (
     <div className='NavBar'>
-        <div className="logo"><img src={cetusik} alt="cetusik" /><h1>CetusFood</h1></div>
+        <div className="logo"><img src={cetusik} alt="cetusik" /><h3>Cetus<span>Food</span></h3></div>
+        <input type="checkbox" id="menu-toggle"/>
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
         <div className="links">
             <Link to='/'>Główna</Link>
             <Link to='/order'>Zamów jedzenie</Link>
@@ -15,5 +18,5 @@ const NavBar = () => {
         </div>
     </div>
   )
-}
+} 
 export default NavBar;
