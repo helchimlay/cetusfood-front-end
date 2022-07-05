@@ -66,6 +66,39 @@
     }
 
 }
+@media (max-width: 610px){
+    .HomePage section{
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+        margin: 0;
+    }
+    .HomePage section .aboutUs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .HomePage section .offer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .HomePage section hr{
+        height: 5px;
+        outline: none;
+        background-color: var(--hrB);
+        max-width: 200px;
+        margin: auto;
+        border-radius: 20px;
+        border: 1px solid var(--hrB);
+    }
+
+}
 .HomePage section .aboutUs{
     display: flex;
     flex-direction: row;
