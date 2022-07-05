@@ -46,13 +46,4 @@
 .Order fieldset{
     text-align: center;
 }
-/* animation studio panel */
-.Order .submit .sign-up-mode p{
-  transform: translateY(-200px);
-  background-color: antiquewhite;
-}
 
-.Order button.sign-up-mode div{
-    font-size: 18px;
-
-}

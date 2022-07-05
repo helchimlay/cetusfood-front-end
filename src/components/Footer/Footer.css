@@ -178,7 +178,10 @@ body {
    }
    .Footer  .footer-links a{
      text-align: center;
-	 width: 170px;
+	 width: 300px;
+   }
+   .Footer  h3{
+	font-size: 45px;
    }
    
  

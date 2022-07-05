@@ -3,18 +3,11 @@ import './project.css';
 import './Footer copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
-     const handleClick2 = () => {
-     document.querySelector(".submit").classList.add('sign-up-mode');
-  }
-    const handleClick1 = () => {
-    console.log('adma jest najlepszy')
-    document.querySelector(".submit").classList.remove("sign-up-mode");
-  }
   return (
     <div className='OrderPanel'>
       <div class="header">
         <div><img src="CetusikKurier.png" alt="" />
-          Cetus<span onClick={handleClick2}>Food</span> 
+          Cetus<span >Food</span> 
         </div>
         <div>
           <form action="">
