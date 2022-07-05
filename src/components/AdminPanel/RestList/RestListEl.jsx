@@ -33,8 +33,10 @@ const RestListEl = ({ data, i }) => {
         <td>{data.name}</td>
         <td><a href={`mailto:${data.email}`}>{data.email}</a></td>
         <td><a target='_blank' rel='noreferrer' href={`https://${data.url}`}>{data.url}</a></td>
-        <td><button className='edit-btn'><i className='bx bxs-edit'></i></button></td>
-        <td><button className='del-btn'><i className='bx bx-trash-alt' ></i></button></td>
+        <td className='actions'>
+            <button className='edit-btn'><i className='bx bxs-edit'></i></button>
+            <button className='del-btn'><i className='bx bx-trash-alt' ></i></button>
+        </td>
     </tr>
   )
 }
