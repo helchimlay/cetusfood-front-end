@@ -46,9 +46,6 @@
 .RestListEl.checked{
     background-color: rgba(0, 0, 0, 0.08);
 }
-.RestListEl button{
-    margin-right: 5px;
-}
 .RestListEl .edit-btn{
     color: rgb(0, 140, 255);
     font-size: 1em;
@@ -74,4 +71,11 @@
 }
 .RestListEl button{
     background-color: rgba(255, 255, 255, 0.35);
+}
+.RestListEl .actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 5px;
 }

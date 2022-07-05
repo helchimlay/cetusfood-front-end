@@ -106,7 +106,7 @@
   display: block;
   animation: expand-bar .2s ease-in-out;
 }
-.NavBar [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+.NavBar [type="checkbox"]:not(:checked), .NavBar [type="checkbox"]:checked {
   display: none;
 }
 @keyframes expand-bar{
