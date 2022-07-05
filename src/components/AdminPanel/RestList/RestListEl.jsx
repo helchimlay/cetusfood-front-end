@@ -32,7 +32,7 @@ const RestListEl = ({ data, i }) => {
         <td><input ref={checkboxRef} checked={Ctx.selectedIds.includes(data.id)} type="checkbox" name="checkbox-el-checker" onChange={handleCheckboxChange} /></td>
         <td>{data.name}</td>
         <td><a href={`mailto:${data.email}`}>{data.email}</a></td>
-        <td><a target='_blank' rel='xd' href={`https://${data.url}`}>{data.url}</a></td>
+        <td><a target='_blank' rel='noreferrer' href={`https://${data.url}`}>{data.url}</a></td>
         <td><button className='edit-btn'><i className='bx bxs-edit'></i></button></td>
         <td><button className='del-btn'><i className='bx bx-trash-alt' ></i></button></td>
     </tr>
