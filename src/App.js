@@ -6,6 +6,7 @@ import LogIn from './components/LogIn/LogIn';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
+import Popup from './components/popup/popup';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/admin-panel' element={<AdminPanel />} />
         </Routes>
         <Footer />
+        <Popup />
       </div>
     </Router>
   );

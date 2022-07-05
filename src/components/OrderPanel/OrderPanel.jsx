@@ -10,6 +10,7 @@ const OrderPanel = () => {
     console.log('adma jest najlepszy')
     document.querySelector(".submit").classList.remove("sign-up-mode");
   }
+
   return (
     <div className='OrderPanel'>
       <div class="header">
