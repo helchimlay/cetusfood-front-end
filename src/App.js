@@ -10,6 +10,7 @@ import RestList from './components/AdminPanel/RestList/RestList';
 import NotFound404 from './components/NotFound404/NotFound404';
 import React from 'react';
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
+import AddNewRestForm from './components/AdminPanel/RestList/AddNewRestForm/AddNewRestForm';
 
 function App() {
   return (
@@ -21,13 +22,9 @@ function App() {
           <Route path='/order' element={<OrderPanel />} />
           <Route path='/log-in' element={<LogIn />} />
           <Route path='/admin-panel' element={<AdminPanel />}>
-            <Route path='restaurants' element={<>
-              <h3 className="title">Lista restauracji</h3>
-              <RestList />
-            </>} />
-            <Route path='users' element={<>
-              <h3 className="title">Lista użytkowników</h3>
-            </>} />
+            <Route path='restaurants' element={<RestList />} />
+            <Route path='restaurants/add-new' element={<AddNewRestForm />} />
+            <Route path='users' element={<h3 className="title">Lista użytkowników</h3>} />
             <Route path='' element={<>
               <h3 className="title">Start</h3>
               <AdminPanelStart />

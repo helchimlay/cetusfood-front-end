@@ -2,6 +2,7 @@ import React from 'react';
 import './RestList.css';
 import { getRestaurants, getRestaurantsByName, deleteRestaurant } from '../../services/RestaurationsList';
 import RestListEl from './RestListEl';
+import { Link } from 'react-router-dom';
 
 
 export const RestListCtx = React.createContext();
@@ -26,7 +27,8 @@ const RestList = () => {
     console.log(selectedIds);
 
 
-    return (
+    return (<>
+        <h3 className="title">Lista restauracji</h3>
         <div className='RestList'>
             <RestListCtx.Provider value={{
                 selectedIds: selectedIds, setSelectedIds: setSelectedIds
@@ -35,6 +37,7 @@ const RestList = () => {
                     <button onClick={()=>fetchedData?.map(a=>a.id).every(el=>selectedIds.includes(el)) ? setSelectedIds([]) : setSelectedIds(fetchedData?.map(a=>a.id))}>
                         {fetchedData?.map(a=>a.id).every(el=>selectedIds.includes(el)) ? 'Odznacz wszystkie' : 'Zaznacz wszystkie'}
                     </button>
+                    <Link to='add-new'>Dodaj nowy element</Link>
                 </div>
                 <table className='main-table'>
                     <thead>
@@ -49,7 +52,7 @@ const RestList = () => {
                 </table>
             </RestListCtx.Provider>
         </div>
-    )
+    </>)
 }
 
 export default RestList;
