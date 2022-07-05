@@ -11,6 +11,35 @@
   color: white;
   align-content: center;
 }
+@media (max-width: 920px){
+  .NavBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .NavBar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 610px){
+  .NavBar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .NavBar .links{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+}
 
 .NavBar .links{
   display: flex;

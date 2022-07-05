@@ -12,9 +12,59 @@
 .HomePage section{
     background-color: var(--backB);
     border:1px solid var(--backB);
-    margin: 50px 200px;
+    margin: 50px 10em;
     border-radius: 5px;
     
+}
+@media (max-width: 1260px){
+    .HomePage section{
+        margin: 5em;
+    }
+    .HomePage section .aboutUs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .HomePage section .aboutUs .cetusek img{
+        max-width: 420px;
+        max-height: 315px;
+    }
+    
+    
+}
+@media (max-width: 920px){
+    .HomePage section{
+        display: flex;
+        flex-direction: column;
+    }
+    .HomePage section .aboutUs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .HomePage section .aboutUs .cetusek{
+        padding: 0px;
+    }
+    .HomePage section .aboutUs .cetusek img{
+        max-width: 300px;
+        max-height: 225px;
+    }
+    .HomePage section .offer{
+        justify-content: center;
+        align-items: center;
+    }
+    .HomePage section .offer .cetKurier{
+        padding: 0px;
+    }
+    .HomePage section .offer .cetKurier img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
 }
 .HomePage section .aboutUs{
     display: flex;
