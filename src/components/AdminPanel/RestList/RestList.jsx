@@ -8,11 +8,7 @@ import { Link } from 'react-router-dom';
 export const RestListCtx = React.createContext();
 
 const RestList = () => {
-    const [fetchedData, setFetchedData] = React.useState([
-        { id: 1, name: 'example1', email: 'contact@example1.com', url: 'example1.com' },
-        { id: 2, name: 'example2', email: 'contact@example2.com', url: 'example2.com' },
-        { id: 3, name: 'example3', email: 'contact@example3.com', url: 'example3.com' }
-    ]);
+    const [fetchedData, setFetchedData] = React.useState([]);
     const [selectedIds, setSelectedIds] = React.useState([]);
     const [forceFetch, setForceFetch] = React.useState(0);
 
@@ -23,9 +19,10 @@ const RestList = () => {
     const handleDelManyBtn = () => {
         selectedIds?.forEach(el => {
             deleteRestaurant(el);
+            console.log(el);
         })
         setSelectedIds([]);
-        setForceFetch(prev => prev + 1);
+        setForceFetch(forceFetch + 1);
     }
 
     return (<>
@@ -39,7 +36,7 @@ const RestList = () => {
                     <button onClick={() => fetchedData?.map(a => a.id).every(el => selectedIds.includes(el)) ? setSelectedIds([]) : setSelectedIds(fetchedData?.map(a => a.id))}>
                         {fetchedData?.map(a => a.id).every(el => selectedIds.includes(el)) ? 'Odznacz wszystkie' : 'Zaznacz wszystkie'}
                     </button>
-                    <Link to='add-new'>Dodaj nowy element</Link>
+                    <Link replace to='add-new'>Dodaj nowy element</Link>
                     <button onClick={handleDelManyBtn}>Usuń zaznaczone<i className='bx bx-trash-alt' ></i></button>
                 </div>
                 <table className='main-table'>
