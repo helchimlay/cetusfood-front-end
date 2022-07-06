@@ -11,7 +11,6 @@ import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestFor
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
 import Popup from './components/popup/popup';
-
 function App() {
   return (
     <Router>
@@ -30,7 +29,7 @@ function App() {
           <Route exact path='*' element={<NotFound404 />} />
         </Routes>
         <Footer />
-        <Popup />
+        <Popup show={false}/>
       </div>
     </Router>
   );

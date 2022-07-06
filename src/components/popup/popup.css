@@ -20,35 +20,44 @@
     font-size: 14px;
     padding: 10px 24px;
 }
-.Popup .modal-container{
+
+.modal_container{
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
     pointer-events: none;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
-    opacity: 0;
+    width: 100vw; 
+    display: none;
     transition: opacity 0.3s ease;
+    position: fixed;
 }
-.Popup .modal-container .show{
-    pointer-events: auto;
-    opacity: 1;
-}
-.Popup .modal{
+
+.modal{
     background-color: #fff;
     border-radius: 5px;
     padding:30px 50px;
     width: 600px;
     max-width: 100%;
 }
-.Popup .modal h1{
+.modal h1{
     margin: 0;
 }
-.Popup .modal p{
+.modal p{
     font-size: 14px;
     opacity: 0.7;
+}
+
+.show{
+    pointer-events: auto;
+    display: flex !important ;
+    z-index: 12;
+}
+.Popup .a23{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
