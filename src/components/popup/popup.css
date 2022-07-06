@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
 }
-.Popup button{
+.Popup button, .button{
     background-color: #47a386;
     border: 0;
     border-radius: 5px;
@@ -26,15 +26,15 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    opacity: 0;
     pointer-events: none;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
-.Popup .modal-container.show{
+.Popup .modal-container .show{
     pointer-events: auto;
     opacity: 1;
 }

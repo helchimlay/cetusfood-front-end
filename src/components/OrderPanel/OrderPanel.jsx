@@ -1,6 +1,6 @@
 import React from 'react';
 import './project.css';
-import './Footer copy.css';
+import './Footer-copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
   {document.title = "CetusFood | Zamów jedzenie"}
