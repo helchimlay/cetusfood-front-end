@@ -10,12 +10,8 @@ import RestList from './components/AdminPanel/RestList/RestList';
 import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
-<<<<<<< HEAD
-import Popup from './components/popup/popups'
-=======
 import Popup from './components/popup/popup';
-import { Helmet, HelmetProvider } from "react-helmet-async"; 
->>>>>>> c53b8794a5930d61546f34751ac000cf502cfca9
+import {HelmetProvider } from "react-helmet-async"; 
 
 function App() {
   return (

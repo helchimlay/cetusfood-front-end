@@ -2,6 +2,7 @@ import React from 'react';
 import './project.css';
 import './Footer-copy.css';
 import Order from './Order.jsx';
+import OrderPanelPanel from './orderPanelPanel';
 import { Helmet } from 'react-helmet-async';
 
 const OrderPanel = () => {
@@ -46,6 +47,7 @@ const OrderPanel = () => {
                   <Order/>
           </fieldset>
         </form>
+        <OrderPanelPanel/>
       </div>
     </div>
   )
