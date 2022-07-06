@@ -6,11 +6,7 @@ import LogIn from './components/LogIn/LogIn';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
-import RestList from './components/AdminPanel/RestList/RestList';
-import NotFound404 from './components/NotFound404/NotFound404';
-import React from 'react';
-import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
-import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
+import Popup from './components/popup/popup';
 
 function App() {
   return (
@@ -18,7 +14,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} exact />
           <Route path='/order' element={<OrderPanel />} />
           <Route path='/log-in' element={<LogIn />} />
           <Route path='/admin-panel' element={<AdminPanel />}>
@@ -30,6 +26,7 @@ function App() {
           <Route exact path='*' element={<NotFound404 />} />
         </Routes>
         <Footer />
+        <Popup />
       </div>
     </Router>
   );
