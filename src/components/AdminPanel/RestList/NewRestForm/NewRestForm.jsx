@@ -7,7 +7,6 @@ const AddNewRestForm = () => {
   const [formData, setFormData] = React.useState({});
   const navigate = useNavigate();
   const handleSubmit = e => {
-    console.log(formData);
     addRestaurant(formData);
     navigate('../restaurants');
     e.preventDefault();

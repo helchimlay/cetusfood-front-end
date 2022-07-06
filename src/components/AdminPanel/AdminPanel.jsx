@@ -1,14 +1,14 @@
 import React from 'react';
 import './AdminPanel.css';
-import { Outlet, Link, Navigate } from 'react-router-dom';
+import { Outlet, NavLink, Navigate } from 'react-router-dom';
 
 const AdminPanel = () => {
   return (
     <div className='AdminPanel'>
         <nav className='navigation'>
             <div className="title">Admin Panel</div>
-            <Link to='restaurants'>Restauracje</Link>
-            <Link to='users'>Użytkownicy</Link>
+            <NavLink className={({isActive}) => isActive ? 'current' : null} to='restaurants'>Restauracje</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'current' : null} to='users'>Użytkownicy</NavLink>
         </nav>
         <div className="content">
             <Outlet />

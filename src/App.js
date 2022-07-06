@@ -25,10 +25,7 @@ function App() {
             <Route path='restaurants' element={<RestList />} />
             <Route path='restaurants/add-new' element={<NewRestForm />} />
             <Route path='users' element={<h3 className="title">Lista użytkowników</h3>} />
-            <Route path='' element={<>
-              <h3 className="title">Start</h3>
-              <AdminPanelStart />
-            </>} />
+            <Route path='' element={<AdminPanelStart />} />
           </Route>
           <Route exact path='*' element={<NotFound404 />} />
         </Routes>

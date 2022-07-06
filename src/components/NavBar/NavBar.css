@@ -185,6 +185,20 @@
   bottom: 2rem;
   height: 100%;
 }
+.NavBar .links a.active{
+  color: rgb(0, 174, 255);
+}.NavBar .links a.active::before{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  animation: 0.5s dot ease-in-out;
+  animation-direction: alternate;
+  background-color: rgb(0, 174, 255);
+}
 .NavBar .logo{
   align-items: center;
   display: flex;
