@@ -6,7 +6,10 @@ import LogIn from './components/LogIn/LogIn';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
-import Popup from './components/popup/popup';
+import RestList from './components/AdminPanel/RestList/RestList';
+import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
+import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
+import NotFound404 from './components/NotFound404/NotFound404';
 
 function App() {
   return (
@@ -26,7 +29,7 @@ function App() {
           <Route exact path='*' element={<NotFound404 />} />
         </Routes>
         <Footer />
-        <Popup />
+        {/* <Popup /> */}
       </div>
     </Router>
   );

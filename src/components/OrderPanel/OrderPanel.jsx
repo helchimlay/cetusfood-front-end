@@ -3,7 +3,6 @@ import './project.css';
 import './Footer copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
-<<<<<<< HEAD
      const handleClick2 = () => {
      document.querySelector(".submit").classList.add('sign-up-mode');
   }
@@ -12,8 +11,6 @@ const OrderPanel = () => {
     document.querySelector(".submit").classList.remove("sign-up-mode");
   }
 
-=======
->>>>>>> a4a70943ac99b44102ec1eb7c0bbb2539f973b66
   return (
     <div className='OrderPanel'>
       <div className="header">
