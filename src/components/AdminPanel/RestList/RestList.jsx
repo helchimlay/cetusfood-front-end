@@ -11,22 +11,20 @@ export const RestListCtx = React.createContext();
 const RestList = () => {
     const navigate = useNavigate();
 
-    const [fetchedData, setFetchedData] = React.useState([]);
-    const [selectedIds, setSelectedIds] = React.useState([]);
-    const [forceFetch, setForceFetch] = React.useState(0);
+    // const [fetchedData, setFetchedData] = React.useState([]);
 
-    React.useEffect(() => {
-        getRestaurants().then(res => setFetchedData(res.data))
-    }, [forceFetch])
+    // React.useEffect(() => {
+    //     setTimeout(() => getRestaurants().then(res => setFetchedData(res.data)), 100);
+    // }, [])
 
-    const handleDelManyBtn = () => {
-        selectedIds?.forEach(el => {
-            deleteRestaurant(el);
-            console.log(el);
-        })
-        setSelectedIds([]);
-        setForceFetch(forceFetch + 1);
-    }
+    // const handleDelManyBtn = () => {
+    //     selectedIds?.forEach(el => {
+    //         deleteRestaurant(el);
+    //         console.log(el);
+    //     })
+    //     setSelectedIds([]);
+    //     setForceFetch(forceFetch + 1);
+    // }
 
     return (<>
         <h3 className="title">Lista restauracji</h3>
@@ -58,7 +56,9 @@ const RestList = () => {
                 {!fetchedData[0] && <p className='no-data'>Brak danych do wyświetlenia</p>}
             </RestListCtx.Provider>
         </div> */}
-        <List data={fetchedData}
+        <List
+            getDataFunc={getRestaurants}
+            getDataByParamFunc={getRestaurantsByName}
             dontShow={['id']}
             deleteElFunc={deleteRestaurant}
             buttons={[
