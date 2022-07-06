@@ -2,8 +2,10 @@ import React from 'react';
 import './project.css';
 import './Footer-copy.css';
 import Order from './Order.jsx';
+import { Helmet } from 'react-helmet-async';
+
 const OrderPanel = () => {
-  {document.title = "CetusFood | Zamów jedzenie"}
+  // {document.title = "CetusFood | Zamów jedzenie"}
      const handleClick2 = () => {
      document.querySelector(".submit").classList.add('sign-up-mode');
   }
@@ -14,6 +16,9 @@ const OrderPanel = () => {
 
   return (
     <div className='OrderPanel'>
+      <Helmet>
+        <title>CetusFood | Zamów jedzenie</title>
+      </Helmet>
       <div className="header">
         <div><img src="CetusikKurier.png" alt="" />
           Cetus<span >Food</span> 

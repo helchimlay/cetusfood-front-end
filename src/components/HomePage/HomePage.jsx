@@ -2,11 +2,16 @@ import React from 'react';
 import './HomePage.css';
 import cetusek from '../../images/CetusFoodNapisDown.png';
 import cetKurier from '../../images/CetusikKurier.png';
+import { Helmet } from 'react-helmet-async';
 
 const HomePage = () => {
-  {document.title = "CetusFood | Strona główna"}
+  // {document.title = "CetusFood | Strona główna"}
   return (
+    
     <div className='HomePage'>
+      <Helmet>
+        <title>CetusFood | Strona główna</title>
+      </Helmet>
       <section>
         <div className="aboutUs">
         <div className="cetusek"><img src={cetusek} alt="cetusek" /></div>

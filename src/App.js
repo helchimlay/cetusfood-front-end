@@ -10,10 +10,12 @@ import RestList from './components/AdminPanel/RestList/RestList';
 import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <Router>
+    <HelmetProvider>
+      <Router>
       <div className="App">
         <NavBar />
         <Routes>
@@ -32,6 +34,8 @@ function App() {
         {/* <Popup /> */}
       </div>
     </Router>
+    </HelmetProvider>
+    
   );
 }
 
