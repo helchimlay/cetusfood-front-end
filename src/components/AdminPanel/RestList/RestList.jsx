@@ -2,12 +2,15 @@ import React from 'react';
 import './RestList.css';
 import { getRestaurants, getRestaurantsByName, deleteRestaurant } from '../../services/RestaurationsList';
 import RestListEl from './RestListEl';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import List from '../List/List';
 
 
 export const RestListCtx = React.createContext();
 
 const RestList = () => {
+    const navigate = useNavigate();
+
     const [fetchedData, setFetchedData] = React.useState([]);
     const [selectedIds, setSelectedIds] = React.useState([]);
     const [forceFetch, setForceFetch] = React.useState(0);
@@ -27,7 +30,7 @@ const RestList = () => {
 
     return (<>
         <h3 className="title">Lista restauracji</h3>
-        <div className='RestList'>
+        {/* <div className='RestList'>
             <RestListCtx.Provider value={{
                 selectedIds: selectedIds, setSelectedIds: setSelectedIds,
                 forceFetch: forceFetch, setForceFetch: setForceFetch
@@ -54,7 +57,14 @@ const RestList = () => {
                 </table>
                 {!fetchedData[0] && <p className='no-data'>Brak danych do wyświetlenia</p>}
             </RestListCtx.Provider>
-        </div>
+        </div> */}
+        <List data={fetchedData}
+            dontShow={['id']}
+            deleteElFunc={deleteRestaurant}
+            buttons={[
+                {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
+            ]}
+        />
     </>)
 }
 
