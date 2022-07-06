@@ -11,7 +11,7 @@ import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestFor
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
 import Popup from './components/popup/popup';
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet, HelmetProvider } from "react-helmet-async"; 
 
 function App() {
   return (
