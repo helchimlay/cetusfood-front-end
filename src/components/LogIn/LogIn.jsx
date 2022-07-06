@@ -5,6 +5,7 @@ import log from './log.svg';
 import reg from './register.svg';
 
 const LogIn = () => {
+  {document.title = "CetusFood | Logowanie"}
   const handleClick2 = () => {
     document.querySelector(".container").classList.add("sign-up-mode");
   }

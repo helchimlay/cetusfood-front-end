@@ -3,6 +3,7 @@ import './AdminPanel.css';
 import { Outlet, NavLink, Navigate } from 'react-router-dom';
 
 const AdminPanel = () => {
+  {document.title = "CetusFood | Panel admina"}
   return (
     <div className='AdminPanel'>
         <nav className='navigation'>

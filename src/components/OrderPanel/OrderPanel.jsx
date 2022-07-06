@@ -3,6 +3,7 @@ import './project.css';
 import './Footer copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
+  {document.title = "CetusFood | Zamów jedzenie"}
      const handleClick2 = () => {
      document.querySelector(".submit").classList.add('sign-up-mode');
   }

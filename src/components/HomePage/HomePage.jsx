@@ -4,6 +4,7 @@ import cetusek from '../../images/CetusFoodNapisDown.png';
 import cetKurier from '../../images/CetusikKurier.png';
 
 const HomePage = () => {
+  {document.title = "CetusFood | Strona główna"}
   return (
     <div className='HomePage'>
       <section>
