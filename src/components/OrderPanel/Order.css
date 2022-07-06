@@ -52,3 +52,11 @@
     height: 20%; 
   }
 }
+@media (max-width: 450px){
+  .Order button{
+    max-width: 100px;
+  }
+  /* .Order button div{
+    max-width: 200px;
+  } */
+}
