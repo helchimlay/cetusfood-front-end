@@ -6,7 +6,6 @@ import reg from './register.svg';
 import { Helmet } from 'react-helmet-async';
 
 const LogIn = () => {
-  // {document.title = "CetusFood | Logowanie"}
   const handleClick2 = () => {
     document.querySelector(".container").classList.add("sign-up-mode");
   }
