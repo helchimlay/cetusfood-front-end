@@ -3,8 +3,10 @@ import React from 'react';
 import './Login.css';
 import log from './log.svg';
 import reg from './register.svg';
+import { Helmet } from 'react-helmet-async';
 
 const LogIn = () => {
+  // {document.title = "CetusFood | Logowanie"}
   const handleClick2 = () => {
     document.querySelector(".container").classList.add("sign-up-mode");
   }
@@ -14,6 +16,9 @@ const LogIn = () => {
   }
   return (
     <div className='LogIn'>
+      <Helmet>
+        <title>CetusFood | Logowanie</title>
+      </Helmet>
        <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
