@@ -1,16 +1,8 @@
 import React from 'react';
 import './project.css';
-import './Footer copy.css';
+import './Footer-copy.css';
 import Order from './Order.jsx';
 const OrderPanel = () => {
-     const handleClick2 = () => {
-     document.querySelector(".submit").classList.add('sign-up-mode');
-  }
-    const handleClick1 = () => {
-    console.log('adma jest najlepszy')
-    document.querySelector(".submit").classList.remove("sign-up-mode");
-  }
-
   return (
     <div className='OrderPanel'>
       <div className="header">
