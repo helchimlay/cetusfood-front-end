@@ -1,12 +1,13 @@
 import React from 'react'
+import './Order.css';
 
 const Order = () => {
   return (
-        <button type="submit" class='submit Order'>
+        <button type="submit" className='submit Order'>
               <div >
                 <p>Pizza Hut</p>
               </div>
-              <p ><i class='bx bx-like'></i> 95%</p>
+              <p ><i className='bx bx-like'></i> 95%</p>
             </button>
   )
 } 
