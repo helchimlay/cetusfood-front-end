@@ -2,17 +2,21 @@ import React from 'react';
 import './project.css';
 import './Footer-copy.css';
 import Order from './Order.jsx';
-import OrderPanelPanel from './orderPanelPanel';
 import { Helmet } from 'react-helmet-async';
+import Popup from './popup';
 
 const OrderPanel = () => {
-  // {document.title = "CetusFood | Zamów jedzenie"}
-     const handleClick2 = () => {
-     document.querySelector(".submit").classList.add('sign-up-mode');
+  // {document.title = "CetusFood | Zamów jedzenie"};
+  
+  conr
+
+     const handleClick1 = () => {
+      console.log('adma jest najlepszy');
+     document.querySelector(".modal_container").classList.add('show');
   }
-    const handleClick1 = () => {
+    const handleClick2 = () => {
     console.log('adma jest najlepszy')
-    document.querySelector(".submit").classList.remove("sign-up-mode");
+    document.querySelector(".modal_container").classList.remove("show");
   }
 
   return (
@@ -38,7 +42,7 @@ const OrderPanel = () => {
       <div className="mein">
         <form action="">
           <fieldset className='order-container'>
-                  <Order/>
+                  <Order onClick={handleClick1} />
                   <Order/>
                   <Order/>
                   <Order/>
@@ -47,7 +51,7 @@ const OrderPanel = () => {
                   <Order/>
           </fieldset>
         </form>
-        <OrderPanelPanel/>
+        <Popup/>
       </div>
     </div>
   )

@@ -3,12 +3,12 @@ import './Order.css';
 
 const Order = () => {
   return (
-        <button type="submit" className='submit Order'>
+        <button type='button'  className='submit Order'>
               <div >
                 <p>Pizza Hut</p>
               </div>
               <p ><i className='bx bx-like'></i> 95%</p>
-            </button>
+        </button>
   )
 } 
 

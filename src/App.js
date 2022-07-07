@@ -10,8 +10,7 @@ import RestList from './components/AdminPanel/RestList/RestList';
 import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
-import Popup from './components/popup/popup';
-import { Helmet, HelmetProvider } from "react-helmet-async"; 
+import { HelmetProvider } from "react-helmet-async"; 
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
           <Route exact path='*' element={<NotFound404 />} />
         </Routes>
         <Footer />
-        <Popup show={false}/>
       </div>
     </Router>
     </HelmetProvider>

@@ -3,11 +3,6 @@
     height: 1000px;
     border: 1px solid red;
 }
-.orderPanelPanel  iframe{
-    display: inline-block;
-    width: 50%;
-    height: 1000px;
-}
 .orderPanelPanel div{
     display: inline-block;
     width:50% ;
