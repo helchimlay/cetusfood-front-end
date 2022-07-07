@@ -1,7 +1,7 @@
 import React from 'react';
 import { ListContext } from './List';
 
-const ListEl = ({ data, dontShow, i }) => {
+const ListEl = ({ data, dontShow, i, setData }) => {
     const Ctx = React.useContext(ListContext);
     const inputRef = React.useRef();
 
@@ -29,7 +29,7 @@ const ListEl = ({ data, dontShow, i }) => {
         {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{data[key]}</td>)}
         <td className='actions'>
             <button className='edit-btn'><i className='bx bxs-edit'></i></button>
-            <button className='del-btn' onClick={() => Ctx.deleteElFunc(data.id)}><i className='bx bx-trash-alt' ></i></button>
+            <button className='del-btn' onClick={() => {Ctx.deleteElFunc(data.id)}}><i className='bx bx-trash-alt' ></i></button>
         </td>
     </tr>
   )

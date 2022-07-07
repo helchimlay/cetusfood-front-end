@@ -13,3 +13,8 @@ export const addRestaurant = async (data) => {
         await axios.post('https://api.foodapp.academy.st.cetuspro.com/restaurants', data);
     }
 }
+export const editRestaurant = async (id, data) => {
+    if(id && data.name && data.url && data.email){
+        await axios.put(`https://api.foodapp.academy.st.cetuspro.com/restaurants/${id}`, data)
+    }
+}
