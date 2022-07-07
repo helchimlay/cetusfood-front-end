@@ -2,6 +2,7 @@ import React from 'react';
 import './project.css';
 import './Footer-copy.css';
 import Order from './Order.jsx';
+import OrderPanelPanel from './orderPanelPanel';
 import { Helmet } from 'react-helmet-async';
 
 const OrderPanel = () => {
@@ -20,9 +21,7 @@ const OrderPanel = () => {
         <title>CetusFood | Zamów jedzenie</title>
       </Helmet>
       <div className="header">
-        <div><img src="CetusikKurier.png" alt="" />
-          Cetus<span >Food</span> 
-        </div>
+        
         <div>
           <form action="">
             <fieldset>
@@ -30,13 +29,15 @@ const OrderPanel = () => {
             </fieldset>
           </form> 
         </div> 
+
         <div>
           <i className="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
+
       </div>
       <div className="mein">
         <form action="">
-          <fieldset>
+          <fieldset className='order-container'>
                   <Order/>
                   <Order/>
                   <Order/>
@@ -46,6 +47,7 @@ const OrderPanel = () => {
                   <Order/>
           </fieldset>
         </form>
+        <OrderPanelPanel/>
       </div>
     </div>
   )

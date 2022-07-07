@@ -17,12 +17,7 @@ body{
     display: inline-block;
     position: relative;
 }
-.OrderPanel .header img{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 6px;
-}
+
 .OrderPanel .header div:first-of-type{
     color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
@@ -34,21 +29,24 @@ body{
     color:#5383d3;
 }
 
-.OrderPanel .header div:nth-child(2){
-    width: 400px;
-    position: absolute;
-    right: 280px;
+.OrderPanel .header div:nth-child(1){
+    width: 100%;
+    position: relative;
+    
     top: 15px;
 }
-.OrderPanel .header div:nth-child(2) input{
-    position: absolute;
-    top: -7px;
+.OrderPanel .header div:nth-child(1) input{
+    position: relative;
+    bottom: 50%;
+    transform: translateY(-50%);
     width: 400px;
     border: 0;
     outline: 0;
     height: 40px;
     border-radius: 24px;
     text-align: center;
+    
+    
 }
 .OrderPanel .header div:last-of-type{
     position: relative;
@@ -112,6 +110,7 @@ body{
 }
 .OrderPanel fieldset{
     text-align: center;
+    
 }
 /* animation studio panel */
 .OrderPanel .submit .sign-up-mode p{
@@ -126,7 +125,7 @@ body{
 @media (max-width:610px) {
   .OrderPanel button{
     width: 90%;
-    height: 50vw;
+    height: 50vh;
   }
   .OrderPanel button div{
     width: 100%;
@@ -137,23 +136,35 @@ body{
     display: flex;
     justify-content: center;
   }
-  .OrderPanel .header div:nth-child(2){
-    height: 10px; 
-    width: 100px;
-    background-color: rebeccapurple;
-} 
+  
 /* do lekkich poprawek środkowanie tego panelu^^ */
 .OrderPanel .header{
   width: 100%;
 } 
-.OrderPanel .header div:nth-child(1){
+/* .OrderPanel .header div:nth-child(1){
   display: none;
-}
+} */
 .OrderPanel .header div:nth-child(3){
   display: none;
 }
 .OrderPanel .header div:nth-child(2) input{
  display: none;}
+}
+@media (max-width: 450px){
+  .OrderPanel .header div:nth-child(1) input{
+    max-width: 300px;
+  }
+  .OrderPanel .order-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .OrderPanel button{
+    
+    width: 40%;
+    margin: 0px;
+  }
 }
 
 
