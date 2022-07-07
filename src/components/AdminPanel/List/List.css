@@ -1,3 +1,6 @@
+.List{
+    word-break: break-all;
+}
 .List .main-table{
     width: 100%;
     border-collapse: collapse;

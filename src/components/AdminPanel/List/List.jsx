@@ -10,7 +10,7 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
     const searchBarRef = React.useRef();
 
     React.useEffect(() => {
-        fetchData();
+        setTimeout(() => fetchData(), 100)
     }, [])
     const fetchData = async (name) => {
         if (name && name !== '') {
