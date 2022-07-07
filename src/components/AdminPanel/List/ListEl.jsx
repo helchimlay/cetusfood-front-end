@@ -1,9 +1,11 @@
 import React from 'react';
 import { ListContext } from './List';
+import { useNavigate } from 'react-router-dom';
 
-const ListEl = ({ data, dontShow, i }) => {
+const ListEl = ({ data, dontShow, i, setData }) => {
     const Ctx = React.useContext(ListContext);
     const inputRef = React.useRef();
+    const navigate = useNavigate();
 
     const handleCheckboxChange = () => {
         if(inputRef.current.checked){
@@ -28,8 +30,8 @@ const ListEl = ({ data, dontShow, i }) => {
         <td><input checked={Ctx.selectedIds.includes(data.id) ? true : false} ref={inputRef} onChange={handleCheckboxChange} type="checkbox" name="table-checkbox" /></td>
         {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{data[key]}</td>)}
         <td className='actions'>
-            <button className='edit-btn'><i className='bx bxs-edit'></i></button>
-            <button className='del-btn' onClick={() => Ctx.deleteElFunc(data.id)}><i className='bx bx-trash-alt' ></i></button>
+            <button className='edit-btn' onClick={() => navigate(`edit/${data.id}`)}><i className='bx bxs-edit'></i></button>
+            <button className='del-btn' onClick={() => {Ctx.deleteElFunc(data.id)}}><i className='bx bx-trash-alt' ></i></button>
         </td>
     </tr>
   )
