@@ -1,0 +1,47 @@
+.RestGridPnl{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.RestGridEl input{
+    display: none;
+}
+.RestGridEl input:checked + span{
+    background-color: rgb(255, 166, 0);
+}.RestGridEl input:checked + span *{
+    transform: translateX(15px);
+}
+
+.RestGridEl > span *{
+    transition: .1s;
+}
+.RestGridEl > span{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    cursor: pointer;
+    height: 8em;
+    overflow: hidden;
+}.RestGridEl > span:hover *{
+    transform: translateX(15px);
+}
+.RestGridEl > span .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RestGridEl > span .name > span{
+    transform: rotate(270deg);
+    font-size: .7em;
+    font-weight: 300;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.RestGridEl > span .img{
+    height: 100%;
+    background-position: center;
+}
