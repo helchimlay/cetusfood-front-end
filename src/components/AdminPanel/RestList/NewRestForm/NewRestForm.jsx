@@ -2,7 +2,7 @@ import React from 'react';
 import './NewRestForm.css';
 import { addRestaurant } from '../../../services/RestaurationsList.js';
 import { Link, useNavigate } from 'react-router-dom';
-import NewListElForm from '../../List/NewListElForm/NewListElForm';
+import NewListElForm from '../../List/ListElForm/NewListElForm';
 
 const AddNewRestForm = () => {
   const [formData, setFormData] = React.useState({});

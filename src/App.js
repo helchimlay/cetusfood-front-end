@@ -11,7 +11,8 @@ import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestFor
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
 import Popup from './components/popup/popup';
-import { Helmet, HelmetProvider } from "react-helmet-async"; 
+import EditRestForm from './components/AdminPanel/RestList/EditRestForm/EditRestForm';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/admin-panel' element={<AdminPanel />}>
             <Route path='restaurants' element={<RestList />} />
             <Route path='restaurants/add-new' element={<NewRestForm />} />
+            <Route path='restaurants/edit/:id' element={<EditRestForm />} />
             <Route path='users' element={<h3 className="title">Lista użytkowników</h3>} />
             <Route path='' element={<AdminPanelStart />} />
           </Route>

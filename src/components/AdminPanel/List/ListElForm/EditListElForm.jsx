@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './NewListElForm.css';
+import './ListElForm.css';
 
-const NewListElForm = ({ inputs, sendingFunc, linkTo }) => {
+const EditListElForm = ({ id, inputs, sendingFunc, linkTo }) => {
     const navigate = useNavigate();
 
     const handleSubmit = e => {
@@ -10,23 +10,23 @@ const NewListElForm = ({ inputs, sendingFunc, linkTo }) => {
         inputs.forEach(el => {
             values = { ...values, [el.name]: e.target.elements[el.name].value };
         })
-        sendingFunc(values);
+        sendingFunc(id, values);
         e.preventDefault();
         navigate(linkTo);
     }
 
   return (
-    <div className='NewListElForm'>
+    <div className='EditListElForm ListElForm'>
         {inputs[0] && (
             <form onSubmit={handleSubmit}>
                 {inputs.map((el, i) => (
                     <p key={i}>
                         <label htmlFor={el.id}>{el.label}</label>
-                        <input type={el.type} name={el.name} id={el.id} placeholder={el.placeholder} required={true} />
+                        <input type={el.type} name={el.name} id={el.id} placeholder={el.placeholder} defaultValue={el.default} required={true} />
                     </p>
                 ))}
                 <div>
-                    <button onClick={() => navigate(linkTo)}>Anuluj</button>
+                    <button onClick={() => navigate(linkTo)} type='button'>Anuluj</button>
                     <button type='submit'>Zatwierdź</button>
                 </div>
             </form>
@@ -35,4 +35,4 @@ const NewListElForm = ({ inputs, sendingFunc, linkTo }) => {
   )
 }
 
-export default NewListElForm;
+export default EditListElForm;

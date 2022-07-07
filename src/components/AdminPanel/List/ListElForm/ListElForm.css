@@ -1,24 +1,24 @@
-.NewListElForm p{
+.ListElForm p{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
 }
-.NewListElForm form{
+.ListElForm form{
     width: 50%;
 }
-.NewListElForm input{
+.ListElForm input{
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
     text-decoration: none;
     font-family: inherit;
     color: black;
-}.NewListElForm input:focus{
+}.ListElForm input:focus{
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(231, 226, 216);
 }
-.NewListElForm button, .NewListElForm a{
+.ListElForm button, .ListElForm a{
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
@@ -26,7 +26,7 @@
     font-family: inherit;
     color: black;
     margin-right: 5px;
-}.NewListElForm button:active, .NewListElForm a:active{
+}.ListElForm button:active, .ListElForm a:active{
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(231, 226, 216);
 }

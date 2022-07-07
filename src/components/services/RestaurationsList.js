@@ -5,6 +5,9 @@ export const getRestaurants = async () => {
 export const getRestaurantsByName = async (name) => {
     return await axios.get(`https://api.foodapp.academy.st.cetuspro.com/restaurants/name/${name}`);
 }
+export const getRestaurantsById = async (id) => {
+    return await axios.get(`https://api.foodapp.academy.st.cetuspro.com/restaurants/${id}`);
+}
 export const deleteRestaurant = async (id) => {
     await axios.delete(`https://api.foodapp.academy.st.cetuspro.com/restaurants/${id}`);
 }
