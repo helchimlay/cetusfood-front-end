@@ -1,3 +1,9 @@
 .OrderPanel{
     min-height: 100vh;
 }
+.OrderPanel form{
+    height: 70vh;
+    overflow-y: scroll;
+    margin: 0 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

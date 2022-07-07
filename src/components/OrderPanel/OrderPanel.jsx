@@ -3,6 +3,7 @@ import './OrderPanel.css';
 import RestGridPnl from './RestGridPnl/RestGridPnl';
 import { getRestaurants } from '../services/RestaurationsList';
 import Stepper from './Stepper';
+import MealInputPnl from './MealInputPnl/MealInputPnl';
 
 export const OrderPnlCtx = React.createContext();
 
@@ -33,6 +34,7 @@ const OrderPanel = () => {
         <Stepper />
         <form onSubmit={handleSubmit}>
           {step===0 && <RestGridPnl />}
+          {step===1 && <MealInputPnl />}
         </form>
       </OrderPnlCtx.Provider>
     </div>

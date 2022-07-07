@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
-    padding: 40px;
+    padding: 10px 40px;
     font-size: 30px;
 }
 
@@ -36,10 +36,11 @@
 }
 .RestGridEl > span .name > span{
     transform: rotate(270deg);
-    font-size: .7em;
+    font-size: .5em;
     font-weight: 300;
-    white-space: nowrap;
     text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
 }
 .RestGridEl > span .img{
     height: 100%;
