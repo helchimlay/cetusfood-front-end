@@ -10,7 +10,6 @@ import RestList from './components/AdminPanel/RestList/RestList';
 import NewRestForm from './components/AdminPanel/RestList/NewRestForm/NewRestForm';
 import AdminPanelStart from './components/AdminPanel/RestList/AdminPanelStart';
 import NotFound404 from './components/NotFound404/NotFound404';
-import Popup from './components/popup/popup';
 import EditRestForm from './components/AdminPanel/RestList/EditRestForm/EditRestForm';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
