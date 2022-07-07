@@ -3,6 +3,7 @@ import './HomePage.css';
 import cetusek from '../../images/CetusFoodNapisDown.png';
 import cetKurier from '../../images/CetusikKurier.png';
 import { Helmet } from 'react-helmet-async';
+import Stepper from './Stepper/Stepper';
 
 const HomePage = () => {
   // {document.title = "CetusFood | Strona główna"}
@@ -34,6 +35,9 @@ const HomePage = () => {
           </div>
           <div className="cetKurier"><img src={cetKurier} alt="cetKurier" /></div>
         </div>
+        <hr />
+        <h2 className='how'>Jak to działa?</h2>
+        <Stepper />
       </section>
       
     </div>
