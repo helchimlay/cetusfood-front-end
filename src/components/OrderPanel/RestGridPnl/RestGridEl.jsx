@@ -9,7 +9,7 @@ const RestGridEl = ({ data }) => {
 
   return (
     <label className='RestGridEl' htmlFor={elId}>
-        <input type="radio" name={'rest-list-radio'} id={elId} checked={Ctx?.formData?.restId===data.id} onChange={() => Ctx.setFormData({ ...Ctx.formData, restId: data.id })} />
+        <input type="radio" name={'rest-list-radio'} id={elId} checked={Ctx?.formData?.restId===data.id} onChange={() => Ctx.setFormData({ restId: data.id, products: [] })} />
         <span>
             <span className="name"><span>{data.name}</span></span>
             <span className="img" style={{backgroundImage: `url(${XdImg})`}}></span>
