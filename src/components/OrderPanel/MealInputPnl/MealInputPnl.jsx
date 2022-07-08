@@ -10,6 +10,7 @@ const MealInputPnl = () => {
         if(inputRef.current.value !== ''){
             Ctx.setFormData({ ...Ctx.formData, products: [ ...Ctx.formData.products, [inputRef.current.value, Math.random()] ] });
         }
+        inputRef.current.value = '';
     }
 
   return (
