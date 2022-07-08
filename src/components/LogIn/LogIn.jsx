@@ -22,17 +22,17 @@ const LogIn = () => {
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
+            <h2 class="title">Zaloguj się</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Nazwa użytkownika" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Hasło" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Or Sign in with social platforms</p>
+            <p class="social-text">Lub Zaloguj się za pomocą platform społecznościowych</p>
             <div class="social-media">
               <a href="#" class="social-icon">
               <i class='bx bxl-facebook-circle'></i>
@@ -49,10 +49,10 @@ const LogIn = () => {
             </div>
           </form>
           <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
+            <h2 class="title">Zarejestruj się</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Nazwa użytkownika" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
@@ -60,10 +60,10 @@ const LogIn = () => {
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Hasło" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with social platforms</p>
+            <input type="submit" class="btn" value="Zarejestruj się" />
+            <p class="social-text">Lub zarejestruj się na platformach społecznościowych</p>
             <div class="social-media">
               <a href="#" class="social-icon">
               <i class='bx bxl-facebook-circle'></i>
@@ -85,26 +85,26 @@ const LogIn = () => {
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Jesteś nowy?</h3>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
             </p>
             <button class="btn transparent" id="sign-up-btn" onClick={handleClick2}>
-              Sign up
+              Zarejestruj się
             </button>
           </div>
           <img src={log} class="image" alt="" />
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>One of us ?</h3>
+            <h3>Zaloguj się</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               laboriosam ad deleniti.
             </p>
             <button class="btn transparent" id="sign-in-btn" onClick={handleClick1}>
-              Sign in
+              Zaluguj się
             </button>
           </div>
           <img src={reg} class="image" alt="dsadsa" />

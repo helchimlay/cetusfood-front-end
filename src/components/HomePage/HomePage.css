@@ -16,6 +16,14 @@
     border-radius: 5px;
     
 }
+.HomePage section .how{
+    background-color: var(--gray);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin: 100px;
+}
 @media (max-width: 1260px){
     .HomePage section{
         margin: 5em;
@@ -64,8 +72,10 @@
         max-width: 300px;
         max-height: 300px;
     }
+    
 
 }
+
 @media (max-width: 610px){
     .HomePage section{
         display: flex;
