@@ -1,58 +1,42 @@
 import React from 'react';
-import './project.css';
-import './Footer-copy.css';
-import Order from './Order.jsx';
-import { Helmet } from 'react-helmet-async';
-import Popup from './popup';
+import './OrderPanel.css';
+import RestGridPnl from './RestGridPnl/RestGridPnl';
+import { getRestaurants } from '../services/RestaurationsList';
+import Stepper from './Stepper';
+import MealInputPnl from './MealInputPnl/MealInputPnl';
+
+export const OrderPnlCtx = React.createContext();
 
 const OrderPanel = () => {
-  // {document.title = "CetusFood | Zamów jedzenie"};
-  
-  conr
+  const [restList, setRestList] = React.useState([]);
+  const [step, setStep] = React.useState(0);
+  const [steps, setSteps] = React.useState(['Wybierz restaurację', 'Wybierz produkt', 'Finalizacja']);
+  const [formData, setFormData] = React.useState({ products: [] });
 
-     const handleClick1 = () => {
-      console.log('adma jest najlepszy');
-     document.querySelector(".modal_container").classList.add('show');
+  React.useEffect(() => {
+    getRestaurants().then(res => setRestList(res.data));
+  }, [])
+
+  const handleSubmit = e => {
+    e.preventDefault();
   }
-    const handleClick2 = () => {
-    console.log('adma jest najlepszy')
-    document.querySelector(".modal_container").classList.remove("show");
-  }
+
+  console.log(formData);
 
   return (
     <div className='OrderPanel'>
-      <Helmet>
-        <title>CetusFood | Zamów jedzenie</title>
-      </Helmet>
-      <div className="header">
-        
-        <div>
-          <form action="">
-            <fieldset>
-              <input type="text" placeholder="Wyszukaj restauracje" />
-            </fieldset>
-          </form> 
-        </div> 
-
-        <div>
-          <i className="fa-solid fa-arrow-right-from-bracket"></i>
-        </div>
-
-      </div>
-      <div className="mein">
-        <form action="">
-          <fieldset className='order-container'>
-                  <Order onClick={handleClick1} />
-                  <Order/>
-                  <Order/>
-                  <Order/>
-                  <Order/>
-                  <Order/>
-                  <Order/>
-          </fieldset>
+      <OrderPnlCtx.Provider value={{
+        restList: restList, setRestList: setRestList,
+        step: step, setStep: setStep,
+        steps: steps, setSteps: setSteps,
+        formData: formData, setFormData: setFormData
+      }}>
+        <Stepper />
+        <form onSubmit={handleSubmit}>
+          {step===0 && <RestGridPnl />}
+          {step===1 && <MealInputPnl />}
         </form>
-        <Popup/>
-      </div>
+      </OrderPnlCtx.Provider>
     </div>
   )
 }
