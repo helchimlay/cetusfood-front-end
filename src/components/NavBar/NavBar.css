@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 .NavBar{
-  background: rgb(64, 68, 73);
+  background: rgb(46, 49, 53);
   font-family: "Montserrat", sans-serif;
   position: relative;
   display: flex;

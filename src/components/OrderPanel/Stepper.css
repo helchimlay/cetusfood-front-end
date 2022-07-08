@@ -27,6 +27,9 @@
     text-align: center;
     color: black;
     font-size: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .OrderPanel .Stepper button.current{
     background-color: rgb(255, 187, 0);
@@ -40,7 +43,16 @@
 }
 .OrderPanel .Stepper button i{
     font-size: 2.3em;
-    top: 0;
-    left: 50%;
     color: green;
+}
+
+
+@media screen and (max-width: 400px){
+    .OrderPanel .Stepper{
+        font-size: 20px;
+    }
+    .OrderPanel .Stepper button{
+        width: 50px;
+        height: 50px;
+    }
 }
