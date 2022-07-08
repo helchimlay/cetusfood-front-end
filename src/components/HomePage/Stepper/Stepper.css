@@ -1,3 +1,9 @@
+:root{
+    --backB: aliceblue;
+    --gray: rgb(64, 68, 73);
+    --hrB: lightblue;
+    --shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
+}
 .Stepper .step{
     display: flex;
     flex-direction: row;
@@ -12,10 +18,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
-    background-color: #ffff;
+    background-color: var(--gray);
     margin-bottom: 0;
     /* position: absolute;
     top: 200%;
@@ -28,10 +34,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
-    background-color: #ffff;
+    background-color: var(--gray);
     margin-bottom: 0;
     /* position: absolute;
     top: 5%;
@@ -44,10 +50,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid grey;
+    border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
-    background-color: #ffff;
+    background-color: var(--gray);
     margin-bottom: 0;
     
     /* position: absolute;
@@ -56,16 +62,28 @@
     
     }
     
-    .circle:hover, .circlee:hover, .circleee:hover{
-        background-color: blue;
+    /* .circle:hover, .circlee:hover, .circleee:hover{
+        
+    } */
+    .one:hover .circle, .two:hover .circlee, .three:hover .circleee{
+        transform: scale(1.1);
+        transition: 0.1s ease-in;
+        background-color: var(--gray);
+        color: white;
+    }
+    .one:hover .jeden, .two:hover .dwa, .three:hover .trzy{
+        transform: scale(1.05);
+
     }
     .circle, .circlee, .circleee{
         margin: 20px;
+        color: var(--gray);
+        background-color: var(--backB);
     }
     .line{
     width: 51%;
-    height: 1px;
-    background: grey;
+    height: 3px;
+    background: var(--gray);
     margin: auto;
     top: 45px;
     
@@ -77,15 +95,16 @@
     
     
     
-    .jeden:hover, .dwa:hover, .trzy:hover{
+    /* .jeden:hover, .dwa:hover, .trzy:hover{
         font-size: 20px;
-    }
-    .one, .two, .three{
+    } */
+    /* .one, .two, .three:hover {
         display: flex;
-        flex-direction: column;
+        
         justify-content: center;
-    }
+    } */
     .one , .two , .three{
+        flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
