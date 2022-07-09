@@ -1,27 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .NavBar{
   background: rgb(46, 49, 53);
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  display: flex;
+  position: var(--relative);
+  display: var(--flex);
   justify-content: space-between;
   align-items: baseline;
   padding: 10px 90px;
-  color: white;
-  align-content: center;
+  color: var(--white);
+  align-content: var(--center);
 }
 @media (max-width: 920px){
   .NavBar{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: var(--flex);
+    flex-direction: var(--column);
+    width: var(--a100procent);
   }
   .NavBar .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    display: var(--flex);
+    align-items: var(--center);
+    justify-content: var(--center);
+    position: var(--relative);
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 30px;
@@ -40,18 +41,16 @@
   }
   #trigger, #burger, #burger:before, #burger:after{
     max-width: 30px;
-    position: relative;
+    position: var(--relative);
     left: 20px;
   }
-  
 }
 .logo  h3{
-	color:  #ffffff;
-	font: normal 2.5em 'Cookie', cursive;
+	color:  var(--white);
+	font: var(--normal) 2.5em 'Cookie', cursive;
   /* font-size: 2.5em;
   font-family: 'Prompt', sans-serif; */
-
-	margin: 0;
+	margin: var(--zero);
 }
  
 .logo  h3 span{
@@ -61,7 +60,7 @@
 /* burger menu */
 /* BURGER MENU */
 #trigger, #burger, #burger:before, #burger:after {
-  display: none;
+  display: var(--none);
   position: absolute;
   top: 25px;
   left: 25px;
@@ -71,24 +70,20 @@
   transition: .2s ease;
   cursor: pointer;
   z-index: 1;
- 
 }
 #trigger {
   height: 25px;
-  background: none;
-  
+  background: var(--none);
 }
 #burger:before {
   content: " ";
   top: 13px;
-  left: 0px;
-
+  left: var(--zero);
 }
 #burger:after {
   content: " ";
   top: 25px;
-  left: 0px;
-
+  left: var(--zero);
 }
 #menu-toggle:checked + #trigger + #burger {
   transition: transform .2s ease;
@@ -101,21 +96,21 @@
 #menu-toggle:checked + #trigger + #burger:before {
   transform: rotate(-45deg);
   transition: transform 2s ease;
-  display: none;
+  display: var(--none);
 }
 #menu-toggle:checked + #trigger + #burger:after {
   transform: rotate(-90deg);
   transition: transform .2s ease;
   height: 7px;
-  top: 0px;
+  top: var(--zero);
 }
 #menu {
   position: absolute;
-  margin: 0; padding: 0;
+  margin: var(--zero); padding: var(--zero);
   width: 110px;
   height: 110px;
-  background-color: #fff;
-  border-bottom-right-radius: 100%;
+  background-color: var(--white);
+  border-bottom-right-radius: var(--a100procent);
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   animation: not-checked-anim .2s both;
   transition: .2s;
@@ -124,19 +119,19 @@
   animation: checked-anim 1s ease both;
 }
 #menu-toggle:checked + #trigger ~ .links > a {
-  display: block;
+  display: var(--block);
   animation: expand-bar .2s ease-in-out;
 }
 .NavBar [type="checkbox"]:not(:checked), .NavBar [type="checkbox"]:checked {
-  display: none;
+  display: var(--none);
 }
 @keyframes expand-bar{
   0%{
-    opacity: 0;
-    font-size: 0px;
+    opacity: var(--zero);
+    font-size: var(--zero);
   }
   50%{
-    opacity: 0;
+    opacity: var(--zero);
     font-size: 10px;
   }
   100%{
@@ -144,46 +139,38 @@
   }
 }
 
-
-
-
 @media (max-width: 610px){
   .NavBar{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    display: var(--flex);
+    flex-direction: var(--column);
+    width: var(--a100procent);
   }
   .NavBar .links{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: none;
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-direction: var(--column);
+    display: var(--none);
   }
   .NavBar .links a{
-    display: none;
+    display: var(--none);
   }
   #trigger, #burger, #burger:before, #burger:after {
-    display: block;
+    display: var(--block);
   }
   .NavBar .logo{
     left: 65%;
   }
-  
-
-
-
-
 }
 
 .NavBar .links{
-  display: flex;
+  display: var(--flex);
   justify-content: flex-start;
   align-items: baseline;
   gap: 20px;
   font-size: 20px;
-  position: relative;
+  position: var(--relative);
   bottom: 2rem;
-  height: 100%;
+  height: var(--a100procent);
 }
 .NavBar .links a.active{
   color: rgb(0, 174, 255);
@@ -200,32 +187,28 @@
   background-color: rgb(0, 174, 255);
 }
 .NavBar .logo{
-  align-items: center;
-  display: flex;
+  align-items: var(--center);
+  display: var(--flex);
   flex-direction: row;
-  
 }
 .NavBar .logo h1{
-  
   font-family: 'Prompt', sans-serif;
-  height: 100%;
+  height: var(--a100procent);
   color: deepskyblue;
   font-size: 40px;
-
 }
 .NavBar .logo img{
   width: 100px;
   height: 100px;
-
 }
 .NavBar .links a{
-  color: white;
-  position: relative;
-  text-decoration: none;
+  color: var(--white);
+  position: var(--relative);
+  text-decoration: var(--none);
   padding: 0.5em;
-}.NavBar .links a:hover{
+}
+.NavBar .links a:hover{
   color: rgb(0, 174, 255);
-  
 }
 .NavBar .links a:hover::before{
   content: '';
@@ -249,9 +232,4 @@
   100%{ 
     opacity: 1;
   }
-  
-  
 }
-
-
-

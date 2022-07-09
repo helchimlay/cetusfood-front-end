@@ -1,5 +1,6 @@
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .AdminPanel{
-    position: relative;
+    position: var(--relative);
     min-height: 100vh;
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -8,23 +9,23 @@
 .AdminPanel nav.navigation{
     width: 250px;
     background-color: #292c2f;
-    color: white;
-    padding: 10px 0;
+    color: var(--white);
+    padding: 10px var(--zero);
     position: sticky;
-    top: 0;
+    top: var(--zero);
 }
 .AdminPanel nav.navigation a{
-    outline: none;
-    border: none;
+    outline: var(--none);
+    border: var(--none);
     background-color: transparent;
-    color: white;
+    color: var(--white);
     width: 95%;
-    display: block;
+    display: var(--block);
     margin: 5px auto;
-    padding: 5px 0;
+    padding: 5px var(--zero);
     font-size: 18px;
-    text-align: center;
-    text-decoration: none;
+    text-align: var(--center);
+    text-decoration: var(--none);
 }.AdminPanel nav.navigation a:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }.AdminPanel nav.navigation a:active{
@@ -36,23 +37,23 @@
 }
 .AdminPanel nav.navigation .title{
     font-size: 23px;
-    color: white;
+    color: var(--white);
     width: 80%;
-    display: block;
+    display: var(--block);
     margin: 5px auto 10px auto;
-    border-bottom: 1px solid white;
-    padding: 5px 0;
+    border-bottom: 1px solid var(--white);
+    padding: 5px var(--zero);
     font-weight: 100;
     white-space: nowrap;
-    text-align: center;
+    text-align: var(--center);
 }
 .AdminPanel .content{
     padding: 0 70px;
 }
 .AdminPanel h3.title{
     font-size: 30px;
-    font-weight: 300;
-    margin: 10px 0 20px 0;
+    font-weight: var(--a300);
+    margin: 10px 0 20px var(--zero);
 }
 
 .AdminPanelStart{
@@ -63,11 +64,11 @@
 }
 .AdminPanelStart a{
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    display: var(--flex);
+    flex-direction: var(--column);
+    justify-content: var(--center);
+    align-items: var(--center);
+    text-decoration: var(--none);
     border-radius: 3px;
     color: #292c2f;
     border: 1px solid #292c2f0c;

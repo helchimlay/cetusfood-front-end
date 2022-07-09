@@ -1,28 +1,23 @@
-:root{
-    --backB: aliceblue;
-    --gray: rgb(64, 68, 73);
-    --hrB: lightblue;
-    --shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
-}
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .Stepper .step{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--center);
+    align-items: var(--center);
     padding-bottom: 20px;
     
 }
 .circle{
     z-index: 1;
-    width: 48px;
-    height: 48px;
+    width: var(--a48);
+    height: var(--a48);
     line-height: 44px;
-    text-align: center;
+    text-align: var(--center);
     border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
     background-color: var(--gray);
-    margin-bottom: 0;
+    margin-bottom: var(--zero);
     /* position: absolute;
     top: 200%;
     left: 25%; */
@@ -30,15 +25,15 @@
     
     .circlee{
     z-index: 1;
-    width: 48px;
-    height: 48px;
+    width: var(--a48);
+    height: var(--a48);
     line-height: 44px;
-    text-align: center;
+    text-align: var(--center);
     border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
     background-color: var(--gray);
-    margin-bottom: 0;
+    margin-bottom: var(--zero);
     /* position: absolute;
     top: 5%;
     left: 50%; */
@@ -46,15 +41,15 @@
     
     .circleee{
     z-index: 1;
-    width: 48px;
-    height: 48px;
+    width: var(--a48);
+    height: var(--a48);
     line-height: 44px;
-    text-align: center;
+    text-align: var(--center);
     border: 2px solid var(--gray);
     border-radius: 50%;
     font-size: 18px;
     background-color: var(--gray);
-    margin-bottom: 0;
+    margin-bottom: var(--zero);
     
     /* position: absolute;
     top: 5%;
@@ -101,15 +96,15 @@
     /* .one, .two, .three:hover {
         display: flex;
         
-        justify-content: center;
+        justify-content: var(--center);
     } */
     .one , .two , .three{
         flex-direction: column;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: var(--center);
+        align-items: var(--center);
         align-content: top;
-        margin: 0px;
+        margin: var(--zero);
         width: 260px;
         height: 145px;
 
