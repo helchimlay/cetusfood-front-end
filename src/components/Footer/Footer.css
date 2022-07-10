@@ -1,15 +1,14 @@
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 body {
-	margin: var(--zero);
-	padding: var(--zero);
+	margin: 0;;
+	padding: 0;;
 }
 .Footer {
 	background-color: #292c2f;
-	box-shadow: var(--zero) 1px 1px var(--zero) rgba(0, 0, 0, 0.12);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: var(--bold) 16px sans-serif;
+	font: bold 16px sans-serif;
 	padding: 55px 50px;
 }
  
@@ -25,12 +24,12 @@ body {
 }
  
 .Footer  h3{
-	color:  var(--white);
-	font:  var(--normal) 36px 'Cookie', cursive;
+	color:  white;
+	font:  normal 36px 'Cookie', cursive;
 	/* font-size: 36px;
   	font-family: 'Prompt', sans-serif; */
 
-	margin: var(--zero);
+	margin: 0;;
 }
  
 .Footer  h3 span{
@@ -39,8 +38,8 @@ body {
  
  
 .Footer  .footer-links{
-	color:  var(--white);
-	margin: var(--a20) var(--zero) 12px;
+	color:  white;
+	margin: 20px 0 12px;
 	padding: 0px;
 	display: flex;
 	flex-direction: row;
@@ -52,7 +51,7 @@ body {
 	list-style: none;
 	width: 70px;
 	height: 50px;
-	text-align: var(--center);
+	text-align: center;;
 }
 .Footer .footer-links a:hover{
 	font-size: 1.1em;
@@ -63,9 +62,9 @@ body {
  
 .Footer  .footer-company-name{
 	color:  #8f9296;
-	font-size: var(--a14);
-	font-weight: var(--normal);
-	margin: var(--zero);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;;
 }
  
  
@@ -75,12 +74,12 @@ body {
  
 .Footer  .footer-center i{
 	background-color:  #33383b;
-	color: var(--white);
+	color: white;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
-	text-align: var(--center);
+	text-align: center;;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
@@ -93,15 +92,15 @@ body {
  
 .Footer  .footer-center p{
 	display: inline-block;
-	color: var(--white);
+	color: white;
 	vertical-align: middle;
-	margin: var(--zero);
+	margin: 0;;
 }
  
 .Footer  .footer-center p span{
 	display:block;
-	font-weight: var(--normal);
-	font-size: var(--a14);
+	font-weight: normal;
+	font-size: 14px;
 	line-height:2;
 }
  
@@ -115,19 +114,19 @@ body {
 }
  
 .Footer  .footer-company-about{
-	line-height: var(--a20);
+	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
-	font-weight: var(--normal);
-	margin: var(--zero);
+	font-weight: normal;
+	margin: 0;;
 }
  
 .Footer  .footer-company-about span{
 	display: block;
-	color:  var(--white);
-	font-size:  var(--a14);
-	font-weight: var(--bold);
-	margin-bottom: var(--a20);
+	color:  white;
+	font-size:  14px;
+	font-weight: bold;;
+	margin-bottom: 20px;
 }
  
 .Footer  .footer-icons{
@@ -142,9 +141,9 @@ body {
 	background-color:  #33383b;
 	border-radius: 2px;
  
-	font-size: var(--a20);
-	color: var(--white);
-	text-align: var(--center);
+	font-size: 20px;
+	color: white;
+	text-align: center;;
 	line-height: 35px;
 	margin-bottom: 5px;
 }
@@ -153,7 +152,7 @@ body {
 @media (max-width: 880px) {
  
 	.Footer {
-		font: var(--bold)  var(--a14) sans-serif;
+		font: bold  14px sans-serif;
  
 	}
  
@@ -163,25 +162,25 @@ body {
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
-		text-align: var(--center);
+		text-align: center;;
 	}
  
 	.Footer  .footer-center i{
-		margin-left: var(--zero);
+		margin-left: 0;;
 	}
 	.Footer .main {
-		line-height: var(--normal);
+		line-height: normal;
 		font-size: auto;
 	}
 	 
     .Footer  .footer-links{
 	display: flex;
 	flex-direction: column;
-	align-items: var(--center);
+	align-items: center;;
 	font-size: 2em;
    }
    .Footer  .footer-links a{
-     text-align: var(--center);
+     text-align: center;;
 	 width: 300px;
    }
    .Footer  h3{

@@ -1,21 +1,20 @@
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .NotFound404{
     display: flex;
     flex-direction: column;
-    justify-content: var(--center);
-    align-items: var(--center);
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     min-height: 70vh;
 }
 .NotFound404 *{
-    margin: var(--zero);
-    padding: var(--zero);
+    margin: 0;
+    padding: 0;
 }
 .NotFound404 h1{
     font-size: 50px;
-    font-weight: var(--a300);
+    font-weight: 300;
 }
 .NotFound404 p{
     font-size: 20px;
-    font-weight: var(--a300);
+    font-weight: 300;
 }

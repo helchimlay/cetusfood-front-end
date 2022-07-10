@@ -1,8 +1,7 @@
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .NewRestForm p{
-    display: var(--flex);
+    display: flex;
     justify-content: space-between;
-    align-items: var(--center);
+    align-items: center;
     margin-bottom: 5px;
 }
 .NewRestForm form{
@@ -12,7 +11,7 @@
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
-    text-decoration: var(--none);
+    text-decoration: none;
     font-family: inherit;
     color: black;
 }.NewRestForm input:focus{
@@ -23,7 +22,7 @@
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
-    text-decoration: var(--none);
+    text-decoration: none;
     font-family: inherit;
     color: black;
     margin-right: 5px;

@@ -1,22 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .HomePage{
     font-family: 'Montserrat', sans-serif;
     
 }
 .HomePage section{
-    background-color: var(--backB);
-    border:1px solid var(--backB);
+    background-color: aliceblue;
+    border:1px solid aliceblue;
     margin: 50px 10em;
     border-radius: 5px;
     
 }
 .HomePage section .how{
-    background-color: var(--gray);
+    background-color: rgb(64, 68, 73);
     color: white;
     border-radius: 5px;
     padding: 20px;
-    text-align: var(--var(--center));
+    text-align: center;
     margin: 50px;
 }
 @media (max-width: 1260px){
@@ -24,10 +23,10 @@
         margin: 5em;
     }
     .HomePage section .aboutUs{
-        display: var(--flex);
-        flex-direction: var(--column);
-        justify-content: var(--center);
-        align-items: var(--center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
     }
     .HomePage section .aboutUs .cetusek img{
@@ -39,29 +38,29 @@
 }
 @media (max-width: 920px){
     .HomePage section{
-        display: var(--flex);
-        flex-direction: var(--column);
+        display: flex;
+        flex-direction: column;
     }
     .HomePage section .aboutUs{
-        display: var(--flex);
-        flex-direction: var(--column);
-        justify-content: var(--center);
-        align-items: var(--center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
     .HomePage section .aboutUs .cetusek{
-        padding: var(--zero);;
+        padding: 0;;
     }
     .HomePage section .aboutUs .cetusek img{
         max-width: 300px;
         max-height: 225px;
     }
     .HomePage section .offer{
-        justify-content: var(--center);
-        align-items: var(--center);
+        justify-content: center;
+        align-items: center;
     }
     .HomePage section .offer .cetKurier{
-        padding: var(--zero);;
+        padding: 0;;
     }
     .HomePage section .offer .cetKurier img{
         max-width: 300px;
@@ -73,34 +72,34 @@
 
 @media (max-width: 610px){
     .HomePage section{
-        display: var(--flex);
-        flex-direction: var(--column);
+        display: flex;
+        flex-direction: column;
         font-size: 11px;
-        margin: var(--zero);
+        margin: 0;
     }
     .HomePage section .aboutUs{
-        display: var(--flex);
-        flex-direction: var(--column);
-        justify-content: var(--center);
-        align-items: var(--center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         width: 100%;
     }
     .HomePage section .offer{
-        display: var(--flex);
-        flex-direction: var(--column);
-        justify-content: var(--center);
-        align-items: var(--center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
     .HomePage section hr{
         height: 5px;
         outline: none;
-        background-color: var(--hrB);
+        background-color: lightblue;
         max-width: 200px;
         margin: auto;
         border-radius: 20px;
-        border: 1px solid var(--hrB);
+        border: 1px solid lightblue;
     }
 
 }
@@ -113,20 +112,20 @@
     }
 }
 .HomePage section .aboutUs{
-    display: var(--flex);
+    display: flex;
     flex-direction: row;
-    justify-content: var(--center);
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    margin: 100px var(--zero);
+    margin: 100px 0;
 }
 .HomePage section .graybox{
-    background-color: var(--gray);
+    background-color: rgb(64, 68, 73);
     color: white;
     border-radius: 5px;
     padding: 20px;
     margin: 50px;
     width: 25rem;
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
 }
 .HomePage section .aboutUs .about-us p{
     padding:10px;
@@ -139,10 +138,10 @@
     padding: 20px;
 }
 .HomePage section .offer{
-    display: var(--flex);
+    display: flex;
     flex-direction: row;
-    justify-content: var(--center);
-    margin: 100px var(--zero);
+    justify-content: center;
+    margin: 100px 0;
 }
 .HomePage section .offer .cetKurier img{
     width: 500px;
@@ -151,10 +150,10 @@
 .HomePage section hr{
     height: 5px;
     outline: none;
-    background-color: var(--hrB);
+    background-color: lightblue;
     width: 500px;
     margin: auto;
     border-radius: 20px;
-    border: 1px solid var(--hrB);
+    border: 1px solid lightblue;
 }
 

@@ -1,6 +1,5 @@
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .ListElForm p{
-    display: var(--flex);
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
@@ -12,7 +11,7 @@
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
-    text-decoration: var(--none);
+    text-decoration: none;
     font-family: inherit;
     color: black;
 }.ListElForm input:focus{
@@ -23,7 +22,7 @@
     background-color: rgb(231, 226, 216);
     font-size: .9em;
     padding: 5px 15px;
-    text-decoration: var(--none);
+    text-decoration: none;
     font-family: inherit;
     color: black;
     margin-right: 5px;

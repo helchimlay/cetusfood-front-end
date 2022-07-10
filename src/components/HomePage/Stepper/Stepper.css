@@ -1,23 +1,22 @@
-@import url("C:\Users\48603\Documents\cetusfood-front-end\src\root.css");
 .Stepper .step{
     display: flex;
     flex-direction: row;
-    justify-content: var(--center);
-    align-items: var(--center);
+    justify-content: center;
+    align-items: center;
     padding-bottom: 20px;
     
 }
 .circle{
     z-index: 1;
-    width: var(--a48);
-    height: var(--a48);
+    width: 48px;
+    height: 48px;
     line-height: 44px;
-    text-align: var(--center);
-    border: 2px solid var(--gray);
+    text-align: center;
+    border: 2px solid rgb(64, 68, 73);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
-    margin-bottom: var(--zero);
+    background-color: rgb(64, 68, 73);
+    margin-bottom: 0;
     /* position: absolute;
     top: 200%;
     left: 25%; */
@@ -25,15 +24,15 @@
     
     .circlee{
     z-index: 1;
-    width: var(--a48);
-    height: var(--a48);
+    width: 48px;
+    height: 48px;
     line-height: 44px;
-    text-align: var(--center);
-    border: 2px solid var(--gray);
+    text-align: center;
+    border: 2px solid rgb(64, 68, 73);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
-    margin-bottom: var(--zero);
+    background-color: rgb(64, 68, 73);
+    margin-bottom: 0;
     /* position: absolute;
     top: 5%;
     left: 50%; */
@@ -41,15 +40,15 @@
     
     .circleee{
     z-index: 1;
-    width: var(--a48);
-    height: var(--a48);
+    width: 48px;
+    height: 48px;
     line-height: 44px;
-    text-align: var(--center);
-    border: 2px solid var(--gray);
+    text-align: center;
+    border: 2px solid rgb(64, 68, 73);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
-    margin-bottom: var(--zero);
+    background-color: rgb(64, 68, 73);
+    margin-bottom: 0;
     
     /* position: absolute;
     top: 5%;
@@ -63,7 +62,7 @@
     .one:hover .circle, .two:hover .circlee, .three:hover .circleee{
         transform: scale(1.1);
         transition: 0.1s ease-in;
-        background-color: var(--gray);
+        background-color: rgb(64, 68, 73);
         color: white;
     }
     .one:hover .jeden, .two:hover .dwa, .three:hover .trzy{
@@ -72,13 +71,13 @@
     }
     .circle, .circlee, .circleee{
         margin: 20px;
-        color: var(--gray);
-        background-color: var(--backB);
+        color: rgb(64, 68, 73);
+        background-color: aliceblue;
     }
     .line{
     width: 51%;
     height: 3px;
-    background: var(--gray);
+    background: rgb(64, 68, 73);
     margin: auto;
     top: 45px;
     
@@ -96,15 +95,15 @@
     /* .one, .two, .three:hover {
         display: flex;
         
-        justify-content: var(--center);
+        justify-content: center;
     } */
     .one , .two , .three{
         flex-direction: column;
         display: flex;
-        justify-content: var(--center);
-        align-items: var(--center);
+        justify-content: center;
+        align-items: center;
         align-content: top;
-        margin: var(--zero);
+        margin: 0;
         width: 260px;
         height: 145px;
 
