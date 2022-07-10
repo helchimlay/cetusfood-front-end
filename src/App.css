@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -7,31 +8,31 @@ body{
 
 ::-webkit-scrollbar{
     width: 12px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--bcg);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: lightgray;
+    background-color: var(--lightgray);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(179, 179, 179);
+    background-color: var(--bch_1);
 }
 input[type=text], input[type=email]{
     outline: none;
     border: none;
-    background-color: white;
-    color: #57687c;
+    background-color: var(--white);
+    color: var(--color_1);
     padding: 5px 20px;
 }
 button{
     outline: none;
     border: none;
-    background-color: white;
-    color: #57687c;
+    background-color: var(--white);
+    color: var(--color_1);
     padding: 5px 20px;
 }button:hover{
-    background-color: rgb(235, 235, 235);
+    background-color: var(--white);
 }button:active{
-    background-color: #57687c;
-    color: white;
+    background-color: var(--color_1);
+    color: var(--white);
 }

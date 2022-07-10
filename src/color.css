@@ -1,3 +1,45 @@
 :root{
-    
+    --bcg_0 : rgba(0, 0, 0, 0);
+    --lightgray : lightgray;
+    --bcg_1 : rgb(179, 179, 179);
+    --white : white;
+    --color_1 : #57687c;
+    --bcg_2 : rgb(46, 49, 53);
+    --color_2 : #5484d3;
+    --shadow_1 : rgba(0,0,0,0.26);
+    --color_3 : rgb(0, 174, 255);
+    --color_4 : deepskyblue;
+    --color_5 : #444;
+    --color_6 : #acacac;
+    --color_7 : #333;
+    --color_8 : #aaa;
+    --color_9 : #4481eb;
+    --color_10 : #5995fd;
+    --color_11 : #04befe;
+    --aliceblue : aliceblue;
+    --color_12 : rgb(64, 68, 73);
+    --lightblue : lightblue;
+    --color_13 : rgba(0, 0, 0, 0.3);
+    --color_14 : #292c2f;
+    --shadow_2 : rgba(0, 0, 0, 0.12);
+    --color_15 : #5383d3;
+    --color_16 : #0080ff;
+    --color_17 : #8f9296;
+    --color_18 : #33383b;
+    --color_19 : #92999f;
+    --black : black;
+    --color_20 : rgb(231, 226, 216);
+    --color_21 : rgba(0, 0, 0, 0.05);
+    --color_22 : rgba(0, 0, 0, 0.1);
+    --color_23 : rgb(223, 226, 216);
+    --color_24 : rgba(0, 0, 0, 0.8);
+    --color_25 : rgb(0, 140, 255);
+    --color_26 : rgb(255,0, 0);
+    --color_27 : rgba(255, 255, 255, 0.35);
+    --color_28 : rgb(255, 247, 241);
+    --color_29 : rgba(255, 255, 255, 0.1);
+    --color_30 : #292c2f;
+    --color_31 : #292c2f0c;
+    --color_32 : #292c2f2a;
+    --color_33 : #292c2f2d;
 }

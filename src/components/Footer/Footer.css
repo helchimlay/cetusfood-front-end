@@ -1,10 +1,11 @@
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 body {
 	margin: 0;;
 	padding: 0;;
 }
 .Footer {
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	background-color: var(--color_14);
+	box-shadow: 0 1px 1px 0 var(--shadow_2);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -24,7 +25,7 @@ body {
 }
  
 .Footer  h3{
-	color:  white;
+	color:  var(--white);
 	font:  normal 36px 'Cookie', cursive;
 	/* font-size: 36px;
   	font-family: 'Prompt', sans-serif; */
@@ -33,12 +34,12 @@ body {
 }
  
 .Footer  h3 span{
-	color:  #5383d3;
+	color:  var(--color_15);
 }
  
  
 .Footer  .footer-links{
-	color:  white;
+	color:  var(--white);
 	margin: 20px 0 12px;
 	padding: 0px;
 	display: flex;
@@ -55,13 +56,13 @@ body {
 }
 .Footer .footer-links a:hover{
 	font-size: 1.1em;
-	color: #0080ff;
+	color: var(--color_16);
 	display: inline-block;
 	
 }
  
 .Footer  .footer-company-name{
-	color:  #8f9296;
+	color:  var(--color_17);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;;
@@ -73,8 +74,8 @@ body {
 }
  
 .Footer  .footer-center i{
-	background-color:  #33383b;
-	color: white;
+	background-color:  var(--color_18);
+	color: var(--white);
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -92,7 +93,7 @@ body {
  
 .Footer  .footer-center p{
 	display: inline-block;
-	color: white;
+	color: var(--white);
 	vertical-align: middle;
 	margin: 0;;
 }
@@ -105,7 +106,7 @@ body {
 }
  
 .Footer .footer-center p a{
-	color:  #5383d3;
+	color:  var(--color_15);
 	text-decoration: none;;
 }
  
@@ -115,7 +116,7 @@ body {
  
 .Footer  .footer-company-about{
 	line-height: 20px;
-	color:  #92999f;
+	color:  var(--color_19);
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;;
@@ -123,7 +124,7 @@ body {
  
 .Footer  .footer-company-about span{
 	display: block;
-	color:  white;
+	color:  var(--white);
 	font-size:  14px;
 	font-weight: bold;;
 	margin-bottom: 20px;
@@ -138,11 +139,11 @@ body {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  var(--color_18);
 	border-radius: 2px;
  
 	font-size: 20px;
-	color: white;
+	color: var(--white);
 	text-align: center;;
 	line-height: 35px;
 	margin-bottom: 5px;
