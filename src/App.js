@@ -3,6 +3,7 @@ import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OrderPanel from './components/OrderPanel/OrderPanel';
 import LogIn from './components/LogIn/LogIn';
+import Register from './components/Register/Register';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import HomePage from './components/HomePage/HomePage';
 import Footer from './components/Footer/Footer';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<HomePage />} exact />
           <Route path='/order' element={<OrderPanel />} />
           <Route path='/log-in' element={<LogIn />} />
+          <Route path='/register' element={<Register />} />
           <Route path='/admin-panel' element={<AdminPanel />}>
             <Route path='restaurants' element={<RestList />} />
             <Route path='restaurants/add-new' element={<NewRestForm />} />

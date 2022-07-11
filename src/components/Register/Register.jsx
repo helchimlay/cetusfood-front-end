@@ -1,11 +1,12 @@
 import React from 'react';
-import './Login.css';
+import './Register.css';
 import { Helmet } from 'react-helmet-async';
 
-const LogIn = () => {
+const Register = () => {
   const [formData, setFormData] = React.useState({});
   const emailId = React.useId();
   const passwId = React.useId();
+  const passwId2 = React.useId();
 
   const updateFormData = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,12 +16,12 @@ const LogIn = () => {
   }
 
   return (
-    <div className='LogIn'>
+    <div className='Register'>
       <Helmet>
-        <title>CetusFood | Logowanie</title>
+        <title>CetusFood | Rejestracja</title>
       </Helmet>
 
-      <h3 className="title">Zaloguj się na swoje konto</h3>
+      <h3 className="title">Stwórz nowe konto</h3>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor={emailId}>Email: </label>
@@ -31,11 +32,15 @@ const LogIn = () => {
           <input onChange={updateFormData} type="password" name="password" id={passwId} />
         </div>
         <div>
-          <button type="submit">Zaloguj się</button>
+          <label htmlFor={passwId2}>Hasło: </label>
+          <input onChange={updateFormData} type="password" name="password2" id={passwId2} />
+        </div>
+        <div>
+          <button type="submit">Stwórz konto</button>
         </div>
       </form>
     </div>
   )
 }
 
-export default LogIn;
+export default Register;
