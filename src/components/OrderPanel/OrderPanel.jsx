@@ -1,7 +1,7 @@
 import React from 'react';
 import './OrderPanel.css';
 import RestGridPnl from './RestGridPnl/RestGridPnl';
-import { getRestaurants } from '../services/RestaurationsList';
+import { getRestaurants } from '../../services/RestaurationsList';
 import Stepper from './Stepper';
 import MealInputPnl from './MealInputPnl/MealInputPnl';
 import FinalizationPnl from './FinalizationPnl/FinalizationPnl';

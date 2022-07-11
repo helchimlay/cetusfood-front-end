@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewRestForm.css';
-import { addRestaurant } from '../../../services/RestaurationsList.js';
+import { addRestaurant } from '../../../../services/RestaurationsList.js';
 import { Link, useNavigate } from 'react-router-dom';
 import NewListElForm from '../../List/ListElForm/NewListElForm';
 
@@ -29,7 +29,8 @@ const AddNewRestForm = () => {
     <NewListElForm inputs={[
         {type: 'text', name: 'name', placeholder: 'nazwa', id: 'name', label: 'Nazwa'},
         {type: 'email', name: 'email', placeholder: 'email', id: 'email', label: 'Email'},
-        {type: 'text', name: 'url', placeholder: 'url', id: 'url', label: 'Link do strony'}
+        {type: 'text', name: 'url', placeholder: 'url', id: 'url', label: 'Link do strony'},
+        {type: 'text', name: 'logoUrl', placeholder: 'logo url', id: 'logoUrl', label: 'Link do loga'}
       ]} 
       sendingFunc={addRestaurant}
       linkTo='../restaurants'

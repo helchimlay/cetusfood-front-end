@@ -1,6 +1,6 @@
 import React from 'react';
 import './RestList.css';
-import { getRestaurants, getRestaurantsByName, deleteRestaurant } from '../../services/RestaurationsList';
+import { getRestaurants, getRestaurantsByName, deleteRestaurant } from '../../../services/RestaurationsList';
 import RestListEl from './RestListEl';
 import { Link, useNavigate } from 'react-router-dom';
 import List from '../List/List';

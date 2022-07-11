@@ -19,9 +19,9 @@ const Stepper = () => {
         ))}
       </div>
       <nav>
-        {Ctx.step!==0 && <button onClick={() => Ctx.setStep(prev => prev - 1)}><i class='bx bx-left-arrow-alt' ></i>Poprzedni krok</button>}
+        {Ctx.step!==0 && <button className='prev' onClick={() => Ctx.setStep(prev => prev - 1)}><i class='bx bx-left-arrow-alt' ></i>Poprzedni krok</button>}
         {Ctx.step!==2 && <div></div>}
-        {Ctx.step!==2 && <button onClick={() => Ctx.setStep(prev => prev + 1)}>Następny krok<i class='bx bx-right-arrow-alt' ></i></button>}
+        {Ctx.step!==2 && <button className='next' onClick={() => Ctx.setStep(prev => prev + 1)}>Następny krok<i class='bx bx-right-arrow-alt' ></i></button>}
       </nav>
     </div>
   )
