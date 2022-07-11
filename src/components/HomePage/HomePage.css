@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root{
-    --backB: aliceblue;
-    --gray: rgb(64, 68, 73);
-    --hrB: lightblue;
-    --shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
-}
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 .HomePage{
     font-family: 'Montserrat', sans-serif;
     
 }
 .HomePage section{
-    background-color: var(--backB);
-    border:1px solid var(--backB);
+    background-color: var(--aliceblue);
+    border:1px solid var(--aliceblue);
     margin: 50px 10em;
     border-radius: 5px;
     
 }
 .HomePage section .how{
-    background-color: var(--gray);
-    color: white;
+    background-color: var(--color_12);
+    color: var(--white);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    margin: 100px;
+    margin: 50px;
 }
 @media (max-width: 1260px){
     .HomePage section{
@@ -55,7 +50,7 @@
         width: 100%;
     }
     .HomePage section .aboutUs .cetusek{
-        padding: 0px;
+        padding: 0;;
     }
     .HomePage section .aboutUs .cetusek img{
         max-width: 300px;
@@ -66,7 +61,7 @@
         align-items: center;
     }
     .HomePage section .offer .cetKurier{
-        padding: 0px;
+        padding: 0;;
     }
     .HomePage section .offer .cetKurier img{
         max-width: 300px;
@@ -101,11 +96,11 @@
     .HomePage section hr{
         height: 5px;
         outline: none;
-        background-color: var(--hrB);
+        background-color: var(--lightblue);
         max-width: 200px;
         margin: auto;
         border-radius: 20px;
-        border: 1px solid var(--hrB);
+        border: 1px solid var(--lightblue);
     }
 
 }
@@ -125,13 +120,13 @@
     margin: 100px 0;
 }
 .HomePage section .graybox{
-    background-color: var(--gray);
-    color: white;
+    background-color: var(--color_12);
+    color: var(--white);
     border-radius: 5px;
     padding: 20px;
     margin: 50px;
     width: 25rem;
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 24px 0 var(--color_13);
 }
 .HomePage section .aboutUs .about-us p{
     padding:10px;
@@ -156,10 +151,9 @@
 .HomePage section hr{
     height: 5px;
     outline: none;
-    background-color: var(--hrB);
+    background-color: var(--lightblue);
     width: 500px;
     margin: auto;
     border-radius: 20px;
-    border: 1px solid var(--hrB);
+    border: 1px solid var(--lightblue);
 }
-

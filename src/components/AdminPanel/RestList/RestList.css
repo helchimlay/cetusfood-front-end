@@ -1,3 +1,4 @@
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 .RestList .main-table{
     width: 100%;
     border-collapse: collapse;
@@ -10,10 +11,10 @@
     font-weight: 300;
 }
 .RestList .main-table tbody tr:hover{
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--color_21);
 }
 .RestList .main-table tr:not(tr:first-of-type) td{
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--color_22);
 }
 .RestList .main-table th{
     text-transform: capitalize;
@@ -29,18 +30,18 @@
     gap: 5px;
 }
 .RestList .opt-bar button, .RestList .opt-bar a{
-    background-color: rgb(231, 226, 216);
+    background-color: var(--color_20);
     font-size: .9em;
     padding: 5px 15px;
     text-decoration: none;
     font-family: inherit;
-    color: black;
+    color: var(--black);
     cursor: pointer;
 }.RestList .opt-bar button:hover, .RestList .opt-bar a:hover{
-    background-color: rgb(223, 217, 206);
+    background-color: var(--color_23);
 }.RestList .opt-bar button:active, .RestList .opt-bar a:active{
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(231, 226, 216);
+    background-color: var(--color_24);
+    color: var(--color_20);
 }
 .RestList .opt-bar button i, .RestList .opt-bar a i{
     font-size: 15px;

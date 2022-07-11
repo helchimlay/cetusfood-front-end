@@ -1,9 +1,4 @@
-:root{
-    --backB: aliceblue;
-    --gray: rgb(64, 68, 73);
-    --hrB: lightblue;
-    --shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
-}
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 .Stepper .step{
     display: flex;
     flex-direction: row;
@@ -18,10 +13,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--color_12);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
+    background-color: var(--color_12);
     margin-bottom: 0;
     /* position: absolute;
     top: 200%;
@@ -34,10 +29,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--color_12);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
+    background-color: var(--color_12);
     margin-bottom: 0;
     /* position: absolute;
     top: 5%;
@@ -50,10 +45,10 @@
     height: 48px;
     line-height: 44px;
     text-align: center;
-    border: 2px solid var(--gray);
+    border: 2px solid var(--color_12);
     border-radius: 50%;
     font-size: 18px;
-    background-color: var(--gray);
+    background-color: var(--color_12);
     margin-bottom: 0;
     
     /* position: absolute;
@@ -68,8 +63,8 @@
     .one:hover .circle, .two:hover .circlee, .three:hover .circleee{
         transform: scale(1.1);
         transition: 0.1s ease-in;
-        background-color: var(--gray);
-        color: white;
+        background-color: var(--color_12);
+        color: var(--white);
     }
     .one:hover .jeden, .two:hover .dwa, .three:hover .trzy{
         transform: scale(1.05);
@@ -77,13 +72,13 @@
     }
     .circle, .circlee, .circleee{
         margin: 20px;
-        color: var(--gray);
-        background-color: var(--backB);
+        color: var(--color_12);
+        background-color: var(--aliceblue);
     }
     .line{
     width: 51%;
     height: 3px;
-    background: var(--gray);
+    background: var(--color_12);
     margin: auto;
     top: 45px;
     
@@ -109,7 +104,7 @@
         justify-content: center;
         align-items: center;
         align-content: top;
-        margin: 0px;
+        margin: 0;
         width: 260px;
         height: 145px;
 

@@ -1,14 +1,15 @@
+@import url("C:\Users\48603\Documents\cetusfood-front-end\src\color.css");
 .AdminPanel{
     position: relative;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 250px 1fr;
-    background-color: rgb(255, 247, 241);
+    background-color: var(--color_28);
 }
 .AdminPanel nav.navigation{
     width: 250px;
     background-color: #292c2f;
-    color: white;
+    color: var(--white);
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -17,7 +18,7 @@
     outline: none;
     border: none;
     background-color: transparent;
-    color: white;
+    color: var(--white);
     width: 95%;
     display: block;
     margin: 5px auto;
@@ -26,21 +27,21 @@
     text-align: center;
     text-decoration: none;
 }.AdminPanel nav.navigation a:hover{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color_29);
 }.AdminPanel nav.navigation a:active{
-    background-color: rgb(255, 247, 241);
-    color: #292c2f;
+    background-color: var(--color_28);
+    color: var(--color_30);
 }.AdminPanel nav.navigation a.current{
-    background-color: rgb(255, 247, 241);
-    color: #292c2f;
+    background-color: var(--color_28);
+    color: var(--color_30);
 }
 .AdminPanel nav.navigation .title{
     font-size: 23px;
-    color: white;
+    color: var(--white);
     width: 80%;
     display: block;
     margin: 5px auto 10px auto;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white);
     padding: 5px 0;
     font-weight: 100;
     white-space: nowrap;
@@ -69,11 +70,11 @@
     align-items: center;
     text-decoration: none;
     border-radius: 3px;
-    color: #292c2f;
-    border: 1px solid #292c2f0c;
+    color: var(--color_30);
+    border: 1px solid var(--color_31);
 }.AdminPanelStart a:hover{
-    background-color: #292c2f2a;
-    border: 1px solid #292c2f2d;
+    background-color: var(--color_32);
+    border: 1px solid var(--color_33);
 }
 .AdminPanelStart a i{
     font-size: 150px;

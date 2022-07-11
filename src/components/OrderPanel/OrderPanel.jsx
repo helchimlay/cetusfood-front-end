@@ -5,6 +5,7 @@ import { getRestaurants } from '../services/RestaurationsList';
 import Stepper from './Stepper';
 import MealInputPnl from './MealInputPnl/MealInputPnl';
 import FinalizationPnl from './FinalizationPnl/FinalizationPnl';
+import { Helmet } from 'react-helmet-async';
 
 export const OrderPnlCtx = React.createContext();
 
@@ -26,6 +27,9 @@ const OrderPanel = () => {
 
   return (
     <div className='OrderPanel'>
+      <Helmet>
+        <title>CetusFood | Zamówienia</title>
+      </Helmet>
       <OrderPnlCtx.Provider value={{
         restList: restList, setRestList: setRestList,
         step: step, setStep: setStep,
