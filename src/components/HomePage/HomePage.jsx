@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.css';
+import './HomePage.scss';
 import cetusek from '../../images/CetusFoodNapisDown.png';
 import cetKurier from '../../images/CetusikKurier.png';
 import { Helmet } from 'react-helmet-async';
@@ -7,6 +7,36 @@ import Stepper from './Stepper/Stepper';
 
 const HomePage = () => {
   // {document.title = "CetusFood | Strona główna"}
+  const stepperData = [
+  {
+    circClass: "circle1",
+    circContClass: "step-cont1",
+    circHeadingClass: "heading1",
+    circDescClass: "desc1",
+    num: 1,
+    heading: "01.Krok pierwszy",
+    description: "Otrzymujesz na  Mail wiadomość z proźbą o złożenie zamówienia "
+  },
+  {
+    circClass: "circle2",
+    circContClass: "step-cont2",
+    circHeadingClass: "heading2",
+    circDescClass: "desc2",
+    num: 2,
+    heading: "02.Krok pierwszy",
+    description: "Wybierasz na aplikacji co chcesz zamówić"
+  },
+  {
+    circClass: "circle3",
+    circContClass: "step-cont3",
+    circHeadingClass: "heading3",
+    circDescClass: "desc3",
+    num: 3,
+    heading: "03.Krok trzeci",
+    description: "Zamawiamy Ci co chcesz!"
+  }
+  ];
+
   return (
     
     <div className='HomePage'>
@@ -37,7 +67,7 @@ const HomePage = () => {
         </div>
         <hr />
         <h2 className='how'>Jak to działa?</h2>
-        <Stepper />
+        <Stepper items={stepperData}/>
       </section>
       
     </div>
