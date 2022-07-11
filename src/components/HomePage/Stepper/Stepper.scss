@@ -20,6 +20,19 @@
             margin: 0px;
             width: 260px;
             height: 145px;
+
+            &:hover {
+                .circle1, .circle2, .circle3{
+                    transform: scale(1.1);
+                    transition: 0.1s ease-in;
+                    background-color: var(--gray);
+                    color: white;
+                }
+                .desc1, .desc2, .desc3, .heading1, .heading2, .heading3{
+                    transform: scale(1.05);
+                }
+            }
+
             .circle1, .circle2, .circle3{
                 z-index: 1;
                 width: 48px;
@@ -29,7 +42,7 @@
                 border: 2px solid var(--gray);
                 border-radius: 50%;
                 font-size: 18px;
-                background-color: var(--gray);
+                background-color: var(--backB);
                 margin-bottom: 0;
             }
         }
@@ -40,24 +53,20 @@
     /* .circle:hover, .circlee:hover, .circleee:hover{
         
     } */
-    .step-cont1:hover .circle1, .step-cont2:hover .circle2, .step-cont3:hover .circle3{
-        transform: scale(1.1);
-        transition: 0.1s ease-in;
-        background-color: var(--gray);
-        color: white;
-    }
-    .step-cont1:hover .desc1, .step-cont2:hover .desc2, .step-cont3:hover .desc3{
-        transform: scale(1.05);
+    // .Stepper .step .step-cont1:hover .circle1, .step-cont2:hover .circle2, .step-cont3:hover .circle3{
+    //     transform: scale(1.1);
+    //     transition: 0.1s ease-in;
+    //     background-color: var(--gray);
+    //     color: white;
+    // }
+    // .step-cont1:hover .desc1, .step-cont2:hover .desc2, .step-cont3:hover .desc3{
+    //     transform: scale(1.05);
 
-    }
-    .step-cont1:hover .heading1, .step-cont2:hover .heading2, .step-cont3:hover .heading3{
-        transform: scale(1.05);
-    }
-    .circle1, .circle2, .circle3{
-        margin: 20px;
-        color: var(--gray);
-        background-color: var(--backB);
-    }
+    // }
+    // .step-cont1:hover .heading1, .step-cont2:hover .heading2, .step-cont3:hover .heading3{
+    //     transform: scale(1.05);
+    // }
+    
     .line{
     width: 51%;
     height: 3px;
