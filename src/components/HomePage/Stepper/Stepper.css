@@ -1,4 +1,4 @@
-@import url("../../../color.css");
+@import url("../../../assets/color.css");
 .Stepper .step{
     display: flex;
     flex-direction: row;
