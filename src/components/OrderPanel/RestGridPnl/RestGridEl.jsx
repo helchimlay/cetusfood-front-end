@@ -9,7 +9,6 @@ const RestGridEl = ({ data }) => {
 
     const handleRadioChange = () => {
       Ctx.setFormData({ restId: data.id, products: [] });
-      Ctx.setStep(prev => prev + 1);
     }
 
   return (

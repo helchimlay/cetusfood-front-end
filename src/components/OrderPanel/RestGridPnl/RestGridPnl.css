@@ -1,69 +1,70 @@
-.RestGridPnl{
+.RestGridPnl {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 10px 40px;
+  font-size: 30px;
+}
+
+.RestGridEl input {
+  display: none;
+}
+.RestGridEl input:checked + span {
+  background-color: rgb(255, 166, 0);
+}
+.RestGridEl input:checked + span * {
+  transform: translateX(15px);
+}
+
+.RestGridEl > span * {
+  transition: 0.1s;
+}
+.RestGridEl > span {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  cursor: pointer;
+  height: 8em;
+  overflow: hidden;
+}
+.RestGridEl > span:hover * {
+  transform: translateX(15px);
+}
+.RestGridEl > span .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RestGridEl > span .name > span {
+  transform: rotate(270deg);
+  font-size: 0.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+}
+.RestGridEl > span .img {
+  height: 100%;
+  background-position: center;
+}
+
+@media screen and (max-width: 700px) {
+  .RestGridPnl {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 30px;
-    padding: 10px 40px;
-    font-size: 30px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    font-size: 25px;
+  }
 }
 
-.RestGridEl input{
-    display: none;
-}
-.RestGridEl input:checked + span{
-    background-color: rgb(255, 166, 0);
-}.RestGridEl input:checked + span *{
-    transform: translateX(15px);
-}
-
-.RestGridEl > span *{
-    transition: .1s;
-}
-.RestGridEl > span{
+@media screen and (max-width: 400px) {
+  .RestGridPnl {
     display: grid;
-    grid-template-columns: 20% 80%;
-    background-color: rgb(49, 49, 49);
-    color: white;
-    cursor: pointer;
-    height: 8em;
-    overflow: hidden;
-}.RestGridEl > span:hover *{
-    transform: translateX(15px);
-}
-.RestGridEl > span .name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.RestGridEl > span .name > span{
-    transform: rotate(270deg);
-    font-size: .5em;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    white-space: nowrap;
-}
-.RestGridEl > span .img{
-    height: 100%;
-    background-position: center;
-}
-
-
-@media screen and (max-width: 700px){
-    .RestGridPnl{
-        display: grid;
-        gap: 10px;
-        padding: 10px;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 400px){
-    .RestGridPnl{
-        display: grid;
-        gap: 5px;
-        padding: 10px;
-        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-        font-size: 25px;
-    }
+    gap: 5px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    font-size: 25px;
+  }
 }
