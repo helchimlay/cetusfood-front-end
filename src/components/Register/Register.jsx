@@ -1,5 +1,5 @@
 import React from 'react';
-import '../LogIn/Login.css';
+import './Register.css';
 import { Helmet } from 'react-helmet-async';
 import { registerUser } from '../../services/Auth';
 import { useNavigate } from 'react-router-dom';
