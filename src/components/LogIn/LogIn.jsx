@@ -19,21 +19,23 @@ const LogIn = () => {
       <Helmet>
         <title>CetusFood | Logowanie</title>
       </Helmet>
-
-      <h3 className="title">Zaloguj się na swoje konto</h3>
+    <div className="center">
+      <header>
+        <h3 className="title">Zaloguj się</h3>
+        <p className='title_1'>zaloguj się, używając swojej nazwy użytkownika i hasła</p>
+      </header>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor={emailId}>Email: </label>
-          <input onChange={updateFormData} type="email" name="email" id={emailId} />
+          <input onChange={updateFormData} type="email" name="email" placeholder="Nazwa użytkownika" required id={emailId} />
         </div>
         <div>
-          <label htmlFor={passwId}>Hasło: </label>
-          <input onChange={updateFormData} type="password" name="password" id={passwId} />
+          <input onChange={updateFormData} type="password" name="password" placeholder="Hasło" required id={passwId} />
         </div>
         <div>
           <button type="submit">Zaloguj się</button>
         </div>
       </form>
+      </div>
     </div>
   )
 }
