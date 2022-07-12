@@ -1,34 +1,32 @@
 import React from 'react';
-import './Login.css';
+import './Register.css';
 import { Helmet } from 'react-helmet-async';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { logInUser } from '../../services/Auth';
-import { GlobalCtx } from '../../App';
+import { registerUser } from '../../services/Auth';
+import { useNavigate } from 'react-router-dom';
 
-const LogIn = () => {
-    const { user, setUser } = React.useContext(GlobalCtx);
+const Register = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = React.useState({});
     const emailId = React.useId();
     const passwId = React.useId();
+    const passwId2 = React.useId();
 
     const updateFormData = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
     const handleSubmit = e => {
         e.preventDefault();
-        logInUser(formData.email, formData.password).then(res => setUser(prev => ({ ...prev, accessToken: res.data })));
-        navigate('/');
+        registerUser(formData.email, formData.password, formData.password2);
+        navigate('/log-in');
     }
-    
 
     return (
-        <div className='LogIn'>
+        <div className='Register'>
             <Helmet>
-                <title>CetusFood | Logowanie</title>
+                <title>CetusFood | Rejestracja</title>
             </Helmet>
 
-            <h3 className="title">Zaloguj się na swoje konto</h3>
+            <h3 className="title">Stwórz nowe konto</h3>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor={emailId}>Email: </label>
@@ -39,12 +37,15 @@ const LogIn = () => {
                     <input onChange={updateFormData} type="password" name="password" id={passwId} />
                 </div>
                 <div>
-                    <button type="submit">Zaloguj się</button>
-                    <p>Nie masz jeszcze konta? <NavLink to='/register'>Załóż nowe konto</NavLink></p>
+                    <label htmlFor={passwId2}>Hasło: </label>
+                    <input onChange={updateFormData} type="password" name="password2" id={passwId2} />
+                </div>
+                <div>
+                    <button type="submit">Stwórz konto</button>
                 </div>
             </form>
         </div>
     )
 }
 
-export default LogIn;
+export default Register;

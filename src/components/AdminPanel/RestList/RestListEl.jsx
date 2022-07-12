@@ -1,6 +1,6 @@
 import React from 'react';
 import { RestListCtx } from './RestList';
-import { deleteRestaurant } from '../../services/RestaurationsList';
+import { deleteRestaurant } from '../../../services/RestaurationsList';
 
 const RestListEl = ({ data, i }) => {
     const Ctx = React.useContext(RestListCtx);

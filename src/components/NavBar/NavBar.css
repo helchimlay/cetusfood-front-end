@@ -11,6 +11,8 @@
   padding: 10px 90px;
   color: var(--white);
   align-content: center;
+  text-align: center;
+  white-space: nowrap;
 }
 @media (max-width: 920px){
   .NavBar{
