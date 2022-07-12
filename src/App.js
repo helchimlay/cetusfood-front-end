@@ -68,8 +68,8 @@ function App() {
               {user.loggedIn && (
                 <Route path="/order" element={<OrderPanel />} />
               )}
-              <Route path="/log-in" element={<LogIn />} />
-              <Route path="/register" element={<Register />} />
+              {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}
+              {!user.loggedIn && <Route path="/register" element={<Register />} />}
               {user.role === "admin" && (
                 <Route path="/admin-panel" element={<AdminPanel />}>
                   <Route path="restaurants" element={<RestList />} />

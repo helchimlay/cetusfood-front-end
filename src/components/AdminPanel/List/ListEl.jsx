@@ -31,7 +31,7 @@ const ListEl = ({ data, dontShow, i, setData }) => {
       {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{data[key]}</td>)}
       <td className='actions'>
         <button className='edit-btn' onClick={() => navigate(`edit/${data.id}`)}><i className='bx bxs-edit'></i></button>
-        <button className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id) }}><i className='bx bx-trash-alt' ></i></button>
+        <button className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id, Ctx.accessToken) }}><i className='bx bx-trash-alt' ></i></button>
       </td>
     </tr>
   )

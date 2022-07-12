@@ -1,16 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ListElForm.css';
+import { GlobalCtx } from '../../../../App';
 
 const NewListElForm = ({ inputs, sendingFunc, linkTo }) => {
     const navigate = useNavigate();
+    const { user } = React.useContext(GlobalCtx);
 
     const handleSubmit = e => {
         let values = {};
         inputs.forEach(el => {
             values = { ...values, [el.name]: e.target.elements[el.name].value };
         })
-        sendingFunc(values);
+        sendingFunc(values, user.accessToken);
         e.preventDefault();
         navigate(linkTo);
     }
