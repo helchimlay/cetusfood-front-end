@@ -11,41 +11,52 @@ const LogIn = () => {
     const [formData, setFormData] = React.useState({});
     const emailId = React.useId();
     const passwId = React.useId();
+    const [error, setError] = React.useState(null);
 
     const updateFormData = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
     const handleSubmit = e => {
         e.preventDefault();
-        logInUser(formData.email, formData.password).then(res => setUser(prev => ({ ...prev, accessToken: res.data })));
-        navigate('/');
+        logInUser(formData.email, formData.password)
+            .then(res => {
+                setUser(prev => ({ ...prev, accessToken: res.data }));
+                navigate('/');
+            })
+            .catch(err => setError(err.response.data.message))
     }
-    
 
-  return (
-    <div className='LogIn'>
-      <Helmet>
-        <title>CetusFood | Logowanie</title>
-      </Helmet>
-    <div className="center">
-      <header>
-        <h3 className="title">Zaloguj się</h3>
-        <p className='title_1'>zaloguj się, używając swojej nazwy użytkownika i hasła</p>
-      </header>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <input onChange={updateFormData} type="email" name="email" placeholder="Nazwa użytkownika" required id={emailId} />
+
+    return (
+        <div className='LogIn'>
+            <Helmet>
+                <title>CetusFood | Logowanie</title>
+            </Helmet>
+            <div className="center">
+                <header>
+                    <h3 className="title">Zaloguj się</h3>
+                    <p className='title_1'>używając swojej nazwy użytkownika i hasła</p>
+                </header>
+                <form onSubmit={handleSubmit}>
+                    {error && (
+                        <div className='error'>Niepoprawne dane logowania. Może literówka?</div>
+                    )}
+                    <div>
+                        <input onChange={updateFormData} type="email" name="email" placeholder="Nazwa użytkownika" required id={emailId} />
+                    </div>
+                    <div>
+                        <input onChange={updateFormData} type="password" name="password" placeholder="Hasło" required id={passwId} />
+                    </div>
+                    <div>
+                        <button type="submit">Zaloguj się</button>
+                    </div>
+                    <div>
+                        Nie masz jeszcze konta? <button onClick={() => navigate('/register')}>Stwórz nowe</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-          <input onChange={updateFormData} type="password" name="password" placeholder="Hasło" required id={passwId} />
-        </div>
-        <div>
-          <button type="submit">Zaloguj się</button>
-        </div>
-      </form>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default LogIn;

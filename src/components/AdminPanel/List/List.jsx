@@ -4,36 +4,37 @@ import './List.css';
 
 export const ListContext = React.createContext();
 
-const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc }) => {
+const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc, accessToken }) => {
   const [selectedIds, setSelectedIds] = React.useState([]);
   const [data, setData] = React.useState([]);
   const searchBarRef = React.useRef();
 
   React.useEffect(() => {
-    setTimeout(() => fetchData(), 100)
+    setTimeout(() => fetchData(undefined, accessToken), 100)
   }, [])
-  const fetchData = async (name) => {
+  const fetchData = async (name, token) => {
     if (name && name !== '') {
-      await getDataByParamFunc(name).then(res => setData(res.data));
+      await getDataByParamFunc(name, token).then(res => setData(res.data));
     } else {
-      await getDataFunc().then(res => setData(res.data));
+      await getDataFunc(token).then(res => setData(res.data));
     }
   }
   const handleDelManyBtn = () => {
     selectedIds?.forEach(el => {
-      deleteElFunc(el);
+      deleteElFunc(el, accessToken);
     })
     setSelectedIds([]);
   }
   const handleSearchBtnClick = () => {
-    fetchData(searchBarRef.current.value);
+    fetchData(searchBarRef.current.value, accessToken);
     setSelectedIds([]);
   }
   console.log(selectedIds)
   return (
     <ListContext.Provider value={{
       selectedIds: selectedIds, setSelectedIds: setSelectedIds,
-      deleteElFunc: deleteElFunc
+      deleteElFunc: deleteElFunc,
+      accessToken: accessToken
     }}>
       <div className='List'>
         <div className="opt-bar">

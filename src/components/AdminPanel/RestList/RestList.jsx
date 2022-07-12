@@ -4,12 +4,14 @@ import { getRestaurants, getRestaurantsByName, deleteRestaurant } from '../../..
 import RestListEl from './RestListEl';
 import { Link, useNavigate } from 'react-router-dom';
 import List from '../List/List';
+import { GlobalCtx } from '../../../App';
 
 
 export const RestListCtx = React.createContext();
 
 const RestList = () => {
     const navigate = useNavigate();
+    const { user } = React.useContext(GlobalCtx);
 
     // const [fetchedData, setFetchedData] = React.useState([]);
 
@@ -64,6 +66,7 @@ const RestList = () => {
             buttons={[
                 {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
             ]}
+            accessToken={user.accessToken}
         />
     </>)
 }

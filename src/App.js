@@ -30,14 +30,23 @@ function App() {
     accessToken: null,
   });
   React.useEffect(() => {
-    if(localStorage.getItem('accessToken')){
-        getUserRole(localStorage.getItem('accessToken')).then(res => setUser(prev => ({ ...prev, role: res.data, loggedIn: true, accessToken: localStorage.getItem('accessToken') })));
+    if (localStorage.getItem("accessToken")) {
+      getUserRole(localStorage.getItem("accessToken")).then((res) =>
+        setUser((prev) => ({
+          ...prev,
+          role: res.data,
+          loggedIn: true,
+          accessToken: localStorage.getItem("accessToken"),
+        }))
+      );
     }
-  }, [])
+  }, []);
   React.useEffect(() => {
-    if(user.accessToken){
-        getUserRole(user.accessToken).then(res => setUser(prev => ({ ...prev, role: res.data, loggedIn: true })));
-        localStorage.setItem('accessToken', user.accessToken);
+    if (user.accessToken) {
+      getUserRole(user.accessToken).then((res) =>
+        setUser((prev) => ({ ...prev, role: res.data, loggedIn: true }))
+      );
+      localStorage.setItem("accessToken", user.accessToken);
     }
   }, [user.accessToken]);
 
@@ -59,8 +68,8 @@ function App() {
               {user.loggedIn && (
                 <Route path="/order" element={<OrderPanel />} />
               )}
-              <Route path="/log-in" element={<LogIn />} />
-              <Route path="/register" element={<Register />} />
+              {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}
+              {!user.loggedIn && <Route path="/register" element={<Register />} />}
               {user.role === "admin" && (
                 <Route path="/admin-panel" element={<AdminPanel />}>
                   <Route path="restaurants" element={<RestList />} />
