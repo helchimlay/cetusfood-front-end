@@ -35,7 +35,7 @@ const LogIn = () => {
             <div className="center">
                 <header>
                     <h3 className="title">Zaloguj się</h3>
-                    <p className='title_1'>zaloguj się, używając swojej nazwy użytkownika i hasła</p>
+                    <p className='title_1'>używając swojej nazwy użytkownika i hasła</p>
                 </header>
                 <form onSubmit={handleSubmit}>
                     {error && (
