@@ -1,55 +1,45 @@
 import axios from "axios";
+import variables from '../assets/variables.json';
+
 export const getRestaurants = async (token) => {
   return await axios.get(
-    "https://api.foodapp.academy.st.cetuspro.com/user/restaurants",
-    {
-      'Authorization': `Bearer ${token}` 
-    }
+    `${variables.proxy}/user/restaurants`, 
+    {headers: {'Authorization': `Bearer ${token}`}}
   );
 };
 export const getRestaurantsByName = async (name, token) => {
   return await axios.get(
-    `https://api.foodapp.academy.st.cetuspro.com/user/restaurants/name/${name}`,
-    {
-      'Authorization': `Bearer ${token}` 
-    }
+    `${variables.proxy}/user/restaurants/name/${name}`, 
+    {headers: {'Authorization': `Bearer ${token}`}}
   );
 };
 export const getRestaurantsById = async (id, token) => {
   return await axios.get(
-    `https://api.foodapp.academy.st.cetuspro.com/user/restaurants/${id}`,
-    {
-      'Authorization': `Bearer ${token}` 
-    }
+    `${variables.proxy}/user/restaurants/${id}`, 
+    {headers: {'Authorization': `Bearer ${token}`}}
   );
 };
 export const deleteRestaurant = async (id, token) => {
   await axios.delete(
-    `https://api.foodapp.academy.st.cetuspro.com/admin/restaurants/${id}`,
-    {
-      'Authorization': `Bearer ${token}` 
-    }
+    `${variables.proxy}/admin/restaurants/${id}`, 
+    {headers: {'Authorization': `Bearer ${token}`}}
   );
 };
 export const addRestaurant = async (data, token) => {
   if (data.name && data.url && data.email) {
     await axios.post(
-      "https://api.foodapp.academy.st.cetuspro.com/admin/restaurants",
-      data,
-      {
-        'Authorization': `Bearer ${token}` 
-      }
+      `${variables.proxy}/admin/restaurants`,
+      data, 
+      {headers: {'Authorization': `Bearer ${token}`}}
     );
   }
 };
 export const editRestaurant = async (id, data, token) => {
   if (id && data.name && data.url && data.email) {
     await axios.put(
-      `https://api.foodapp.academy.st.cetuspro.com/admin/restaurants/${id}`,
-      data,
-      {
-        'Authorization': `Bearer ${token}` 
-      }
+      `${variables.proxy}/admin/restaurants/${id}`,
+      data, 
+      {headers: {'Authorization': `Bearer ${token}`}}
     );
   }
 };
