@@ -49,33 +49,33 @@
 }
 
 .RestListEl.checked{
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: var(--color_24);
 }
 .RestListEl .edit-btn{
-    color: rgb(0, 140, 255);
+    color: var(--color_25);
     font-size: 1em;
     border-radius: 2px;
 }.RestListEl .edit-btn:hover{
-    background-color: rgb(233, 225, 214);
+    background-color: var(--color_20);
 }.RestListEl .edit-btn:active{
-    background-color: rgb(0, 140, 255);
-    color: white;
+    background-color: var(--color_25);
+    color: var(--white);
 }
 .RestListEl .del-btn{
-    color: rgb(255, 0, 0);
+    color: var(--color_26);
     font-size: 1em;
     border-radius: 2px;
 }.RestListEl .del-btn:hover{
-    background-color: rgb(233, 225, 214);
+    background-color: var(--color_20);
 }.RestListEl .del-btn:active{
-    background-color: rgb(255, 0, 0);
-    color: white;
+    background-color: var(--color_26);
+    color: var(--white);
 }
 .RestListEl a{
-    color: rgb(0, 140, 255);
+    color: var(--color_25);
 }
 .RestListEl button{
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: var(--color_27);
 }
 .RestListEl .actions{
     display: flex;
