@@ -42,6 +42,9 @@ const LogIn = () => {
         <div>
           <button type="submit">Zaloguj się</button>
         </div>
+        <div>
+          <button onClick={() => navigate('/register')}>link</button>
+        </div>
       </form>
       </div>
     </div>
