@@ -18,16 +18,16 @@ import React from "react";
 export const GlobalCtx = React.createContext();
 
 function App() {
-  const [user, setUser] = React.useState({ loggedIn: true, role: 'admin' });
-  const [accessToken, setAccessToken] = React.useState(null);
+  const [user, setUser] = React.useState({ loggedIn: false, role: null, accessToken: null });
+
+  console.log(user)
 
   return (
     <HelmetProvider>
       <Router>
         <div className="App">
           <GlobalCtx.Provider value={{
-            user, setUser,
-            accessToken, setAccessToken
+            user, setUser
           }}>
             <NavBar />
             <Routes>
