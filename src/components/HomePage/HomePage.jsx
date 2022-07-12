@@ -9,28 +9,16 @@ const HomePage = () => {
   // {document.title = "CetusFood | Strona główna"}
   const stepperData = [
   {
-    circClass: "circle1",
-    circContClass: "step-cont1",
-    circHeadingClass: "heading1",
-    circDescClass: "desc1",
     num: 1,
     heading: "01.Krok pierwszy",
     description: "Otrzymujesz na  Mail wiadomość z proźbą o złożenie zamówienia "
   },
   {
-    circClass: "circle2",
-    circContClass: "step-cont2",
-    circHeadingClass: "heading2",
-    circDescClass: "desc2",
     num: 2,
-    heading: "02.Krok pierwszy",
+    heading: "02.Krok drugi",
     description: "Wybierasz na aplikacji co chcesz zamówić"
   },
   {
-    circClass: "circle3",
-    circContClass: "step-cont3",
-    circHeadingClass: "heading3",
-    circDescClass: "desc3",
     num: 3,
     heading: "03.Krok trzeci",
     description: "Zamawiamy Ci co chcesz!"
