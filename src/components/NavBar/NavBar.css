@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 10px 90px;
   color: var(--white);
   align-content: center;
@@ -170,7 +170,6 @@
   align-items: baseline;
   gap: 20px;
   font-size: 20px;
-  position: relative;
   bottom: 2rem;
   height: 100%;
 }

@@ -3,6 +3,7 @@ import './NavBar.css';
 import { NavLink } from 'react-router-dom';
 import cetusik from '../../images/cetusFood2.png';
 import { GlobalCtx } from '../../App';
+import UserSubmenu from './UserSubmenu/UserSubmenu';
 
 const NavBar = () => {
   const GCtx = React.useContext(GlobalCtx);
@@ -18,7 +19,7 @@ const NavBar = () => {
         {GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/order'>Zamów jedzenie</NavLink>}
         {!GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/log-in'>Zaloguj się</NavLink>}
         {GCtx.user.role === 'admin' && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/admin-panel'>Panel administratora</NavLink>}
-        
+        {GCtx.user.loggedIn && <UserSubmenu />}
       </div>
     </div>
   )

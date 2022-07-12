@@ -6,9 +6,15 @@ export const logInUser = (email, password) => {
     password: password,
   });
 };
-export const logOutUser = () => {};
+export const logOutUser = () => {
+    axios.post('https://api.foodapp.academy.st.cetuspro.com/auth/logout')
+};
 export const refreshToken = () => {};
-export const getUserRole = () => {};
+export const getUserRole = (token) => {
+    return axios.get('https://api.foodapp.academy.st.cetuspro.com/auth/role', 
+    {headers: {'Authorization': `Bearer ${token}`}}
+    )
+};
 export const registerUser = (email, password, password2) => {
   return axios.post(
     "https://api.foodapp.academy.st.cetuspro.com/public/account/register",

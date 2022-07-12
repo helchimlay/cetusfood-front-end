@@ -1,0 +1,44 @@
+.UserSubmenu{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button.main-btn{
+        background-color: rgba(255, 255, 255, 0.05);
+        font-size: 1em;
+        width: 70px;
+        aspect-ratio: 1;
+        color: white;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    .submenu{
+        background-color: rgb(56, 56, 56);
+        position: absolute;
+        top: 100%;
+        width: 230px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-size: .7em;
+            margin: 5px;
+        }
+        button.log-out{
+            font-size: .7em;
+            color: red;
+            background-color: transparent;
+            margin: 10px 0;
+            &:hover{
+                background-color: rgba(255, 0, 0, 0.7);
+                color: white;
+            }
+        }
+    }
+}
