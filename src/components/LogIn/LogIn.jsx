@@ -22,7 +22,6 @@ const LogIn = () => {
     }
     
 
-<<<<<<< HEAD
   return (
     <div className='LogIn'>
       <Helmet>
@@ -47,31 +46,6 @@ const LogIn = () => {
       </div>
     </div>
   )
-=======
-    return (
-        <div className='LogIn'>
-            <Helmet>
-                <title>CetusFood | Logowanie</title>
-            </Helmet>
-
-            <h3 className="title">Zaloguj się na swoje konto</h3>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor={emailId}>Email: </label>
-                    <input onChange={updateFormData} type="email" name="email" id={emailId} />
-                </div>
-                <div>
-                    <label htmlFor={passwId}>Hasło: </label>
-                    <input onChange={updateFormData} type="password" name="password" id={passwId} />
-                </div>
-                <div>
-                    <button type="submit">Zaloguj się</button>
-                    <p>Nie masz jeszcze konta? <NavLink to='/register'>Załóż nowe konto</NavLink></p>
-                </div>
-            </form>
-        </div>
-    )
->>>>>>> b80b37f11015fe714a9ce83c24a8fa9e4e7efc1f
 }
 
 export default LogIn;
