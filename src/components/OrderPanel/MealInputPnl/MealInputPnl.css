@@ -34,7 +34,7 @@
     font-size: .8em;
     color: black;
 }
-.MealInputPnl div button{
+.MealInputPnl div:not(div.list) button{
     border: 1px solid rgb(0, 153, 255);
     font-size: 1em;
     display: inline-flex;
@@ -68,9 +68,9 @@
     font-size: .8em;
     border-color: red;
     color: white;
-    aspect-ratio: 1.3;
     background-color: red;
     border-radius: 3px;
+    padding: 10px 20px;
 }.MealInputPnl .list button:hover{
     background-color: rgb(212, 0, 0);
     border-color: rgb(212, 0, 0);

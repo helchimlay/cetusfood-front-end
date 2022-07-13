@@ -20,11 +20,7 @@ const OrderPanel = () => {
 
     React.useEffect(() => {
         user.loggedIn && getRestaurants(user.accessToken).then(res => setRestList(res.data));
-    }, [])
-
-    const handleSubmit = e => {
-        e.preventDefault();
-    }
+    }, []);
 
     console.log(formData);
 
@@ -41,11 +37,11 @@ const OrderPanel = () => {
             }}>
                 {user.loggedIn ? (<>
                     <Stepper />
-                    <form onSubmit={handleSubmit}>
+                    <div>
                         {step === 0 && <RestGridPnl />}
                         {step === 1 && <MealInputPnl />}
                         {step === 2 && <FinalizationPnl />}
-                    </form>
+                    </div>
                 </>) : (<>
                     <div className="error">
                         <h3>Musisz być zalogowany aby złożyć zamówienie.</h3>

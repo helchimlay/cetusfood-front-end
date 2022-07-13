@@ -8,8 +8,6 @@ const RestGridEl = ({ data }) => {
     const handleRadioChange = () => {
       Ctx.setFormData({ restId: data.id, products: [] });
     }
-    console.log(data)
-
   return (
     <label className='RestGridEl' htmlFor={elId}>
         <input type="radio" name={'rest-list-radio'} id={elId} checked={Ctx?.formData?.restId===data.id} onChange={handleRadioChange} />
