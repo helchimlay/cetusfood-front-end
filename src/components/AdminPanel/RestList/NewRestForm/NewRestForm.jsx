@@ -23,12 +23,6 @@ const AddNewRestForm = () => {
             { type: 'email', name: 'email', placeholder: 'email', id: 'email', label: 'Email' },
             { type: 'text', name: 'url', placeholder: 'url', id: 'url', label: 'Link do strony' },
             { type: 'text', name: 'logoUrl', placeholder: 'logo url', id: 'logoUrl', label: 'Link do loga' },
-            // {
-            //     type: 'radio', label: 'Typ konta', name: 'test', id: 'test', options: [
-            //         { value: 'user', label: 'użytkownik standardowy', id: 'user' },
-            //         { value: 'admin', label: 'administrator', id: 'admin' },
-            //     ]
-            // }
         ]}
             sendingFunc={addRestaurant}
             linkTo='../restaurants'

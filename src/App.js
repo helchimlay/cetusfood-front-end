@@ -21,6 +21,8 @@ import { HelmetProvider } from "react-helmet-async";
 import React from "react";
 import { getUserRole } from "./services/Auth";
 import UsersList from "./components/AdminPanel/UsersList/UsersList";
+import NewUserForm from "./components/AdminPanel/UsersList/Forms/NewUserForm";
+import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
 
 export const GlobalCtx = React.createContext();
 
@@ -81,6 +83,8 @@ function App() {
                   />
 
                   <Route path="users" element={<UsersList />} />
+                  <Route path="users/add-new" element={<NewUserForm />} />
+                  <Route path="users/edit/:id" element={<EditUserForm />} />
                   <Route path="" element={<AdminPanelStart />} />
                 </Route>
               )}
