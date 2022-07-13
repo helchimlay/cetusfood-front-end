@@ -12,7 +12,8 @@ body{
     background-color: rgb(238, 238, 238);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(0, 183, 255);
+    background-color: var(--hrB);
+    border-radius: 20px;
 }
 input[type=text], input[type=email]{
     outline: none;
@@ -35,7 +36,7 @@ button{
 }
 body{
     background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(236,252,255,1) 33%, rgba(255,255,255,1) 50%, rgba(236,252,255,1) 66%, rgba(0,212,255,1) 100%);
-    background-size: 500% 500%;
+    background-size: 400% 600%;
     
 	animation: gradient 15s ease infinite;
 	height: 100vh;
