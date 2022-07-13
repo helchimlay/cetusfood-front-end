@@ -11,6 +11,16 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 20px;
+        .line{
+            width: 51%;
+            height: 3px;
+            background: var(--gray);
+            margin: auto;
+            top: 45px;
+            
+            position: relative;
+            
+            }
         .step-cont{
             flex-direction: column;
             display: flex;
@@ -46,12 +56,14 @@
                 background-color: var(--backB);
                 margin-bottom: 0;
             }
-            .desc{
-                text-align: center;
-                margin: 0;
-            }
+            
             .heading{
                 margin-top: 5px;
+                text-align: center;
+                .desc{
+                   
+                    margin: 0;
+                }
             }
         }
     }
@@ -75,16 +87,7 @@
     //     transform: scale(1.05);
     // }
     
-    .line{
-    width: 51%;
-    height: 3px;
-    background: var(--gray);
-    margin: auto;
-    top: 45px;
     
-    position: relative;
-    
-    }
     
     
     
@@ -102,6 +105,47 @@
     .step-cont:last-child{
         position: relative;
         bottom: 10px
+    }
+    @media (max-width: 420px){
+        .Stepper{
+            display: flex;
+            flex-direction: column;
+            max-height: 500px;
+            .line{
+                width: 3px;
+                height: 320px;
+                // top: 20px;
+                margin: 0;
+                left: 33px;
+            }
+            .step{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: left;
+                align-items: center;
+            
+            
+            .step-cont{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100vw;
+                &:last-child{
+                    position: static;
+                    bottom: 0;
+                }
+                .heading{
+                    text-align: center;
+                    margin: auto;
+                    max-width: 250px;
+                }
+            }
+            }
+            
+        }
     }
     
     
