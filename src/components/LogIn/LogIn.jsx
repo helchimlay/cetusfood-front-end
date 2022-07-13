@@ -51,7 +51,7 @@ const LogIn = () => {
                         <button type="submit">Zaloguj się</button>
                     </div>
                     <div>
-                        Nie masz jeszcze konta? <button onClick={() => navigate('/register')}>Stwórz nowe</button>
+                        <span>Nie masz jeszcze konta?</span>  <a onClick={() => navigate('/register')}>Stwórz nowe</a>
                     </div>
                 </form>
             </div>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("assets/color.css");
 body{
     font-family: 'Roboto', sans-serif;
@@ -31,4 +32,22 @@ button{
 }button:active{
     background-color: var(--color_1);
     color: var(--white);
+}
+body{
+    background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(236,252,255,1) 33%, rgba(255,255,255,1) 50%, rgba(236,252,255,1) 66%, rgba(0,212,255,1) 100%);
+    background-size: 500% 500%;
+    
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

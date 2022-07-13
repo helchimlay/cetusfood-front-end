@@ -1,3 +1,5 @@
+@import url("../../assets/color.css");
+
 * {
   padding: 0;
   margin: 0;
@@ -18,19 +20,21 @@
   margin: 2% auto;
   box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
   padding: 2%;
-  background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+  background: var(--gray);
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 .LogIn header {
   margin: 2% auto 10% auto;
   text-align: center;
+
 }
 .LogIn header h3 {
   font-size: 250%;
-  font-family: 'Playfair Display', serif;
-  color: #3e403f;
+  font-family: 'Prompt', serif;
+  color: var(--hrB);
 }
-.LogIn header p {letter-spacing: 0.05em;}
+.LogIn header p {letter-spacing: 0.05em; color: white;}
 
 .LogIn input[type="email"],.LogIn input[type="password"]{
   width: 250px;
@@ -50,6 +54,9 @@
   transition: 0.2s linear;
   
 }
+.LogIn input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+}
 /* focus  */
 .LogIn input:focus {
   transform: translateX(-2px);
@@ -58,6 +65,7 @@
 .LogIn button {
     display: inline-block;
     color: #252537;
+    font-family: 'Prompt', sans-serif;
   
     width: 250px;
     height: 50px;
@@ -77,13 +85,23 @@
     letter-spacing: 0.05em;
 }
 .LogIn button:hover {
-    transform: translatey(3px);
+    transform: translateY(3px);
     box-shadow: none;
+    background-color: var(--hrB);
+    color: white;
 }
 
 /* buttons hover Animation */
 .LogIn button:hover {
     animation: ani9 0.4s ease-in-out infinite alternate;
+}
+.LogIn span{
+  color: white;
+}
+.LogIn a{
+  text-decoration: underline;
+  color: deepskyblue;
+  cursor: pointer;
 }
 @keyframes ani9 {
     0% {
