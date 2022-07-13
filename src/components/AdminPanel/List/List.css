@@ -10,7 +10,7 @@
 .List .main-table td, .List .main-table th{
     padding: 6px 15px;
     text-align: left;
-    font-size: .6em;
+    font-size: .5em;
     font-weight: 300;
 }
 .List .main-table tbody tr:hover{
@@ -96,4 +96,5 @@
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 5px;
+    min-width: 150px;
 }

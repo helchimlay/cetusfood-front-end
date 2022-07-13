@@ -7,6 +7,7 @@ import MealInputPnl from './MealInputPnl/MealInputPnl';
 import FinalizationPnl from './FinalizationPnl/FinalizationPnl';
 import { Helmet } from 'react-helmet-async';
 import { GlobalCtx } from '../../App';
+import { NavLink } from 'react-router-dom';
 
 export const OrderPnlCtx = React.createContext();
 
@@ -18,12 +19,8 @@ const OrderPanel = () => {
     const [formData, setFormData] = React.useState({ products: [] });
 
     React.useEffect(() => {
-        getRestaurants(user.accessToken).then(res => setRestList(res.data));
-    }, [])
-
-    const handleSubmit = e => {
-        e.preventDefault();
-    }
+        user.loggedIn && getRestaurants(user.accessToken).then(res => setRestList(res.data));
+    }, []);
 
     console.log(formData);
 
@@ -38,12 +35,19 @@ const OrderPanel = () => {
                 steps: steps, setSteps: setSteps,
                 formData: formData, setFormData: setFormData
             }}>
-                <Stepper />
-                <form onSubmit={handleSubmit}>
-                    {step === 0 && <RestGridPnl />}
-                    {step === 1 && <MealInputPnl />}
-                    {step === 2 && <FinalizationPnl />}
-                </form>
+                {user.loggedIn ? (<>
+                    <Stepper />
+                    <div>
+                        {step === 0 && <RestGridPnl />}
+                        {step === 1 && <MealInputPnl />}
+                        {step === 2 && <FinalizationPnl />}
+                    </div>
+                </>) : (<>
+                    <div className="error">
+                        <h3>Musisz być zalogowany aby złożyć zamówienie.</h3>
+                        <NavLink to='/log-in'>Zaloguj się tutaj</NavLink>
+                    </div>
+                </>)}
             </OrderPnlCtx.Provider>
         </div>
     )

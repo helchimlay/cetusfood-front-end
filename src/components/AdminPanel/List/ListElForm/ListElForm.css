@@ -15,6 +15,7 @@
     text-decoration: none;
     font-family: inherit;
     color: black !important;
+    width: 500px;
 }.ListElForm input:focus{
     background-color: var(--color_24);
     color: var(--color_20);

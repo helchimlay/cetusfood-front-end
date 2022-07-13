@@ -1,8 +1,6 @@
 import React from 'react';
 import { OrderPnlCtx } from '../OrderPanel';
 
-import XdImg from './mc.png';
-
 const RestGridEl = ({ data }) => {
     const Ctx = React.useContext(OrderPnlCtx);
     const elId = React.useId();
@@ -10,16 +8,17 @@ const RestGridEl = ({ data }) => {
     const handleRadioChange = () => {
       Ctx.setFormData({ restId: data.id, products: [] });
     }
-
   return (
     <label className='RestGridEl' htmlFor={elId}>
         <input type="radio" name={'rest-list-radio'} id={elId} checked={Ctx?.formData?.restId===data.id} onChange={handleRadioChange} />
         <span>
             <span className="name"><span>{data.name}</span></span>
-            <span className="img" style={{backgroundImage: `url(${XdImg})`}}></span>
+            <span className="img-container">
+                <span className="img" style={{backgroundImage: `url(${data.logoUrl})`}}></span>
+            </span>
         </span>
     </label>
   )
 }
 
-export default RestGridEl
+export default RestGridEl;

@@ -20,8 +20,8 @@ const MealInputPnl = () => {
                 <a target='_blank' rel="noreferrer" href={`https://${Ctx.restList.filter(v => v.id===Ctx?.formData?.restId)[0].url}`}>Link do strony <span>{Ctx.restList.filter(v => v.id===Ctx?.formData?.restId)[0].name}</span></a>
             </label>
             <div>
-                <input ref={inputRef} type="text" id='i-text' placeholder='Wpisz tutaj...' autoComplete='off'/>
-                <button type='buttom' onClick={handleBtnClick}><i className='bx bx-plus'></i></button>
+                <input ref={inputRef} onKeyDown={e => e.key==='Enter' && handleBtnClick()} type="text" id='i-text' placeholder='Wpisz tutaj...' autoComplete='off'/>
+                <button type='button' onClick={handleBtnClick}><i className='bx bx-plus'></i></button>
             </div>
             <div className="list">
                 {Ctx.formData.products.map((el, i) => (
