@@ -20,6 +20,7 @@ import EditRestForm from "./components/AdminPanel/RestList/EditRestForm/EditRest
 import { HelmetProvider } from "react-helmet-async";
 import React from "react";
 import { getUserRole } from "./services/Auth";
+import UsersList from "./components/AdminPanel/UsersList/UsersList";
 
 export const GlobalCtx = React.createContext();
 
@@ -78,10 +79,8 @@ function App() {
                     path="restaurants/edit/:id"
                     element={<EditRestForm />}
                   />
-                  <Route
-                    path="users"
-                    element={<h3 className="title">Lista użytkowników</h3>}
-                  />
+
+                  <Route path="users" element={<UsersList />} />
                   <Route path="" element={<AdminPanelStart />} />
                 </Route>
               )}

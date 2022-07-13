@@ -1,3 +1,65 @@
 .FinalizationPnl{
-    
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 50vh;
+    *{
+        margin: 0;
+    }
+    h4{
+        font-size: 1.8em;
+        font-weight: 300;
+        margin-bottom: 10px;
+        span{
+            text-transform: uppercase;
+            color: rgb(255, 196, 0);
+            font-weight: 600;
+        }
+    }
+    .list{
+        margin-left: 5px;
+        h5{
+            font-size: 1em;
+            font-weight: 300;
+        }
+        p{
+            margin-left: 12px;
+            font-size: .9em;
+            font-weight: 300;
+        }
+    }
+    div{
+        button{
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            border: 4px solid rgb(255, 196, 0);
+            font-size: .9em;
+            border-radius: 3px;
+            color: rgb(148, 113, 0);
+            background-color: transparent;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(255, 196, 0);
+                color: white;
+            }
+            &:active{
+                background-color: rgb(231, 177, 0);
+                border-color: rgb(231, 177, 0);
+                color: white;
+            }
+        }
+    }
+    .rest-logo{
+        position: absolute;
+        right: 0;
+        top: 70vh;
+        transform: translateY(-50%);
+        width: 50vw;
+        opacity: .2;
+        z-index: -100;
+    }
 }
