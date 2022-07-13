@@ -44,9 +44,17 @@
   text-align: center;
   white-space: nowrap;
 }
-.RestGridEl > span .img {
+.RestGridEl > span .img-container {
   height: 100%;
+  position: relative;
+  background-color: rgb(58, 58, 58);
+}
+.RestGridEl > span .img-container .img {
   background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
 }
 
 @media screen and (max-width: 700px) {

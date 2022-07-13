@@ -2,13 +2,15 @@ import React from 'react';
 import { editRestaurant, getRestaurantsById } from '../../../../services/RestaurationsList';
 import { useParams } from 'react-router-dom';
 import EditListElForm from '../../List/ListElForm/EditListElForm';
+import { GlobalCtx } from '../../../../App';
 
 const EditRestForm = () => {
     const { id } = useParams();
     const [elData, setElData] = React.useState(null);
+    const { user } = React.useContext(GlobalCtx);
 
     React.useEffect(() => {
-        getRestaurantsById(id).then(res => setElData(res.data));
+        getRestaurantsById(id, user.accessToken).then(res => setElData(res.data));
     }, [])
 
     console.log(elData)

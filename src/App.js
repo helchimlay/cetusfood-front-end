@@ -65,11 +65,11 @@ function App() {
             <NavBar />
             <Routes>
               <Route path="/" element={<HomePage />} exact />
-              {user.loggedIn && (
-                <Route path="/order" element={<OrderPanel />} />
-              )}
+              <Route path="/order" element={<OrderPanel />} />
               {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}
-              {!user.loggedIn && <Route path="/register" element={<Register />} />}
+              {!user.loggedIn && (
+                <Route path="/register" element={<Register />} />
+              )}
               {user.role === "admin" && (
                 <Route path="/admin-panel" element={<AdminPanel />}>
                   <Route path="restaurants" element={<RestList />} />

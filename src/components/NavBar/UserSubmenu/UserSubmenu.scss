@@ -27,18 +27,24 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        h3{
+            font-size: .6em;
+            margin: 7px;
+            font-weight: 300;
+        }
         p{
-            font-size: .7em;
+            font-size: .5em;
             margin: 5px;
         }
         button.log-out{
             font-size: .7em;
-            color: red;
+            color: rgba(255, 0, 0, 0.747);
             background-color: transparent;
             margin: 10px 0;
+            width: 100%;
             &:hover{
-                background-color: rgba(255, 0, 0, 0.7);
-                color: white;
+                background-color: rgba(255, 0, 0, 0.15);
+                color: red;
             }
         }
     }

@@ -16,7 +16,7 @@ const NavBar = () => {
       <label id="burger" htmlFor="menu-toggle"></label>
       <div className="links">
         <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/'>Główna</NavLink>
-        {GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/order'>Złóż zamówienie</NavLink>}
+        <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/order'>Złóż zamówienie</NavLink>
         {!GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/log-in'>Zaloguj się</NavLink>}
         {GCtx.user.role === 'admin' && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/admin-panel'>Panel administratora</NavLink>}
         {GCtx.user.loggedIn && <UserSubmenu />}

@@ -25,7 +25,7 @@ const UserSubmenu = () => {
             <button className='main-btn' onClick={() => setSubmenuON(prev => !prev)}><i class='bx bxs-user'></i></button>
             {submenuON && (
                 <div className='submenu'>
-                    <p>Jesteś zalogowany</p>
+                    <h3>Jesteś zalogowany</h3>
                     <p>Typ konta: {user.role}</p>
                     <button onClick={handleLogOutBtn} className='log-out'>Wyloguj się</button>
                 </div>

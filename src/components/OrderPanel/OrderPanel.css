@@ -1,16 +1,35 @@
-.OrderPanel{
-    min-height: 100vh;
+.OrderPanel {
+  min-height: 100vh;
+  font-size: 30px;
 }
-.OrderPanel form{
-    height: 70vh;
-    overflow-y: scroll;
-    margin: 0 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.OrderPanel form {
+  height: 70vh;
+  overflow-y: scroll;
+  margin: 0 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.OrderPanel .error {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.OrderPanel .error h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.OrderPanel .error a {
+    color: royalblue;
+    text-decoration: none;
+}.OrderPanel .error a:hover {
+    text-decoration: underline;
 }
 
-
-@media screen and (max-width: 700px){
-    .OrderPanel form{
-        margin: 0 10px;
-    }
+@media screen and (max-width: 700px) {
+  .OrderPanel form {
+    margin: 0 10px;
+  }
 }
