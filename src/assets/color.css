@@ -42,4 +42,7 @@
     --color_31 : #292c2f0c;
     --color_32 : #292c2f2a;
     --color_33 : #292c2f2d;
+    --gray: rgb(64, 68, 73);
+    --hrB: lightblue;
+    --grad: linear-gradient(45deg, rgba(64,68,73,0.75) 0%, rgba(64,68,73,0.5) 100%);
 }

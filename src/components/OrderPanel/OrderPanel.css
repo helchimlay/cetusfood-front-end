@@ -1,5 +1,6 @@
 .OrderPanel{
     min-height: 100vh;
+    background-color: white;
 }
 .OrderPanel form{
     height: 70vh;

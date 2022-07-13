@@ -1,3 +1,4 @@
+@import url("../../assets/color.css");
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +19,7 @@
   margin: 2% auto;
   box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
   padding: 2%;
-  background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+  background-color: var(--gray);
   text-align: center;
 }
 .Register header {
@@ -27,8 +28,8 @@
 }
 .Register  header h3 {
   font-size: 250%;
-  font-family: 'Playfair Display', serif;
-  color: #3e403f;
+  font-family: 'Prompt', serif;
+  color: var(--hrB);
 }
 .Register header p {letter-spacing: 0.05em;}
 
@@ -58,6 +59,7 @@
 .Register button {
     display: inline-block;
     color: #252537;
+    font-family: 'Prompt', sans-serif;
   
     width: 250px;
     height: 50px;
@@ -79,6 +81,8 @@
 .Register button:hover {
     transform: translatey(3px);
     box-shadow: none;
+    background-color: var(--hrB);
+    color: white;
 }
 
 /* buttons hover Animation */

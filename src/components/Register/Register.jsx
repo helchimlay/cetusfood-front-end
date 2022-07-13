@@ -37,7 +37,7 @@ const Register = () => {
           <input onChange={updateFormData} type="password" name="password" required placeholder='Hasło' id={passwId} />
         </div>
         <div>
-          <input onChange={updateFormData} type="password" name="password2" required placeholder='Hasło' id={passwId2} />
+          <input onChange={updateFormData} type="password" name="password2" required placeholder='Powtórz Hasło' id={passwId2} />
         </div>
         <div>
           <button type="submit">Stwórz konto</button>
