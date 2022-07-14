@@ -1,7 +1,8 @@
 @import url("../../assets/color.css");
 body {
-	margin: 0;;
-	padding: 0;;
+	margin: 0;
+	padding: 0;
+
 }
 .Footer {
 	background-color: var(--color_14);
@@ -11,8 +12,14 @@ body {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+	
 }
- 
+@media(min-width: 1920px){
+	.Footer{
+		position: absolute;
+		bottom: 0%;
+	}
+}
 .Footer .footer-left,
 .Footer  .footer-center,
 .Footer  .footer-right{
