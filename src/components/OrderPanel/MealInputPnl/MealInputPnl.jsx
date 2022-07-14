@@ -27,6 +27,7 @@ const MealInputPnl = () => {
                 {Ctx.formData.products.map((el, i) => (
                     <p key={i}><span>{i+1}. {el[0]}</span><button type='button' onClick={() => Ctx.setFormData({ ...Ctx.formData, products: [ ...Ctx.formData.products.filter(v => v[1]!==el[1]) ] })}><i className='bx bx-trash-alt'></i></button></p>
                 ))}
+                {!Ctx.formData.products[0] && <h4>Brak elementów</h4>}
             </div>
         </>) : <label>Nie wybrano restauracji</label>}
         

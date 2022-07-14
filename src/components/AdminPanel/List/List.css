@@ -43,8 +43,8 @@
 }.List .opt-bar button:hover, .List .opt-bar a:hover{
     background-color: var(--color_23);
 }.List .opt-bar button:active, .List .opt-bar a:active{
-    background-color: var(--color_24);
-    color: var(--color_20);
+    background-color: rgb(59, 59, 59);
+    color: white;
 }
 .List .opt-bar input{
     background-color: var(--color_20);
@@ -53,8 +53,8 @@
     font-family: inherit;
     color: var(--black);
 }.List .opt-bar input:focus{
-    background-color: var(--color_24);
-    color: var(--color_20);
+    background-color: rgb(59, 59, 59);
+    color: white;
 }
 .List .opt-bar button i, .List .opt-bar a i{
     font-size: 15px;

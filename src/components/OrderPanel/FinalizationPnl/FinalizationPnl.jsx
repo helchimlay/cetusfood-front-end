@@ -28,9 +28,10 @@ const FinalizationPnl = () => {
             <div className='list'>
                 <h5>Lista produktów: </h5>
                 {Ctx.formData.products.map((el, i) => <p key={i}>{i+1}. {el[0]}</p>)}
+                {!Ctx.formData.products[0] && <h4>Brak produktów</h4>}
             </div>
         <div>
-            <button type='button' onClick={order}>Potwierdź zamówienie</button>
+            <button disabled={!Ctx.formData.products[0]} type='button' onClick={order}>Potwierdź zamówienie</button>
         </div>
         </div>
     </div>

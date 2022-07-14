@@ -1,5 +1,8 @@
 import React from 'react';
 import { getAccountById } from '../../../../services/Users';
+import { useParams } from 'react-router-dom';
+import { GlobalCtx } from '../../../../App';
+import EditListElForm from '../../List/ListElForm/EditListElForm';
 
 const EditUserForm = () => {
     const { id } = useParams();
@@ -27,10 +30,10 @@ const EditUserForm = () => {
                 }
             ]}
                 id={elData.id}
-                sendingFunc={editRestaurant}
+                sendingFunc={'xd'}
                 linkTo='../restaurants'
             />
-        </>) : <h3 className="title">Nie znaleziono restauracji</h3>}
+        </>) : <h3 className="title">Nie znaleziono użytkownika</h3>}
     </>)
 }
 

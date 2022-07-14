@@ -13,7 +13,7 @@ const UsersList = () => {
         <List
             getDataFunc={getAccounts}
             getDataByParamFunc={getAccountsByEmail}
-            dontShow={['id']}
+            dontShow={['id', 'password']}
             deleteElFunc={deleteAccount}
             buttons={[
                 {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
