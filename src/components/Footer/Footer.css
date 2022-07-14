@@ -14,12 +14,12 @@ body {
 	padding: 55px 50px;
 	
 }
-@media(min-width: 1920px){
+/* @media(min-width: 1920px){
 	.Footer{
 		position: absolute;
 		bottom: 0%;
 	}
-}
+} */
 .Footer .footer-left,
 .Footer  .footer-center,
 .Footer  .footer-right{
