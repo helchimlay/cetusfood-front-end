@@ -49,9 +49,10 @@
 }
 .logo  h3{
 	color:  var(--white);
-	font: normal 2.5em 'Cookie', cursive;
-  /* font-size: 2.5em;
-  font-family: 'Prompt', sans-serif; */
+  font-family: 'Cookie' ,cursive;
+  font-size: 2.5em;
+  /*font-family: 'Prompt', sans-serif; */
+  font-weight: 700;
 	margin: var(--zero);
 }
  

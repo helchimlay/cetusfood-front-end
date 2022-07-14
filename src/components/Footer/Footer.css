@@ -34,6 +34,7 @@ body {
 .Footer  h3{
 	color:  var(--white);
 	font:  normal 36px 'Cookie', cursive;
+	font-weight: 700;
 	/* font-size: 36px;
   	font-family: 'Prompt', sans-serif; */
 
