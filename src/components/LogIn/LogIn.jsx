@@ -12,11 +12,17 @@ const LogIn = () => {
     const emailId = React.useId();
     const passwId = React.useId();
     const [error, setError] = React.useState(null);
+    const [loginPending, setLoginPending] = React.useState(false);
+
+    React.useEffect(() => {
+        setLoginPending(false);
+    }, [user])
 
     const updateFormData = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
     const handleSubmit = e => {
+        setLoginPending(true);
         e.preventDefault();
         logInUser(formData.email, formData.password)
             .then(res => {
@@ -25,6 +31,8 @@ const LogIn = () => {
             })
             .catch(err => setError(err.response.data.message))
     }
+
+    console.log(loginPending);
 
 
     return (
@@ -48,7 +56,15 @@ const LogIn = () => {
                         <input onChange={updateFormData} type="password" name="password" placeholder="Hasło" required id={passwId} />
                     </div>
                     <div>
-                        <button type="submit">Zaloguj się</button>
+                        <button type="submit" disabled={loginPending}>
+                            {loginPending ? (<>
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </>) : <>Zaloguj się</>}
+                        </button>
                     </div>
                     <div>
                         <span>Nie masz jeszcze konta?</span>  <a onClick={() => navigate('/register')}>Stwórz nowe</a>
