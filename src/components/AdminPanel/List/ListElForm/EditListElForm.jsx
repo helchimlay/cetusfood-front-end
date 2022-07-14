@@ -13,6 +13,7 @@ const EditListElForm = ({ id, inputs, sendingFunc, linkTo }) => {
             values = { ...values, [el.name]: e.target.elements[el.name].value };
         })
         sendingFunc(id, values, user.accessToken);
+        console.log(values)
         e.preventDefault();
         navigate(linkTo);
     }

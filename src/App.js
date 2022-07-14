@@ -83,7 +83,7 @@ function App() {
                   />
 
                   <Route path="users" element={<UsersList />} />
-                  <Route path="users/add-new" element={<NewUserForm />} />
+                  {/* <Route path="users/add-new" element={<NewUserForm />} /> */}
                   <Route path="users/edit/:id" element={<EditUserForm />} />
                   <Route path="" element={<AdminPanelStart />} />
                 </Route>
