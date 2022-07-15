@@ -15,9 +15,7 @@ const UsersList = () => {
             getDataByParamFunc={getAccountsByEmail}
             dontShow={['id', 'password']}
             deleteElFunc={deleteAccount}
-            buttons={[
-                {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
-            ]}
+            buttons={[]}
             accessToken={user.accessToken}
         />
     </>)

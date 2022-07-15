@@ -1,5 +1,5 @@
 @import url("../../assets/color.css");
-body {
+body {	
 	margin: 0;
 	padding: 0;
 
@@ -12,7 +12,6 @@ body {
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
-	
 }
 /* @media(min-width: 1920px){
 	.Footer{
@@ -38,7 +37,7 @@ body {
 	/* font-size: 36px;
   	font-family: 'Prompt', sans-serif; */
 
-	margin: 0;;
+	margin: 0;
 }
  
 .Footer  h3 span{
@@ -60,7 +59,7 @@ body {
 	list-style: none;
 	width: 70px;
 	height: 50px;
-	text-align: center;;
+	text-align: center;
 }
 .Footer .footer-links a:hover{
 	font-size: 1.1em;
@@ -73,7 +72,7 @@ body {
 	color:  var(--color_17);
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;;
+	margin: 0;
 }
  
  
@@ -88,7 +87,7 @@ body {
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
-	text-align: center;;
+	text-align: center;
 	line-height: 42px;
 	margin: 10px 15px;
 	vertical-align: middle;
@@ -103,7 +102,7 @@ body {
 	display: inline-block;
 	color: var(--white);
 	vertical-align: middle;
-	margin: 0;;
+	margin: 0;
 }
  
 .Footer  .footer-center p span{
@@ -115,7 +114,7 @@ body {
  
 .Footer .footer-center p a{
 	color:  var(--color_15);
-	text-decoration: none;;
+	text-decoration: none;
 }
  
 .Footer  .footer-right{
@@ -127,14 +126,14 @@ body {
 	color:  var(--color_19);
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0;;
+	margin: 0;
 }
  
 .Footer  .footer-company-about span{
 	display: block;
 	color:  var(--white);
 	font-size:  14px;
-	font-weight: bold;;
+	font-weight: bold;
 	margin-bottom: 20px;
 }
  
@@ -152,7 +151,7 @@ body {
  
 	font-size: 20px;
 	color: var(--white);
-	text-align: center;;
+	text-align: center;
 	line-height: 35px;
 	margin-bottom: 5px;
 }
@@ -171,11 +170,11 @@ body {
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
-		text-align: center;;
+		text-align: center;
 	}
  
 	.Footer  .footer-center i{
-		margin-left: 0;;
+		margin-left: 0;
 	}
 	.Footer .main {
 		line-height: normal;
@@ -185,11 +184,11 @@ body {
     .Footer  .footer-links{
 	display: flex;
 	flex-direction: column;
-	align-items: center;;
+	align-items: center;
 	font-size: 2em;
    }
    .Footer  .footer-links a{
-     text-align: center;;
+     text-align: center;
 	 width: 300px;
    }
    .Footer  h3{

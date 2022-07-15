@@ -20,4 +20,20 @@ export const deleteAccount = async (id, token) => {
   return await axios.delete(`${variables.proxy}/admin/account/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
+<<<<<<< HEAD
 };
+=======
+};
+export const editAccount = async (id, data, token) => {
+  return await axios.put(
+    `${variables.proxy}/admin/account/${id}`,
+    {
+      email: data.email,
+      role: data.role,
+    },
+    {
+      headers: { Authorization: `Bearer ${token}` },
+    }
+  );
+};
+>>>>>>> 9d9aefa08893b578a47c8e56deb797dcee815b06

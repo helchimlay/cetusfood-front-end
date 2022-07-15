@@ -8,12 +8,7 @@ const NewUserForm = () => {
         <NewListElForm inputs={[
             { type: 'email', name: 'email', placeholder: 'email', id: 'email', label: 'Email' },
             { type: 'text', name: 'password', placeholder: 'hasło', id: 'password', label: 'Hasło' },
-            {
-                type: 'radio', label: 'Typ konta', name: 'role', id: 'role', options: [
-                    { value: 'user', label: 'użytkownik standardowy', id: 'user' },
-                    { value: 'admin', label: 'administrator', id: 'admin' },
-                ]
-            }
+            { type: 'text', name: 'password2', placeholder: 'powtórz hasło', id: 'password2', label: 'Powtórz hasło' }
         ]}
             sendingFunc={registerUser}
             linkTo='../users'
