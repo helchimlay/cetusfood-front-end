@@ -112,11 +112,15 @@
             flex-direction: column;
             max-height: 500px;
             .line{
-                width: 3px;
-                height: 320px;
-                // top: 20px;
+                width: 500px;
+                // // height: 320px;
+                 top: 200px;
                 margin: 0;
-                left: 33px;
+                left: -65px;
+                
+                transform: rotate(90deg);
+                position: relative;
+                float: left;
             }
             .step{
                 display: flex;
