@@ -20,9 +20,7 @@ const OrderPanel = () => {
 
     React.useEffect(() => {
         user.loggedIn && getRestaurants(user.accessToken).then(res => setRestList(res.data));
-    }, []);
-
-    console.log(formData);
+    }, [user]);
 
     return (
         <div className='OrderPanel'>
@@ -35,9 +33,12 @@ const OrderPanel = () => {
                 steps: steps, setSteps: setSteps,
                 formData: formData, setFormData: setFormData
             }}>
+                {formData.restId && (
+                    <img className='bg-logo' src={restList.filter(v => v.id === formData.restId)[0].logoUrl} />
+                )}
                 {user.loggedIn ? (<>
                     <Stepper />
-                    <div>
+                    <div className='content'>
                         {step === 0 && <RestGridPnl />}
                         {step === 1 && <MealInputPnl />}
                         {step === 2 && <FinalizationPnl />}
@@ -48,6 +49,7 @@ const OrderPanel = () => {
                         <NavLink to='/log-in'>Zaloguj się tutaj</NavLink>
                     </div>
                 </>)}
+
             </OrderPnlCtx.Provider>
         </div>
     )

@@ -7,9 +7,17 @@
     height: 100%;
     font-size: 30px;
     padding: 50px 0;
+    z-index: 100;
 }
-.MealInputPnl label{
-    font-size: 1.2em;
+.MealInputPnl h4{
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.MealInputPnl h4 span{
+    text-transform: uppercase;
+    color: rgb(255, 196, 0);
+    font-weight: 600;
 }
 .MealInputPnl label a, .MealInputPnl label span{
     font-size: .7em;
@@ -33,6 +41,7 @@
     width: 88%;
     font-size: .8em;
     color: black;
+    background-color: transparent;
 }
 .MealInputPnl div:not(div.list) button{
     border: 1px solid rgb(0, 153, 255);

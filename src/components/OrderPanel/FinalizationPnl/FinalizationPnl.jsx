@@ -9,7 +9,6 @@ const FinalizationPnl = () => {
     const Ctx = React.useContext(OrderPnlCtx);
     const [popupOpened, setPopupOpened] = React.useState(false);
     const { user } = React.useContext(GlobalCtx);
-    const navigate = useNavigate();
 
     const order = () => {
         let restId = Ctx.formData.restId;
@@ -23,7 +22,6 @@ const FinalizationPnl = () => {
     return (
         <div className='FinalizationPnl'>
             {(Ctx.formData.products[0] && Ctx.formData.restId) ? (<>
-                <img className='rest-logo' src={Ctx.restList.filter(v => v.id === Ctx.formData.restId)[0].logoUrl} />
                 <div>
                     <h4>Restauracja: <span>{Ctx.restList.filter(v => v.id === Ctx.formData.restId)[0].name}</span></h4>
                     <div className='list'>

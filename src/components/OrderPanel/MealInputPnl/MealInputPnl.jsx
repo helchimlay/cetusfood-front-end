@@ -29,7 +29,7 @@ const MealInputPnl = () => {
                 ))}
                 {!Ctx.formData.products[0] && <h4>Brak elementów</h4>}
             </div>
-        </>) : <label>Nie wybrano restauracji</label>}
+        </>) : <h4>Nie wybrano restauracji</h4>}
         
     </div>
   )

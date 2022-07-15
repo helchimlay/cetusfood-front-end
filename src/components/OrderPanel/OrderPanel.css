@@ -2,6 +2,14 @@
     min-height: 100vh;
     background-color: white;
     font-size: 30px;
+    position: relative;
+    background-color: transparent;
+}
+.OrderPanel > div{
+    z-index: 100;
+}
+.OrderPanel > div.content{
+    padding-right: 30vw;
 }
 .OrderPanel form {
   height: 70vh;
@@ -27,6 +35,15 @@
     text-decoration: none;
 }.OrderPanel .error a:hover {
     text-decoration: underline;
+}
+.OrderPanel .bg-logo{
+    width: 70vh;
+    height: auto;
+    opacity: .2;
+    position: absolute;
+    right: 10%;
+    top: calc(100vh - 75%);
+    z-index: -1;
 }
 
 @media screen and (max-width: 700px) {
