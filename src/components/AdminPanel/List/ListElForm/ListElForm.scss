@@ -25,4 +25,10 @@
       flex-direction: column;
     }
   }
+  div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 5px;
+  }
 }

@@ -11,12 +11,12 @@ const LogIn = () => {
     const [formData, setFormData] = React.useState({});
     const emailId = React.useId();
     const passwId = React.useId();
-    const [error, setError] = React.useState(null);
+    const [error, setError] = React.useState([null, 1]);
     const [loginPending, setLoginPending] = React.useState(false);
 
     React.useEffect(() => {
         setLoginPending(false);
-    }, [user])
+    }, [user, error])
 
     const updateFormData = e => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,10 +29,8 @@ const LogIn = () => {
                 setUser(prev => ({ ...prev, accessToken: res.data }));
                 navigate('/');
             })
-            .catch(err => setError(err.response.data.message))
+            .catch(err => setError([err.response.data.message, Math.random()]))
     }
-
-    console.log(loginPending);
 
 
     return (
@@ -46,7 +44,7 @@ const LogIn = () => {
                     <p className='title_1'>używając swojej nazwy użytkownika i hasła</p>
                 </header>
                 <form onSubmit={handleSubmit}>
-                    {error && (
+                    {error[0] && (
                         <div className='error'>Niepoprawne dane logowania. Może literówka?</div>
                     )}
                     <div>

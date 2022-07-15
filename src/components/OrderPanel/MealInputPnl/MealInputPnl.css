@@ -7,6 +7,7 @@
     height: 100%;
     font-size: 30px;
     padding: 50px 0;
+    z-index: 100;
 }
 .MealInputPnl label{
     font-size: 1.2em;
@@ -33,6 +34,7 @@
     width: 88%;
     font-size: .8em;
     color: black;
+    background-color: transparent;
 }
 .MealInputPnl div:not(div.list) button{
     border: 1px solid rgb(0, 153, 255);

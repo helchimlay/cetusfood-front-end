@@ -58,6 +58,10 @@
 .LogIn input::placeholder{
   font-family: 'Montserrat', sans-serif;
 }
+.LogIn .error{
+    color: rgb(255, 94, 0);
+    font-size: 1.2em;
+}
 /* focus  */
 .LogIn input:focus {
   transform: translateX(-2px);
