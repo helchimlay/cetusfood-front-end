@@ -21,6 +21,7 @@ export const deleteAccount = async (id, token) => {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
+
 export const editAccount = async (id, data, token) => {
   return await axios.put(
     `${variables.proxy}/admin/account/${id}`,
@@ -33,3 +34,7 @@ export const editAccount = async (id, data, token) => {
     }
   );
 };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f4b57b1c8c8d0ceea3cb4b17ff33f415de3ec9b

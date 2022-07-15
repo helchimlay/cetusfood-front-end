@@ -38,7 +38,7 @@ const OrderPanel = () => {
                 )}
                 {user.loggedIn ? (<>
                     <Stepper />
-                    <div>
+                    <div className='content'>
                         {step === 0 && <RestGridPnl />}
                         {step === 1 && <MealInputPnl />}
                         {step === 2 && <FinalizationPnl />}

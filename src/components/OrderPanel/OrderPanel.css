@@ -8,6 +8,9 @@
 .OrderPanel > div{
     z-index: 100;
 }
+.OrderPanel > div.content{
+    padding-right: 30vw;
+}
 .OrderPanel form {
   height: 70vh;
   overflow-y: scroll;
