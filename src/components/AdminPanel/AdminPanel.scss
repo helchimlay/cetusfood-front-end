@@ -71,11 +71,15 @@
                         color: black;
                     }
                 }
+                &.sbpnl-open a:not(a.current){
+                   background-color: rgba(255, 255, 255, 0.15); 
+                }
             }
             .list{
                 background-color: rgba(218, 205, 190, 0.2);
                 padding: 5px;
                 border-radius: 0 0 3px 3px;
+                font-size: .9em;
                 a{
                     color: white;
                     text-align: center;
@@ -88,25 +92,17 @@
                         background-color: rgba(255, 255, 255, 0.1);
                     }
                     &.current{
-                        border-bottom: 1px solid rgb(218, 205, 190);
                         color: rgb(218, 205, 190);
                         border-radius: 3px 3px 0 0;
+                        text-decoration: underline;
                     }
                 }
             }
         }
     }
     .title{
-        font-size: 23px;
-        color: var(--white);
-        width: 80%;
-        display: block;
-        margin: 5px auto 10px auto;
-        border-bottom: 1px solid var(--white);
-        padding: 5px 0;
-        font-weight: 100;
-        white-space: nowrap;
-        text-align: center;
+        font-size: 1.3em;
+        font-weight: 200;
     }
 }
 
