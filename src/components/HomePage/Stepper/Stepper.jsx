@@ -4,7 +4,7 @@ import "./Stepper.scss";
 const Stepper = ({ items }) => {
   return (
     <div className="Stepper">
-      <div className="line" ></div>
+      {/* <hr className="line" ></hr> */}
       <div className="step">
         {items.map((el, i) => (
           <div key={i} className='step-cont'>
