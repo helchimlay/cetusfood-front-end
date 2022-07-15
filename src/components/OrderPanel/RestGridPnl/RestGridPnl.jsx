@@ -11,12 +11,6 @@ const RestGridPnl = () => {
       {Ctx?.restList.map((el, i) => (
         <RestGridEl data={el} key={i} />
       ))}
-       {Ctx?.restList.map((el, i) => (
-        <RestGridEl data={el} key={i} />
-      ))}
-       {Ctx?.restList.map((el, i) => (
-        <RestGridEl data={el} key={i} />
-      ))}
     </div>
   )
 }
