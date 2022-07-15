@@ -34,7 +34,3 @@ export const editAccount = async (id, data, token) => {
     }
   );
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> 2f4b57b1c8c8d0ceea3cb4b17ff33f415de3ec9b
