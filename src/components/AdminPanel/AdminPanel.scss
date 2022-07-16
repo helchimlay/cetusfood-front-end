@@ -111,21 +111,78 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 60px 20px;
     gap: 70px;
-}
-.AdminPanelStart a{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 3px;
-    color: var(--color_30);
-    border: 1px solid var(--color_31);
-}.AdminPanelStart a:hover{
-    background-color: var(--color_32);
-    border: 1px solid var(--color_33);
-}
-.AdminPanelStart a i{
-    font-size: 150px;
+    & > div{
+        height: 300px;
+        &:not(.has-sublist){
+            & > a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: black;
+                text-decoration: none;
+                font-size: 1.2em;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                &:hover{
+                    background-color: rgb(36, 42, 48);
+                    color: white;
+                }
+                i{
+                    font-size: 5em;
+                }
+            }
+        }
+        &.has-sublist{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column: span 2;
+            & > a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: black;
+                text-decoration: none;
+                font-size: 1.2em;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                &:hover{
+                    background-color: rgb(36, 42, 48);
+                    color: white;
+                }
+                i{
+                    font-size: 5em;
+                }
+            }
+            .list{
+                padding: 30px 30px 0 10px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                &::-webkit-scrollbar{
+                    width: 3px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+                a{
+                    display: block;
+                    font-size: 1.2em;
+                    color: black;
+                    text-decoration: none;
+                    padding: 5px;
+                    border-radius: 3px;
+                    &:not(:first-of-type){
+                        border-top: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+                    &:hover{
+                        background-color: rgb(36, 42, 48);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 }

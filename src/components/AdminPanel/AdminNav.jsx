@@ -19,7 +19,7 @@ const AdminNav = ({ links }) => {
                 <div className='link' key={i}>
                     <div className={`a ${subpanelsActive.includes(i)?'sbpnl-open':null}`}>
                         <NavLink className={({ isActive }) => {isActive && setStartSubpnl(i); return isActive ? 'current' : null}} to={link.to}>{link.name}</NavLink>
-                        {link.sublinks && <button><i onClick={() => handleBtnClick(i)} className='bx bx-chevron-down'></i></button>}
+                        {link.sublinks && <button><i onClick={() => handleBtnClick(i)} className={`bx ${subpanelsActive.includes(i)?'bx-chevron-up':'bx-chevron-down'}`}></i></button>}
                     </div>
                     {(link.sublinks && subpanelsActive.includes(i)) && (<>
                         <div className="list">
