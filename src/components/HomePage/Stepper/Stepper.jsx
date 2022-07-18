@@ -9,9 +9,9 @@ const Stepper = ({ items }) => {
         {items.map((el, i) => (
           <div key={i} className='step-cont'>
             <p className='circle'>{el.num}</p>
-            <p className='heading'>{el.heading}:
+            <div className='heading'>{el.heading}:
              <p className='desc'>{el.description}</p>
-            </p>
+            </div>
            
           </div>
         ))}
