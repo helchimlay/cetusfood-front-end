@@ -1,0 +1,66 @@
+.MenuGridPnl {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 10px 40px;
+  font-size: 30px;
+  .MenuEl {
+    height: 240px;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+      "name logo"
+      "name controls";
+    padding: 0;
+    &.active{
+        .product-name{
+            background-color: rgb(255, 166, 0);
+        }
+        .controls{
+            background-color: rgb(173, 113, 0);
+        }
+    }
+    .product-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        transform: rotate(270deg);
+        font-size: 0.6em;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      background-color: rgb(71, 71, 71);
+    }
+    .product-logo {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: transparent;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: rgb(49, 49, 49);
+      font-size: 0.7em;
+      button {
+        font-size: 1.2em;
+        padding: 0;
+        height: 70%;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+  }
+}

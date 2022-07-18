@@ -57,7 +57,11 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
                         <thead>
                             <tr>
                                 <th>Lp.</th><th></th>
-                                {Object.keys(data[0]).map((key, i) => dontShow.includes(key) || <th key={i}>{key}</th>)}
+                                {Object.keys(data[0]).map((key, i) => dontShow.includes(key) || (
+                                    <th key={i}>
+                                        {key}
+                                    </th>
+                                ))}
                             </tr>
                         </thead>
                         <tbody>

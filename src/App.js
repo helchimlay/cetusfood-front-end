@@ -23,7 +23,7 @@ import { getUserRole } from "./services/Auth";
 import UsersList from "./components/AdminPanel/UsersList/UsersList";
 import NewUserForm from "./components/AdminPanel/UsersList/Forms/NewUserForm";
 import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
-import AcceptQueue from "./components/AdminPanel/RestList/AcceptQueue/AcceptQueue";
+import AcceptQueue from "./components/AdminPanel/AcceptQueue/AcceptQueue";
 
 export const GlobalCtx = React.createContext();
 
