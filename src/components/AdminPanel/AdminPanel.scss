@@ -108,12 +108,13 @@
 
 .AdminPanelStart{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     padding: 60px 20px;
     gap: 70px;
     & > div{
         height: 300px;
         &:not(.has-sublist){
+            grid-column: span 2;
             & > a{
                 display: flex;
                 flex-direction: column;
@@ -136,8 +137,8 @@
         }
         &.has-sublist{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column: span 2;
+            grid-template-columns: 60% 40%;
+            grid-column: span 3;
             & > a{
                 display: flex;
                 flex-direction: column;
@@ -158,9 +159,11 @@
                 }
             }
             .list{
-                padding: 30px 30px 0 10px;
+                padding: 10px 30px 10px 10px;
                 overflow-y: scroll;
                 overflow-x: hidden;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
                 &::-webkit-scrollbar{
                     width: 3px;
                 }
@@ -173,13 +176,13 @@
                     color: black;
                     text-decoration: none;
                     padding: 5px;
-                    border-radius: 3px;
                     &:not(:first-of-type){
                         border-top: 1px solid rgba(0, 0, 0, 0.2);
                     }
                     &:hover{
                         background-color: rgb(36, 42, 48);
                         color: white;
+                        border-radius: 3px;
                     }
                 }
             }
