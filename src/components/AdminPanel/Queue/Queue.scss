@@ -1,0 +1,46 @@
+.Queue{
+    font-size: 30px;
+    .main-table{
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 30px;
+        td, th{
+            padding: 6px 15px;
+            text-align: left;
+            font-size: .5em;
+            font-weight: 300;
+        }
+        tbody tr:hover{
+            background-color: var(--color_21);
+        }
+        tr:not(tr:first-of-type) td{
+            border-top: 1px solid var(--color_22);
+        }
+        th{
+            text-transform: capitalize;
+            font-size: 0.7em;
+            font-weight: 300;
+            padding-bottom: 10px;
+        }
+        td{
+            button{
+                font-size: 1.2em;
+                border-radius: 3px;
+                &.red{
+                    color: red;
+                    &:hover{
+                        background-color: red;
+                        color: white;
+                    }
+                }
+                &.green{
+                    color: rgb(0, 172, 0);
+                    &:hover{
+                        background-color: rgb(0, 172, 0);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

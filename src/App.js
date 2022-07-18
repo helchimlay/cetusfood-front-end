@@ -23,6 +23,7 @@ import { getUserRole } from "./services/Auth";
 import UsersList from "./components/AdminPanel/UsersList/UsersList";
 import NewUserForm from "./components/AdminPanel/UsersList/Forms/NewUserForm";
 import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
+import AcceptQueue from "./components/AdminPanel/RestList/AcceptQueue/AcceptQueue";
 
 export const GlobalCtx = React.createContext();
 
@@ -83,6 +84,7 @@ function App() {
                   />
 
                   <Route path="users" element={<UsersList />} />
+                  <Route path="users/accept-queue" element={<AcceptQueue />} />
                   {/* <Route path="users/add-new" element={<NewUserForm />} /> */}
                   <Route path="users/edit/:id" element={<EditUserForm />} />
                   <Route path="" element={<AdminPanelStart />} />

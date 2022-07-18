@@ -1,0 +1,191 @@
+@import url("../../assets/color.css");
+.AdminPanel{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background-color: var(--color_28);
+    .content{
+        padding: 0 70px;
+    }
+    h3.title{
+        font-size: 30px;
+        font-weight: 300;
+        margin: 10px 0 20px 0;
+    }
+    nav.navigation{
+        width: 250px;
+        background-color: #292c2f;
+        color: var(--white);
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        .link{
+            margin: 10px 20px;
+            .a{
+                position: relative;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 3px;
+                a{
+                    background-color: transparent;
+                    color: white;
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                    &.current{
+                        background-color: rgb(218, 205, 190);
+                        color: black;
+                    }
+                }
+                button{
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    padding: 0;
+                    height: 80%;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    font-size: 1.5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    background-color: transparent;
+                    &:hover{
+                        background-color: rgba(255, 254, 253, 0.05);
+                        color: white;
+                    }
+                }
+                a.current ~ button{
+                    color: black;
+                    &:hover{
+                        background-color: rgb(228, 220, 211);
+                        color: black;
+                    }
+                }
+                &.sbpnl-open a:not(a.current){
+                   background-color: rgba(255, 255, 255, 0.15); 
+                }
+            }
+            .list{
+                background-color: rgba(218, 205, 190, 0.2);
+                padding: 5px;
+                border-radius: 0 0 3px 3px;
+                font-size: .9em;
+                a{
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    display: block;
+                    margin: 7px 0;
+                    padding: 5px 0;
+                    border-radius: 3px;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                    &.current{
+                        color: rgb(218, 205, 190);
+                        border-radius: 3px 3px 0 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 1.3em;
+        font-weight: 200;
+    }
+}
+
+.AdminPanelStart{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 60px 20px;
+    gap: 70px;
+    & > div{
+        height: 300px;
+        &:not(.has-sublist){
+            grid-column: span 2;
+            & > a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: black;
+                text-decoration: none;
+                font-size: 1.2em;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                &:hover{
+                    background-color: rgb(36, 42, 48);
+                    color: white;
+                }
+                i{
+                    font-size: 5em;
+                }
+            }
+        }
+        &.has-sublist{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-column: span 3;
+            & > a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                color: black;
+                text-decoration: none;
+                font-size: 1.2em;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 3px;
+                &:hover{
+                    background-color: rgb(36, 42, 48);
+                    color: white;
+                }
+                i{
+                    font-size: 5em;
+                }
+            }
+            .list{
+                padding: 10px 30px 10px 10px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                &::-webkit-scrollbar{
+                    width: 3px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+                a{
+                    display: block;
+                    font-size: 1.2em;
+                    color: black;
+                    text-decoration: none;
+                    padding: 5px;
+                    &:not(:first-of-type){
+                        border-top: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+                    &:hover{
+                        background-color: rgb(36, 42, 48);
+                        color: white;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

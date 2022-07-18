@@ -1,4 +1,13 @@
 {
-    "proxy2": "http://192.168.0.246:3000",
-    "proxy": "https://api.foodapp.academy.st.cetuspro.com"
+  "proxy2": "http://192.168.0.246:3000",
+  "proxy": "https://api.foodapp.academy.st.cetuspro.com",
+
+  "adminPnlNav": [
+    { "name": "Restauracje", "to": "restaurants" },
+    {
+      "name": "Użytkownicy",
+      "to": "users",
+      "sublinks": [{ "name": "Odblokowania", "to": "users/accept-queue" }]
+    }
+  ]
 }

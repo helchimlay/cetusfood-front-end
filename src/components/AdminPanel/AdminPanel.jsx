@@ -1,25 +1,23 @@
 import React from 'react';
-import './AdminPanel.css';
-import { Outlet, NavLink, Navigate } from 'react-router-dom';
+import './AdminPanel.scss';
+import { Outlet } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import AdminNav from './AdminNav';
+import variables from '../../assets/variables.json';
 
 const AdminPanel = () => {
-  // {document.title = "CetusFood | Panel admina"}
-  return (
-    <div className='AdminPanel'>
-      <Helmet>
-        <title>CetusFood | Panel admina</title>
-      </Helmet>
-        <nav className='navigation'>
-            <div className="title">Admin Panel</div>
-            <NavLink className={({isActive}) => isActive ? 'current' : null} to='restaurants'>Restauracje</NavLink>
-            <NavLink className={({isActive}) => isActive ? 'current' : null} to='users'>Użytkownicy</NavLink>
-        </nav>
-        <div className="content">
-            <Outlet />
+
+    return (
+        <div className='AdminPanel'>
+            <Helmet>
+                <title>CetusFood | Panel admina</title>
+            </Helmet>
+            <AdminNav links={variables.adminPnlNav} />
+            <div className="content">
+                <Outlet />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default AdminPanel;
