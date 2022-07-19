@@ -8,6 +8,7 @@ import FinalizationPnl from './FinalizationPnl/FinalizationPnl';
 import { Helmet } from 'react-helmet-async';
 import { GlobalCtx } from '../../App';
 import { NavLink } from 'react-router-dom';
+import MenuGridPnl from './MenuGridPnl/MenuGridPnl';
 
 export const OrderPnlCtx = React.createContext();
 
@@ -21,6 +22,8 @@ const OrderPanel = () => {
     React.useEffect(() => {
         user.loggedIn && getRestaurants(user.accessToken).then(res => setRestList(res.data));
     }, [user]);
+
+    console.log(formData);
 
     return (
         <div className='OrderPanel'>
@@ -40,7 +43,7 @@ const OrderPanel = () => {
                     <Stepper />
                     <div className='content'>
                         {step === 0 && <RestGridPnl />}
-                        {step === 1 && <MealInputPnl />}
+                        {step === 1 && <MenuGridPnl />}
                         {step === 2 && <FinalizationPnl />}
                     </div>
                 </>) : (<>
