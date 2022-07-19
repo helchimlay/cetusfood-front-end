@@ -19,7 +19,7 @@ const AcceptQueue = () => {
             show={['email']}
             buttons={[
                 {name: 'Zaakceptuj', boxIconClass: 'bx bxs-happy-alt', class: 'green'},
-                {name: 'Odrzuć', boxIconClass: 'bx bxs-sad', class: 'red'},
+                {name: 'Zbanuj', boxIconClass: 'bx bxs-sad', class: 'red'},
             ]}
         />
     </div>

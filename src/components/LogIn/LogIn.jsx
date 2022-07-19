@@ -32,7 +32,6 @@ const LogIn = () => {
             .catch(err => setError([err.response.data.message, Math.random()]))
     }
 
-
     return (
         <div className='LogIn'>
             <Helmet>

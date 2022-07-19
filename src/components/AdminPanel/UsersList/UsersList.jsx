@@ -13,7 +13,7 @@ const UsersList = () => {
         <List
             getDataFunc={getAccounts}
             getDataByParamFunc={getAccountsByEmail}
-            dontShow={['id', 'password']}
+            dontShow={['id', 'password', 'isVerified', 'verificationCode']}
             deleteElFunc={deleteAccount}
             buttons={[]}
             accessToken={user.accessToken}
