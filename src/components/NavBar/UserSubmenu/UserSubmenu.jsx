@@ -22,7 +22,7 @@ const UserSubmenu = () => {
 
     return (
         <div className='UserSubmenu'>
-            <button className='main-btn' onClick={() => setSubmenuON(prev => !prev)}><i class='bx bxs-user'></i></button>
+            <button className='main-btn' onClick={() => setSubmenuON(prev => !prev)}><i className='bx bxs-user'></i></button>
             {submenuON && (
                 <div className='submenu'>
                     <h3>Jesteś zalogowany</h3>

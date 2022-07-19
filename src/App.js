@@ -46,6 +46,7 @@ function App() {
         }))
       );
     }
+   
   }, []);
   React.useEffect(() => {
     if (user.accessToken) {
@@ -54,10 +55,14 @@ function App() {
       );
       localStorage.setItem("accessToken", user.accessToken);
     }
+    
   }, [user.accessToken]);
 
   console.log(user);
-
+  
+ 
+  // var audio = new Audio(Music);
+  // audio.play();
   return (
     <HelmetProvider>
       <Router>
