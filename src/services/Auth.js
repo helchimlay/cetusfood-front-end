@@ -24,5 +24,6 @@ export const registerUser = (email, password, password2) => {
   });
 };
 export const verifyEmail = (code) => {
-    return axios.post(`${variables.proxy}/public/account/verify/${code}`)
+    console.log(code)
+    return axios.get(`${variables.proxy}/public/account/verify/${code}`)
 }
