@@ -24,12 +24,7 @@ const EditRestForm = () => {
                     { type: 'email', name: 'email', placeholder: 'email', id: 'email', label: 'Email', default: elData.email },
                     { type: 'text', name: 'url', placeholder: 'url', id: 'url', label: 'Link do strony', default: elData.url },
                     { type: 'text', name: 'logoUrl', placeholder: 'logo url', id: 'logoUrl', label: 'Link do loga', default: elData.logoUrl },
-                    // {
-                    //     type: 'radio', label: 'Typ konta', name: 'test', id: 'test', default: 'user', options: [
-                    //         { value: 'user', label: 'użytkownik standardowy', id: 'user' },
-                    //         { value: 'admin', label: 'administrator', id: 'admin' },
-                    //     ]
-                    // }
+                    { type: 'link', name: 'Edytuj menu', link: 'menu' }
                 ]}
                     id={elData.id}
                     sendingFunc={editRestaurant}

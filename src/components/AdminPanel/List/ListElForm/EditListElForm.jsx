@@ -24,17 +24,21 @@ const EditListElForm = ({ id, inputs, sendingFunc, linkTo }) => {
                 <form onSubmit={handleSubmit}>
                     {inputs.map((el, i) => (
                         <div className='form-el' key={i}>
-                            {el.type === 'radio' ? (<>
+                            {el.type === 'link' && (<>
+                                <button onClick={() => navigate(el.link)}>{el.name}</button>
+                            </>)}
+                            {el.type === 'radio' && (<>
                                 <label>{el.label}</label>
                                 <div>
                                     {el.options.map((opt, ii) => (
                                         <p key={ii}>
-                                            <input defaultChecked={el.default===opt.value} type='radio' id={opt.id} value={opt.value} name={el.name} />
+                                            <input defaultChecked={el.default === opt.value} type='radio' id={opt.id} value={opt.value} name={el.name} />
                                             <label htmlFor={opt.id}>{opt.label}</label>
                                         </p>
                                     ))}
                                 </div>
-                            </>) : (<>
+                            </>)}
+                            {(el.type === 'email' || el.type === 'text') && (<>
                                 <label htmlFor={el.id}>{el.label}</label>
                                 <input defaultValue={el.default} type={el.type} name={el.name} id={el.id} placeholder={el.placeholder} required={true} />
                             </>)}

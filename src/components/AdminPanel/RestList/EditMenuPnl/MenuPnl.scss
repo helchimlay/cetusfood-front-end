@@ -1,0 +1,168 @@
+.EditMenuPnl {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  font-size: 30px;
+  .MenuEl {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+    .price {
+      font-style: italic;
+      padding: 5px;
+    }
+    .name {
+      padding: 5px;
+      font-size: 1 em;
+      text-transform: capitalize;
+    }
+    .image {
+      height: 80%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      &:hover{
+        button{
+            display: block;
+        }
+      }
+      button{
+        font-size: 1.2em;
+        border-radius: 3px;
+        display: none;
+        &.red{
+            background-color: red;
+            color: white;
+        }
+        &.blue{
+            background-color: rgb(0, 183, 255);
+            color: white;
+        }
+        
+      }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        align-items: baseline;
+        gap: 15px;
+        grid-column: span 2;
+        & > div {
+          position: relative;
+        }
+        span {
+          position: absolute;
+          left: 10px;
+          top: 0;
+          transform: translateY(-50%);
+          font-size: 0.5em;
+        }
+        div {
+          width: 100%;
+        }
+        input {
+          background-color: transparent;
+          width: 100%;
+          outline: 0;
+          border: 0;
+          border-bottom: 1px solid white;
+          padding: 5px 20px;
+          font-size: 0.8em;
+          color: white;
+        }
+        .buttons {
+          display: flex;
+          justify-content: flex-start;
+          align-items: baseline;
+          gap: 5px;
+          button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            text-align: left;
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+      }
+  }
+  .NewElForm {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 3px;
+    height: 250px;
+    i {
+      font-size: 4.5em;
+    }
+    &:not(.form):hover {
+      background-color: rgb(48, 48, 48);
+    }
+    &.form {
+      padding: 30px;
+      align-items: baseline;
+      gap: 15px;
+      grid-column: span 2;
+      & > div {
+        position: relative;
+      }
+      span {
+        position: absolute;
+        left: 10px;
+        top: 0;
+        transform: translateY(-50%);
+        font-size: 0.5em;
+      }
+      div {
+        width: 100%;
+      }
+      input {
+        background-color: transparent;
+        width: 100%;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid white;
+        padding: 5px 20px;
+        font-size: 0.8em;
+        color: white;
+      }
+      .buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 5px;
+        button {
+          background-color: transparent;
+          border: 1px solid white;
+          color: white;
+          text-align: left;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

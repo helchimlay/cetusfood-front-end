@@ -29,6 +29,12 @@
             margin-left: 12px;
             font-size: .9em;
             font-weight: 300;
+            span{
+                margin-left: 10px;
+                color: grey;
+                font-style: italic;
+                font-weight: 300;
+            }
         }
         h4{
             font-size: 1em;
@@ -48,14 +54,25 @@
             color: rgb(148, 113, 0);
             background-color: transparent;
             cursor: pointer;
+            span{
+                font-style: italic;
+                color: grey;
+                font-weight: 300;
+            }
             &:not(:disabled):hover{
                 background-color: rgb(255, 196, 0);
                 color: white;
+                span{
+                    color: inherit;
+                }
             }
             &:not(:disabled):active{
                 background-color: rgb(231, 177, 0);
                 border-color: rgb(231, 177, 0);
                 color: white;
+                span{
+                    color: inherit;
+                }
             }
             &:disabled{
                 border: 4px solid rgba(124, 110, 61, 0.3);
