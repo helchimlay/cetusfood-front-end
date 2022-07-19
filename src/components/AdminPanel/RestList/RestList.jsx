@@ -61,10 +61,13 @@ const RestList = () => {
         <List
             getDataFunc={getRestaurants}
             getDataByParamFunc={getRestaurantsByName}
-            dontShow={['id']}
+            dontShow={['id', 'logoUrl']}
             deleteElFunc={deleteRestaurant}
             buttons={[
                 {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
+            ]}
+            actionButtons={[
+                {boxIcon: 'bx bx-food-menu', onClick: (restId) => navigate(`edit/${restId}/menu`), title: 'menu'}
             ]}
             accessToken={user.accessToken}
         />
