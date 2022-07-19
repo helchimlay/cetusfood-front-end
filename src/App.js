@@ -23,7 +23,7 @@ import { getUserRole } from "./services/Auth";
 import UsersList from "./components/AdminPanel/UsersList/UsersList";
 import NewUserForm from "./components/AdminPanel/UsersList/Forms/NewUserForm";
 import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
-import AcceptQueue from "./components/AdminPanel/RestList/AcceptQueue/AcceptQueue";
+import AcceptQueue from "./components/AdminPanel/RestList/acceptQueue/acceptQueue";
 
 export const GlobalCtx = React.createContext();
 
@@ -44,6 +44,7 @@ function App() {
         }))
       );
     }
+   
   }, []);
   React.useEffect(() => {
     if (user.accessToken) {
@@ -52,10 +53,14 @@ function App() {
       );
       localStorage.setItem("accessToken", user.accessToken);
     }
+    
   }, [user.accessToken]);
 
   console.log(user);
-
+  
+ 
+  // var audio = new Audio(Music);
+  // audio.play();
   return (
     <HelmetProvider>
       <Router>
