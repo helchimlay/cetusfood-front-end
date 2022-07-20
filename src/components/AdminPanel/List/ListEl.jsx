@@ -34,7 +34,7 @@ const ListEl = ({ data, dontShow, i, setData }) => {
             <button title={el.title} key={i} onClick={() => el.onClick(data.id)}><i className={el.boxIcon}></i></button>
         ))}
         <button title='edytuj' className='edit-btn' onClick={() => navigate(`edit/${data.id}`)}><i className='bx bxs-edit'></i></button>
-        <button title='usuń' className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id, Ctx.accessToken) }}><i className='bx bx-trash-alt' ></i></button>
+        <button title='usuń' className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id, Ctx.accessToken); Ctx.setCounter(Ctx.counter+1) }}><i className='bx bx-trash-alt' ></i></button>
       </td>
     </tr>
   )

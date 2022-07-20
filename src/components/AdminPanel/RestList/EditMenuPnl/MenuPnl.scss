@@ -41,15 +41,19 @@
         font-size: 1.2em;
         border-radius: 3px;
         display: none;
-        &.red{
+        background-color: rgb(207, 192, 178);
+        color: rgb(36, 36, 36);
+        &:hover{
+            background-color: rgb(179, 165, 153);
+        }
+        &.red:active{
             background-color: red;
             color: white;
         }
-        &.blue{
+        &.blue:active{
             background-color: rgb(0, 183, 255);
             color: white;
         }
-        
       }
     }
     form {

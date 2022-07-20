@@ -8,10 +8,11 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
     const [selectedIds, setSelectedIds] = React.useState([]);
     const [data, setData] = React.useState([]);
     const searchBarRef = React.useRef();
+    const [counter, setCounter] = React.useState(0);
 
     React.useEffect(() => {
         setTimeout(() => fetchData(undefined, accessToken), 100)
-    }, [])
+    }, [counter])
     const fetchData = async (name, token) => {
         if (name && name !== '') {
             console.log(name, token)
@@ -25,6 +26,7 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
             deleteElFunc(el, accessToken);
         })
         setSelectedIds([]);
+        setCounter(counter+1);
     }
     const handleSearchBtnClick = () => {
         fetchData(searchBarRef.current.value, accessToken);
@@ -36,7 +38,8 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
             selectedIds, setSelectedIds,
             deleteElFunc,
             accessToken,
-            actionButtons
+            actionButtons,
+            counter, setCounter
         }}>
             <div className='List'>
                 <div className="opt-bar">
