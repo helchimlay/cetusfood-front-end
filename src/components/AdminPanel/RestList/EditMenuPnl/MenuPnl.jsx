@@ -2,21 +2,19 @@ import React from 'react';
 import './MenuPnl.scss';
 import { useParams } from 'react-router-dom';
 import { GlobalCtx } from '../../../../App';
-import { getRestaurantsById } from '../../../../services/RestaurationsList';
+import { getProducts } from '../../../../services/RestaurationsList';
 import MenuEl from './MenuEl';
 import NewElForm from './NewElForm';
 
 const EditMenuPnl = () => {
     const { id } = useParams();
-    const [data, setData] = React.useState([
-        {name: 'jabłuszko', price: 112, imageUrl: 'https://alternatywnie.files.wordpress.com/2011/12/z-masc582em.png?w=584'},
-        {name: 'buła', price: 2137, imageUrl: 'https://alternatywnie.files.wordpress.com/2011/12/buc582ka.png?w=584'}
-    ]);
+    const [data, setData] = React.useState([]);
     const { user } = React.useContext(GlobalCtx);
+    const [counter, setCounter] = React.useState(0);
 
     React.useEffect(() => {
-        // getRestaurantsById(id, user.accessToken).then(res => setData(res.data));
-    }, [])
+        getProducts(id, user.accessToken).then(res => setData((res.data)));
+    }, [counter])
 
     console.log(data)
 
@@ -25,9 +23,9 @@ const EditMenuPnl = () => {
         <h3 className="title">Menu restauracji</h3>
         <div className='EditMenuPnl'>
             {data?.map((el, i) => (
-                <MenuEl data={el} key={i} />
+                <MenuEl data={el} key={i} counter={counter} setCounter={setCounter} restId={id} />
             ))}
-            <NewElForm />
+            <NewElForm counter={counter} setCounter={setCounter} restId={id} />
 
         </div>
     </>)
