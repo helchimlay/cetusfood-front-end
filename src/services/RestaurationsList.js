@@ -42,3 +42,9 @@ export const addOrder = async (restId, content, token) => {
     { headers: { Authorization: `Bearer ${token}` } }
   );
 };
+export const getProducts = async (restId, token) => {
+  return await axios.get(
+    `${variables.proxy}/user/restaurants/products/${restId}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+};

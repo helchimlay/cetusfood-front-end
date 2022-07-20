@@ -8,10 +8,11 @@
     font-size: 30px;
 }
 .List .main-table td, .List .main-table th{
-    padding: 6px 15px;
+    padding: 6px 15px 6px 0;
     text-align: left;
     font-size: .5em;
     font-weight: 300;
+    text-overflow: ellipsis;
 }
 .List .main-table tbody tr:hover{
     background-color: var(--color_21);
@@ -63,6 +64,14 @@
 
 .ListEl.checked{
     background-color: var(--color_24);
+}
+.ListEl button:hover{
+    background-color: var(--color_20);
+}
+.ListEl button:active{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border-radius: 2px;
 }
 .ListEl .edit-btn{
     color: var(--color_25);

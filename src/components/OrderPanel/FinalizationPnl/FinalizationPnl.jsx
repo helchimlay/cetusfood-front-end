@@ -4,6 +4,7 @@ import { OrderPnlCtx } from '../OrderPanel';
 import { addOrder } from '../../../services/RestaurationsList';
 import { GlobalCtx } from '../../../App';
 import { NavLink, useNavigate } from 'react-router-dom';
+import conf from '../../../images/confetti.gif'
 
 const FinalizationPnl = () => {
     const Ctx = React.useContext(OrderPnlCtx);
@@ -46,6 +47,7 @@ const FinalizationPnl = () => {
                                     <NavLink to='/'>Wróć do strony głównej</NavLink>
                                 </div>
                             </div>
+                            <img src={conf} alt="" />
                         </div>
                     )}
                 </div>

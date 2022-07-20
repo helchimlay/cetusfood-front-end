@@ -30,8 +30,11 @@ const ListEl = ({ data, dontShow, i, setData }) => {
       <td><input checked={Ctx.selectedIds.includes(data.id) ? true : false} ref={inputRef} onChange={handleCheckboxChange} type="checkbox" name="table-checkbox" /></td>
       {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{data[key]}</td>)}
       <td className='actions'>
-        <button className='edit-btn' onClick={() => navigate(`edit/${data.id}`)}><i className='bx bxs-edit'></i></button>
-        <button className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id, Ctx.accessToken) }}><i className='bx bx-trash-alt' ></i></button>
+        {Ctx?.actionButtons?.map((el, i) => (
+            <button title={el.title} key={i} onClick={() => el.onClick(data.id)}><i className={el.boxIcon}></i></button>
+        ))}
+        <button title='edytuj' className='edit-btn' onClick={() => navigate(`edit/${data.id}`)}><i className='bx bxs-edit'></i></button>
+        <button title='usuń' className='del-btn' onClick={() => { Ctx.deleteElFunc(data.id, Ctx.accessToken) }}><i className='bx bx-trash-alt' ></i></button>
       </td>
     </tr>
   )
