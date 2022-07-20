@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "proxy2": "http://192.168.0.195:3000",
-=======
-  "proxy2": "http://192.168.0.199:3000",
->>>>>>> c012150b01b4355978fc673c8d6cc9cdab069877
   "proxy": "https://api.foodapp.academy.st.cetuspro.com",
 
   "adminPnlNav": [
