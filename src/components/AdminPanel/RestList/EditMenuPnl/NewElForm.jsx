@@ -1,15 +1,28 @@
 import React from 'react';
+import { GlobalCtx } from '../../../../App';
+import { addProduct } from '../../../../services/RestaurationsList';
 
-const NewElForm = () => {
+const NewElForm = ({ counter, setCounter, restId }) => {
     const [formActive, setFormActive] = React.useState(false);
     const [formData, setFormData] = React.useState({});
+    const { user } = React.useContext(GlobalCtx);
 
     const handleChange = e => {
         setFormData(prev => ({...prev, [e.target.name]: e.target.value}));
     }
     const handleSubmit = e => {
         e.preventDefault();
+        addProduct(
+            {
+                "name": formData.name,
+                "price": parseFloat(formData.price),
+                "logoUrl": formData.imageUrl,
+                "restaurantID": parseFloat(restId)
+            },
+            user.accessToken
+        )
         console.log(formData);
+        setCounter(counter + 1);
         setFormActive(false);
     }
 

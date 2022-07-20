@@ -42,7 +42,7 @@
     opacity: .2;
     position: absolute;
     right: 10%;
-    top: calc(100vh - 75%);
+    top: 25vh;
     z-index: -1;
 }
 

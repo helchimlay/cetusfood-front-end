@@ -48,3 +48,22 @@ export const getProducts = async (restId, token) => {
     { headers: { Authorization: `Bearer ${token}` } }
   );
 };
+export const deleteProduct = async (productId, token) => {
+  await axios.delete(
+    `${variables.proxy}/admin/restaurants/product/${productId}`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+};
+export const addProduct = async (data, token) => {
+  await axios.post(`${variables.proxy}/admin/restaurants/product`, data, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+};
+export const editProduct = async (data, prodId, token) => {
+    console.log(data)
+    await axios.put(
+        `${variables.proxy}/admin/restaurants/product/${prodId}`,
+        data,
+        { headers: { Authorization: `Bearer ${token}` } }
+    )
+}
