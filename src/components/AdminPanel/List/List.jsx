@@ -4,7 +4,7 @@ import './List.css';
 
 export const ListContext = React.createContext();
 
-const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc, accessToken }) => {
+const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc, accessToken, actionButtons }) => {
     const [selectedIds, setSelectedIds] = React.useState([]);
     const [data, setData] = React.useState([]);
     const searchBarRef = React.useRef();
@@ -33,9 +33,10 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
     console.log(selectedIds)
     return (
         <ListContext.Provider value={{
-            selectedIds: selectedIds, setSelectedIds: setSelectedIds,
-            deleteElFunc: deleteElFunc,
-            accessToken: accessToken
+            selectedIds, setSelectedIds,
+            deleteElFunc,
+            accessToken,
+            actionButtons
         }}>
             <div className='List'>
                 <div className="opt-bar">

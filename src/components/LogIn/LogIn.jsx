@@ -32,7 +32,6 @@ const LogIn = () => {
             .catch(err => setError([err.response.data.message, Math.random()]))
     }
 
-
     return (
         <div className='LogIn'>
             <Helmet>
@@ -45,7 +44,7 @@ const LogIn = () => {
                 </header>
                 <form onSubmit={handleSubmit}>
                     {error[0] && (
-                        <div className='error'>Niepoprawne dane logowania. Może literówka?</div>
+                        <div className='error'>{error[0]}</div>
                     )}
                     <div>
                         <input onChange={updateFormData} type="email" name="email" placeholder="Nazwa użytkownika" required id={emailId} />
