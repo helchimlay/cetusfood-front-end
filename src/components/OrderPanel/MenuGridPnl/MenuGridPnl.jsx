@@ -88,7 +88,7 @@ const MenuEl = ({ data }) => {
     return (
         <div className={`MenuEl ${count > 0 ? 'active' : null}`}>
             <div style={{ gridArea: 'name' }} className='product-name'><span>{data.name}</span></div>
-            <div className='product-logo' style={{ backgroundImage: `url(${data.imgUrl})`, gridArea: 'logo' }}></div>
+            <div className='product-logo' style={{ backgroundImage: `url(${data.logoUrl})`, gridArea: 'logo' }}></div>
             <div style={{ gridArea: 'controls' }} className="controls">
                 <button onClick={deleteItem}><i className='bx bx-minus'></i></button>
                 <p>{count}</p>

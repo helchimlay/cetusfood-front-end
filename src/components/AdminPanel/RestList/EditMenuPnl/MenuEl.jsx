@@ -47,7 +47,7 @@ const MenuEl = ({ data, counter, setCounter, restId }) => {
                 </form>
             ) : (<>
                 <div className="price">{data.price}zł</div>
-                <div className="image" style={{ backgroundImage: `url(${data.imageUrl})` }}>
+                <div className="image" style={{ backgroundImage: `url(${data.logoUrl})` }}>
                     <button className='blue' onClick={() => setFormActive(true)}><i class='bx bxs-edit-alt' ></i></button>
                     <button className='red' onClick={handleDelete}><i class='bx bx-trash' ></i></button>
                 </div>
