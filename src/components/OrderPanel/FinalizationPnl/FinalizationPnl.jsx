@@ -47,7 +47,7 @@ const FinalizationPnl = () => {
                                     <NavLink to='/'>Wróć do strony głównej</NavLink>
                                 </div>
                             </div>
-                            <img src={conf} alt="" />
+                            <img className="conf" src={conf} alt="" />
                         </div>
                     )}
                 </div>

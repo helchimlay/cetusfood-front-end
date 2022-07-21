@@ -96,6 +96,10 @@
         backdrop-filter: blur(5px);
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 2000;
+        .conf{
+            margin: auto;
+            width: 100vw;
+        }
     }
     .popup{
         position: fixed;
