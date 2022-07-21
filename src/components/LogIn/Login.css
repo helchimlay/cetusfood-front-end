@@ -152,3 +152,22 @@
         transform: translateY(5px);
     }
 }
+
+@media(max-width: 500px){
+  .LogIn{
+    padding: auto;
+
+  }
+  .LogIn .center{
+    width: 80vw;
+  }
+}
+@media(max-width: 420px){
+  .LogIn{
+    padding: 0;
+  }
+  .LogIn .center {
+    width: 100vw;
+    margin: 0;
+  }
+}
