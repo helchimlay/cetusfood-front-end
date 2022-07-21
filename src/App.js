@@ -78,9 +78,7 @@ function App() {
               <Route path="/" element={<HomePage />} exact />
               <Route path="/order" element={<OrderPanel />} />
               {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}
-              {!user.loggedIn && (
-                <Route path="/register" element={<Register />} />
-              )}
+              {!user.loggedIn && <Route path="/register" element={<Register />} />}
               {user.role === "admin" && (
                 <Route path="/admin-panel" element={<AdminPanel />}>
 

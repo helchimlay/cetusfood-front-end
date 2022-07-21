@@ -20,9 +20,11 @@ const FinalizationPnl = () => {
 
     const order = () => {
         let restId = Ctx.formData.restId;
-        let content = Ctx.formData.products;
+        let items = Ctx.formData.products;
+        items = items.map(el => ({ id: el.id, count: el.count }))
         setPopupOpened(true);
-        // addOrder(restId, content, user.accessToken);
+        console.log({ restId, items })
+        addOrder({ restId, items }, user.accessToken);
     }
 
     return (
@@ -47,7 +49,7 @@ const FinalizationPnl = () => {
                                     <NavLink to='/'>Wróć do strony głównej</NavLink>
                                 </div>
                             </div>
-                            <img src={conf} alt="" />
+                            <img src={conf} alt="" style={{width: '100vw', height: 'auto'}} />
                         </div>
                     )}
                 </div>
