@@ -32,7 +32,7 @@ const List = ({ getDataByParamFunc, getDataFunc, dontShow, buttons, deleteElFunc
         fetchData(searchBarRef.current.value, accessToken);
         setSelectedIds([]);
     }
-    console.log(selectedIds)
+    console.log(data)
     return (
         <ListContext.Provider value={{
             selectedIds, setSelectedIds,

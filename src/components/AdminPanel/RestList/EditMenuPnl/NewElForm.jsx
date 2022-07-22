@@ -53,7 +53,7 @@ const Input = ({ type, placeholder, min, name, onChange }) => {
     return (
         <div>
             {value !== '' && <span>{placeholder}</span>}    
-            <input step={type === 'number' ? '0.01' : null} name={name} maxLength={50} min={type === 'number' ? min : null} ref={inputRef} type={type} placeholder={placeholder} onChange={e => {setValue(e.target.value); onChange(e)}} />
+            <input step={type === 'number' ? '0.01' : null} name={name} maxLength={500} min={type === 'number' ? min : null} ref={inputRef} type={type} placeholder={placeholder} onChange={e => {setValue(e.target.value); onChange(e)}} />
         </div>
     )
 }

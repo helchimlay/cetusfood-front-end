@@ -5,20 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import { GlobalCtx } from '../../../App';
 
 const UsersList = () => {
-    const navigate = useNavigate();
-    const { user } = React.useContext(GlobalCtx);
-    return (<>
-        <h3 className="title">Lista użytkowników</h3>
-        
-        <List
-            getDataFunc={getAccounts}
-            getDataByParamFunc={getAccountsByEmail}
-            dontShow={['id', 'password', 'isVerified', 'verificationCode']}
-            deleteElFunc={deleteAccount}
-            buttons={[]}
-            accessToken={user.accessToken}
-        />
-    </>)
+  const navigate = useNavigate();
+  const { user } = React.useContext(GlobalCtx);
+  return (<>
+    <h3 className="title">Lista użytkowników</h3>
+
+    <List
+      getDataFunc={getAccounts}
+      getDataByParamFunc={getAccountsByEmail}
+      dontShow={['id', 'password', 'verificationCode']}
+      deleteElFunc={deleteAccount}
+      buttons={[]}
+      accessToken={user.accessToken}
+    />
+  </>)
 }
 
 export default UsersList;

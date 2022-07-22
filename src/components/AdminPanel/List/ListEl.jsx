@@ -28,7 +28,7 @@ const ListEl = ({ data, dontShow, i, setData }) => {
     <tr className={`ListEl ${Ctx.selectedIds.includes(data.id) ? 'checked' : null}`} onDoubleClick={handleDblClick}>
       <td>{i + 1}</td>
       <td><input checked={Ctx.selectedIds.includes(data.id) ? true : false} ref={inputRef} onChange={handleCheckboxChange} type="checkbox" name="table-checkbox" /></td>
-      {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{data[key]}</td>)}
+      {Object.keys(data).map((key, i) => dontShow.includes(key) || <td key={i}>{`${data[key]}`}</td>)}
       <td className='actions'>
         {Ctx?.actionButtons?.map((el, i) => (
             <button title={el.title} key={i} onClick={() => el.onClick(data.id)}><i className={el.boxIcon}></i></button>
