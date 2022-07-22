@@ -54,6 +54,7 @@
       background-repeat: no-repeat;
       background-color: transparent;
       filter: grayscale(.5);
+      background-blend-mode: multiply;
     }
     .price{
         position: absolute;

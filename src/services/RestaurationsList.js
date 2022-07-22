@@ -35,12 +35,20 @@ export const editRestaurant = async (id, data, token) => {
     });
   }
 };
-export const addOrder = async (restId, content, token) => {
-  await axios.post(
-    `${variables.proxy}/user/orders`,
-    { restaurantId: restId, content: content },
-    { headers: { Authorization: `Bearer ${token}` } }
-  );
+export const addOrder = async (input, token) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      await axios.post(
+        `${variables.proxy}/user/orders`,
+        input,
+        { headers: { Authorization: `Bearer ${token}` } }
+      );
+
+      resolve();
+    } catch {
+      reject();
+    }
+  })
 };
 export const getProducts = async (restId, token) => {
   return await axios.get(

@@ -56,18 +56,20 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid red; */
-    animation: rotate .5s infinite linear;
 }
-.Register button div > div{
-    width: 12px;
-    height: 12px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
+.Register button > div div{
     position: absolute;
-}.Register button div > div:nth-of-type(1){top: 10%; left: 5%; background-color: rgb(0, 132, 255);}
-.Register button div > div:nth-of-type(2){bottom: 10%; left: 50%; transform: translateX(-50%); background-color: rgb(255, 153, 0);}
-.Register button div > div:nth-of-type(3){top: 10%; right: 5%; background-color: green;}
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    animation: rotate 1s linear infinite;
+}
+.Register button > div div:nth-of-type(1){ border-top: 4px solid red; border-left: 4px solid red; width: 100%; animation-duration: .5s; }
+.Register button > div div:nth-of-type(2){ border-left: 4px solid rgb(0, 140, 255); border-bottom: 4px solid rgb(0, 140, 255); width: 66%; animation-duration: .7s; }
+.Register button > div div:nth-of-type(3){ border-bottom: 4px solid green; border-right: 4px solid green; width: 33%; animation-duration: 1s; }
+
 @keyframes rotate {
     0%{transform: translate(-50%, -50%) rotate(0deg);}
     100%{transform: translate(-50%, -50%) rotate(360deg);}

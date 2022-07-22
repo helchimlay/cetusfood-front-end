@@ -7,7 +7,7 @@ export const getAccounts = async (token) => {
   });
 };
 export const getAccountById = async (id, token) => {
-  return await axios.get(`${variables.proxy}/admin/account/${id}`, {
+  return await axios.get(`${variables.proxy}/admin/account/id/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
@@ -21,7 +21,6 @@ export const deleteAccount = async (id, token) => {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
-
 export const editAccount = async (id, data, token) => {
   return await axios.put(
     `${variables.proxy}/admin/account/${id}`,
@@ -32,5 +31,15 @@ export const editAccount = async (id, data, token) => {
     {
       headers: { Authorization: `Bearer ${token}` },
     }
+  );
+};
+export const getNotAcceptedAccounts = async (token) => {
+  return await axios.get(`${variables.proxy}/admin/account/isVerified`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+};
+export const acceptAccount = async (id, token) => {
+  await axios.post(`${variables.proxy}/admin/account/accept/${id}`, 
+  { headers: { Authorization: `Bearer ${token}` } }
   );
 };
