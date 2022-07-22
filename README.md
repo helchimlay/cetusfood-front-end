@@ -1070,8 +1070,6 @@ Teraz Sędziego, który już spał od godziny,
 Przychodzi budzić; pewnie ma jakieś nowiny.
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga druga
 Zamek
 Polowanie z chartami na upatrzonego — Gość w zamku — Ostatni z dworzan opowiada historię ostatniego z Horeszków — Rzut oka w sad — Dziewczyna w ogórkach — Śniadanie — Pani Telimeny anegdota petersburska — Nowy wybuch sporów o Kusego i Sokoła — Interwencja Robaka — Rzecz Wojskiego — Zakład — Dalej w grzyby!
@@ -1935,8 +1933,6 @@ Sam ją sobie wybierze. Jeśli znajdzie dama,
 Najpiękniejszego chłopca weźmie sobie sama».
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga trzecia
 Umizgi
 Wyprawa Hrabiego na sad — Tajemnicza nimfa gęsi pasie — Podobieństwo grzybobrania do przechadzki cieniów elizejskich — Gatunki grzybów — Telimena w świątyni dumania — Narady tyczące się postanowienia Tadeusza — Hrabia pejzażysta — Tadeusza uwagi malarskie nad drzewami i obłokami — Hrabiego myśl o sztuce — Dzwon — Bilecik — Niedźwiedź, mospanie!
@@ -2738,8 +2734,6 @@ Pobrawszy się pod ręce, Rejent z Asesorem
 Wyszukują ołowiu. Reszta spracowana
 Szła spać wcześnie, ażeby przebudzić się z rana.
 Pora na chwilę przerwy :)
-
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
 
 Księga czwarta
 Dyplomatyka i łowy
@@ -3755,8 +3749,6 @@ A w miejscu, gdzie się zdarzył tak dziwny przypadek,
 Pobudowawszy karczmę, nazwali Niedźwiadek». 
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga piąta
 Kłótnia
 Plany myśliwskie Telimeny — Ogrodniczka wybiera się na wielki świat i słucha nauk opiekunki — Strzelcy wracają — Wielkie zadziwienie Tadeusza — Spotkanie się powtórne w Świątyni dumania i zgoda ułatwiona za pośrednictwem mrówek — U stołu wytacza się rzecz o łowach — Powieść Wojskiego o Rejtanie i księciu Denassów, przerwana — Zagajenie układów między stronami, także przerwane — Zjawisko z kluczem — Kłótnia — Hrabia z Gerwazym odbywają radę wojenną.
@@ -4679,8 +4671,6 @@ Wtem ciężka marzeniami na pierś spadła głowa,
 I tak usnął ostatni Klucznik Horeszkowa. 
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga szósta
 Zaścianek
 Pierwsze ruchy wojenne zajazdu — Wyprawa Protazego — Robak z panem Sędzią radzą o rzeczy publicznej — Dalszy ciąg wyprawy Protazego bezskutecznej — Ustęp o konopiach — Zaścianek szlachecki Dobrzyn — Opisanie domostwa i osoby Maćka Dobrzyńskiego.
@@ -5309,8 +5299,6 @@ Już izbę napełnili, kupią się do sieni,
 Inni słuchają, w okna głowami wciśnieni.
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga siódma
 Rada
 Zbawienne rady Bartka zwanego Prusak — Głos żołnierski Maćka Chrzciciela — Głos polityczny pana Buchmana — Jankiel radzi ku zgodzie, którą Scyzoryk rozcina — Rzecz Gerwazego, z której okazują się wielkie skutki wymowy sejmowej — Protestacja starego Maćka — Nagłe przybycie posiłków wojennych zrywa naradę — Hejże na Soplicę!
@@ -5875,8 +5863,6 @@ Porządkują, rozdają oręże, rozkazy.
 W końcu, wszyscy przez długą zaścianku ulicę
 Puścili się w cwał krzycząc: «Hejże na Soplicę!»
 Pora na chwilę przerwy :)
-
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
 
 Księga ósma
 Zajazd
@@ -6692,8 +6678,6 @@ Ten z misą, ten nad kotłem, ten przy wołu ćwierci.
 Tak zwycięzców zwyciężył w końcu sen, brat śmierci. 
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga dziewiąta
 Bitwa
 O niebezpieczeństwach wynikających z nieporządnego obozowania — Odsiecz niespodziana — Smutne położenie szlachty — Odwiedziny kwestarskie są wróżbą ratunku — Major Płut zbytnią zalotnością ściąga na siebie burzę — Wystrzał z krócicy, hasło boju — Czyny Kropiciela, czyny i niebezpieczeństwa Maćka — Konewka zasadzką ocala Soplicowo — Posiłki jezdne, atak na piechotę — Czyny Tadeusza — Pojedynek dowódców przerwany zdradą — Wojski stanowczym manewrem przechyla szalę boju — Czyny krwawe Gerwazego — Podkomorzy zwycięzca wspaniałomyślny.
@@ -7466,8 +7450,6 @@ Zarywszy się głęboko, leżał jak nieżywy;
 Wyszedł wreszcie ujrzawszy, że było po bitwie. 
 Taki miał koniec zajazd ostatni na Litwie.
 Pora na chwilę przerwy :)
-
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
 
 Księga dziesiąta
 Emigracja. Jacek.
@@ -8386,8 +8368,6 @@ I ubrały mu złotem oblicze i skronie,
 Że błyszczał jako święty w ognistej koronie. 
 Pora na chwilę przerwy :)
 
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
-
 Księga jedenasta
 Rok 1812
 Wróżby wiosenne — Wkroczenie wojsk — Nabożeństwo — Rehabilitacja urzędowa śp. Jacka Soplicy — Z rozmów Gerwazego i Protazego wnosić można bliski koniec procesu — Umizgi ułana z dziewczyną — Rozstrzyga się spór o Kusego i Sokoła — Za czym goście zgromadzają się na biesiadę — Przedstawienie wodzom par narzeczonych.
@@ -9079,8 +9059,6 @@ I choć jej pomagają służebne kobiety,
 Nie mogła w żaden sposób skończyć toalety:
 Ledwie będzie gotowa na godzinę czwartą.
 Pora na chwilę przerwy :)
-
-Podoba Ci się nasza biblioteka? Wesprzyj ją drobną wpłatą, a otrzymasz wcześniejszy dostęp do prapremier!
 
 Księga dwunasta
 Kochajmy się
@@ -10089,4 +10067,6 @@ I którym droższy niż laur Kapitolu,
 Wianek rękami wieśniaczki usnuty
 Z modrych bławatków i zielonej ruty… 
 Pora na chwilę przerwy :)
+
+Kochamy Norbiego ;)
 
