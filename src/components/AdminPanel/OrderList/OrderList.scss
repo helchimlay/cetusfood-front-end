@@ -1,0 +1,36 @@
+table.tb{
+   border-collapse: collapse;
+   margin-top: 70px;
+  
+   margin-bottom: 25px;
+   width: 100%;
+}
+table.tb tr{
+    
+    height: 45px;
+}
+table.tb td, table.tbth{
+    border-top: 1px solid black;
+    
+}
+table.tb tr::before{
+    background-color: rgb(153, 32, 32);
+
+}
+div.list button{
+    border-radius: 135px;
+    height: 40px;
+    color: #292c2f;;
+    width: 40px;
+    margin: 5px;
+    
+}
+
+div.list span{
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+    left: -15px;
+    
+}

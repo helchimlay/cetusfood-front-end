@@ -1,6 +1,12 @@
 import axios from "axios";
 import variables from "../assets/variables.json";
 
+
+export const getOrder = async (token) => {
+  return await axios.get(`${variables.proxy}/admin/orders`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+};
 export const getAccounts = async (token) => {
   return await axios.get(`${variables.proxy}/admin/account`, {
     headers: { Authorization: `Bearer ${token}` },

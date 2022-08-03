@@ -20,6 +20,7 @@ import EditRestForm from "./components/AdminPanel/RestList/EditRestForm/EditRest
 import { HelmetProvider } from "react-helmet-async";
 import React from "react";
 import { getUserRole } from "./services/Auth";
+import OrderList from "./components/AdminPanel/OrderList/OrderList";
 import UsersList from "./components/AdminPanel/UsersList/UsersList";
 import NewUserForm from "./components/AdminPanel/UsersList/Forms/NewUserForm";
 import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
@@ -90,10 +91,12 @@ function App() {
 
                     {/* users */}
                   <Route path="users" element={<UsersList />} />
+                  <Route path="users/:userId/order-list" element={<OrderList/>} />
                   <Route path="users/accept-queue" element={<AcceptQueue />} />
                   {/* <Route path="users/add-new" element={<NewUserForm />} /> */}
                   <Route path="users/edit/:id" element={<EditUserForm />} />
                   <Route path="" element={<AdminPanelStart />} />
+                  {/*Orders list */}
                 </Route>
               )}
               <Route path='/verify-email/:code' element={<VerifyEmail />} />
