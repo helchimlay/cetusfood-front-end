@@ -1,0 +1,65 @@
+.body{
+    background-color: rgb(255, 255, 255);
+}
+.sideBar{
+    height: 100%;
+    width: 240px;
+    background-color: rgb(46, 49, 53);
+    padding: 6px 20px 6px 12px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.sideBar ul{
+    margin-top: 20px;
+}
+.sideBar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin:  0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+.sideBar ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(61, 58, 58);
+    padding-left: 50px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.sideBar ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.sideBar ul li a{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.sideBar ul li a:hover{
+    background-color: rgb(61, 58, 58);
+    color: rgb(255, 255, 255);
+}
+.sideBar ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+   
+}
+
