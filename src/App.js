@@ -76,7 +76,7 @@ function App() {
           >
             <NavBar />
             <Routes>
-             <Route path="/Profile" element={<Profile />} />
+             {/* <Route path="/profile" element={<Profile />}/> */}
               <Route path="/" element={<HomePage />} exact />
               <Route path="/order" element={<OrderPanel />} />
               {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}
