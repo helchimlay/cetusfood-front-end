@@ -2,27 +2,27 @@ import axios from "axios";
 import variables from "../assets/variables.json";
 
 export const logInUser = (email, password) => {
-  return axios.post(`${variables.proxy}/auth/signIn`, {
+  return axios.post(`/auth/signIn`, {
     email: email,
     password: password,
   });
 };
 export const logOutUser = () => {
-  axios.post(`${variables.proxy}/auth/logout`);
+  axios.post(`/auth/logout`);
 };
 export const refreshToken = () => {};
 export const getUserRole = (token) => {
-  return axios.get(`${variables.proxy}/auth/role`, {
+  return axios.get(`/auth/role`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const registerUser = (email, password, password2) => {
-  return axios.post(`${variables.proxy}/public/account/register`, {
+  return axios.post(`/public/account/register`, {
     email: email,
     password: password,
     confirmationPassword: password2,
   });
 };
 export const verifyEmail = (code) => {
-  axios.post(`${variables.proxy}/public/account/verify/${code}`);
+  axios.post(`/public/account/verify/${code}`);
 };

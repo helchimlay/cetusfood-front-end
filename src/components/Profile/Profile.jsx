@@ -2,19 +2,36 @@ import React from 'react';
 import './Profile.css';
 
 const Profile = () => {
+    // render () { 
+    
+    //     var toggleOptions = false
+    //     var sideBar = document.querySelector('#sideBar');
+        
+    //     const toggleOptionsOnClick = (e) => {
+    //         e.preventDefault()
+    //         switch(toggleOptions) {
+    //             case false :
+    //                 toggleOptions = true
+    //                 sideBar.setAttribute('id', 'openedSideBar')
+    //             case true :
+    //                 toggleOptions = false
+    //                 sideBar.setAttribute('id', 'sideBar')
+    //             default :
+                    
 
+    //         }
+    //     }
+    // }
   return( 
     <div className="body">
             <div className="sideBar">
                 <div className="menuContent">
-
+                    <div className="icon_menu"></div>
                 </div>
                 <ul className="nav_list">
                     <li>
                         
-                        <i className='bx bx-search-alt' onClick={()=>{
-                            console.log("jafan")
-                        }}></i>
+                        <i className='bx bx-search-alt' onClick={this.toggleOptionsOnClick}></i>
                         <input type="text" placeholder="wyszukaj"/>
                     </li>
                     <li>

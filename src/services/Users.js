@@ -2,28 +2,28 @@ import axios from "axios";
 import variables from "../assets/variables.json";
 
 export const getAccounts = async (token) => {
-  return await axios.get(`${variables.proxy}/admin/account`, {
+  return await axios.get(` /admin/account`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const getAccountById = async (id, token) => {
-  return await axios.get(`${variables.proxy}/admin/account/id/${id}`, {
+  return await axios.get(` /admin/account/id/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const getAccountsByEmail = async (email, token) => {
-  return await axios.get(`${variables.proxy}/admin/account/email/${email}`, {
+  return await axios.get(` /admin/account/email/${email}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const deleteAccount = async (id, token) => {
-  return await axios.delete(`${variables.proxy}/admin/account/${id}`, {
+  return await axios.delete(` /admin/account/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const editAccount = async (id, data, token) => {
   return await axios.put(
-    `${variables.proxy}/admin/account/${id}`,
+    ` /admin/account/${id}`,
     {
       email: data.email,
       role: data.role,
@@ -34,12 +34,12 @@ export const editAccount = async (id, data, token) => {
   );
 };
 export const getNotAcceptedAccounts = async (token) => {
-  return await axios.get(`${variables.proxy}/admin/account/isVerified`, {
+  return await axios.get(` /admin/account/isVerified`, {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
 export const acceptAccount = async (id, token) => {
-  await axios.post(`${variables.proxy}/admin/account/accept/${id}`, 
+  await axios.post(` /admin/account/accept/${id}`, 
   { headers: { Authorization: `Bearer ${token}` } }
   );
 };
