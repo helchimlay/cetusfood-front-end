@@ -21,7 +21,12 @@ const NewElForm = ({ counter, setCounter, restId }) => {
             },
             user.accessToken
         )
-        console.log(formData);
+        console.log({
+          "name": formData.name,
+          "price": parseFloat(formData.price),
+          "logoUrl": formData.imageUrl,
+          "restaurantId": parseInt(restId)
+      });
         setCounter(counter + 1);
         setFormActive(false);
     }
