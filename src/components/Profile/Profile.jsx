@@ -2,14 +2,16 @@ import React from 'react';
 import './Profile.css';
 
 const Profile = () => {
-
+const [menuIsSmall, setMenuIsSmall]= React.useState(false)
   return( 
     <div className="body">
-            <div className="sideBar">
+            <div className={menuIsSmall?"smal":"big"}>
                 <div className="menuContent">
-                    <div className="icon_menu"></div>
+                    <div className="icon_menu">
+                    <i className='bx bx-menu'onClick={()=>setMenuIsSmall(!menuIsSmall)}></i>
+                    </div>
                 </div>
-                <ul className="nav_list">
+                <ul >
                     <li>
                         
                         <i className='bx bx-search-alt'></i>

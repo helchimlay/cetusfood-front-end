@@ -2,18 +2,29 @@
     background-color: rgb(255, 255, 255);
 
 }
-.sideBar{
+.big{
     height: 500px;
     width: 240px;
     background-color: rgb(46, 49, 53);
     padding: 6px 20px 6px 12px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    overflow: 9999px;
+    transition: all 0.5s cubic-bezier(0,1,0,1);
 }
-.sideBar ul{
+.big .menuContent .icon_menu{
+  
+    text-align: right;
+}
+.big .menuContent .icon_menu .bx-menu{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
+.big ul{
     margin-top: 20px;
 }
-.sideBar ul li{
+.big ul li{
     position: relative;
     height: 50px;
     width: 100%;
@@ -21,7 +32,8 @@
     list-style: none;
     line-height: 50px;
 }
-.sideBar ul li input{
+
+.big ul li input{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -35,14 +47,14 @@
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
-.sideBar ul li .bx-search-alt{
+.big ul li .bx-search-alt{
     position: absolute;
     z-index: 99;
     color: rgb(255, 255, 255);
     font-size: 22px;
 }
 
-.sideBar ul li a{
+.big ul li a{
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -51,11 +63,11 @@
     border-radius: 12px;
     margin-top: 10px;
 }
-.sideBar ul li a:hover{
+.big ul li a:hover{
     background-color: rgb(61, 58, 58);
     color: rgb(255, 255, 255);
 }
-.sideBar ul li i{
+.big ul li i{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
@@ -63,4 +75,84 @@
     text-align: center;
    
 }
+.smal{
+    height: 500px;
+    width: 85px;
+    background-color: rgb(46, 49, 53);
+    padding: 6px 20px 6px 12px;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    height: auto;
+    overflow: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+}
 
+.smal ul{
+    margin-top: 20px;
+}
+.smal ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin:  0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+.smal ul li span{
+    display: none;
+}
+.smal ul li input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(61, 58, 58);
+    padding-left: 50px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+.smal ul li .bx-search-alt{
+    position: absolute;
+    z-index: 99;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.smal ul li a{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.smal ul li a:hover{
+    background-color: rgb(61, 58, 58);
+    color: rgb(255, 255, 255);
+}
+.smal ul li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+   
+}
+.smal .menuContent .icon_menu{
+    text-align: center;
+    margin-top: 20px;
+ 
+
+
+}
+.smal .menuContent .icon_menu .bx-menu{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
