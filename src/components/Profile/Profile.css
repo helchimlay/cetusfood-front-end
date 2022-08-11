@@ -84,7 +84,7 @@
     border-bottom: 2px solid black;
     height: auto;
     overflow: 9999px;
-    transition: all 0.5s cubic-bezier(1,0,1,0);
+    transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
 .smal ul{
