@@ -26,6 +26,10 @@ import EditUserForm from "./components/AdminPanel/UsersList/Forms/EditUserForm";
 import AcceptQueue from "./components/AdminPanel/AcceptQueue/AcceptQueue";
 import EditMenuPnl from "./components/AdminPanel/RestList/EditMenuPnl/MenuPnl";
 import VerifyEmail from "./components/VerifyEmail/VerifyEmail";
+import Regulations from "./components/Pages/regulations";
+import Profile from "./components/Profile/Profile"
+
+
 
 export const GlobalCtx = React.createContext();
 
@@ -96,7 +100,27 @@ function App() {
                   <Route path="" element={<AdminPanelStart />} />
                 </Route>
               )}
+                            {user.role === "admin" && (
+                <Route path="/admin-panel" element={<AdminPanel />}>
+
+                    {/* restaurants */}
+                  <Route path="restaurants" element={<RestList />} />
+                  <Route path="restaurants/add-new" element={<NewRestForm />} />
+                  <Route path="restaurants/edit/:id" element={<EditRestForm />} />
+                  <Route path="restaurants/edit/:id/menu" element={<EditMenuPnl />} />
+
+                    {/* users */}
+                  <Route path="users" element={<UsersList />} />
+                  <Route path="users/accept-queue" element={<AcceptQueue />} />
+                  {/* <Route path="users/add-new" element={<NewUserForm />} /> */}
+                  <Route path="users/edit/:id" element={<EditUserForm />} />
+                  <Route path="" element={<AdminPanelStart />} />
+                </Route>
+              )}
               <Route path='/verify-email/:code' element={<VerifyEmail />} />
+              <Route path='/regulamin' element={<Regulations />} />
+              <Route path='/profile' element={<Profile />} />
+
               <Route exact path="*" element={<NotFound404 />} />
             </Routes>
             <Footer />

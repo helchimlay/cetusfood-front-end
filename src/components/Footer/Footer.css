@@ -62,7 +62,7 @@ body {
 	text-align: center;
 }
 .Footer .footer-links a:hover{
-	font-size: 1.1em;
+	font-size: 1em;
 	color: var(--color_16);
 	display: inline-block;
 	
