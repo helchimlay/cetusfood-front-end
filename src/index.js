@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 
+
 axios.defaults.baseURL = "https://api.foodapp.academy.st.cetuspro.com";
 // console.log("Lorem: "+import.meta.env.REACT_APP_BASE_URL);
 const root = ReactDOM.createRoot(document.getElementById('root'));

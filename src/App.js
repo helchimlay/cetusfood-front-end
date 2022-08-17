@@ -27,6 +27,9 @@ import AcceptQueue from "./components/AdminPanel/AcceptQueue/AcceptQueue";
 import EditMenuPnl from "./components/AdminPanel/RestList/EditMenuPnl/MenuPnl";
 import VerifyEmail from "./components/VerifyEmail/VerifyEmail";
 import Profile from "./components/Profile/Profile";
+import Billings from "./components/Profile/Billings/Billings";
+import YourProfile from "./components/Profile/YourProfile/YourProfile";
+
 
 export const GlobalCtx = React.createContext();
 
@@ -76,8 +79,16 @@ function App() {
           >
             <NavBar />
             <Routes>
-            
-             {user.loggedIn && <Route path="/profile" element={<Profile />}/>}
+              {/* user sidebar */}
+
+              {user.loggedIn && (
+              <Route path="profile" element={<Profile />} >
+                <Route path="/profile/billings" element={<Billings/>}/>
+                <Route path="/profile/your_profile" element={<YourProfile/>}/>
+              </Route>
+              )} 
+
+              
               <Route path="/" element={<HomePage />} exact />
               <Route path="/order" element={<OrderPanel />} />
               {!user.loggedIn && <Route path="/log-in" element={<LogIn />} />}

@@ -19,6 +19,7 @@ const NavBar = () => {
         <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/order'>Złóż zamówienie</NavLink>
         {!GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/log-in'>Zaloguj się</NavLink>}
         {GCtx.user.role === 'admin' && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/admin-panel'>Panel administratora</NavLink>}
+        {GCtx.user.loggedIn && <NavLink className={({ isActive }) => isActive ? 'active' : null} to='/profile'>Panel urzytkownika</NavLink>}
         {GCtx.user.loggedIn && <UserSubmenu />}
       </div>
     </div>
