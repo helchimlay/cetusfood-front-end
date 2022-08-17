@@ -1,7 +1,4 @@
 {
-  "proxy2": "http://192.168.0.195:3000",
-  "proxy": "https://api.foodapp.academy.st.cetuspro.com",
-
   "adminPnlNav": [
     { "name": "Restauracje", "to": "restaurants" },
     {
