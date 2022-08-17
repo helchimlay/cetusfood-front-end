@@ -58,22 +58,3 @@ const Profile = () => {
 };
 
 export default Profile;
-// render () {
-
-//     var toggleOptions = false
-//     var sideBar = document.querySelector('#sideBar');
-
-//     const toggleOptionsOnClick = (e) => {
-//         e.preventDefault()
-//         switch(toggleOptions) {
-//             case false :
-//                 toggleOptions = true
-//                 sideBar.setAttribute('id', 'openedSideBar')
-//             case true :
-//                 toggleOptions = false
-//                 sideBar.setAttribute('id', 'sideBar')
-//             default :
-
-//         }
-//     }
-// }

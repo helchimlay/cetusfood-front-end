@@ -29,6 +29,7 @@ import VerifyEmail from "./components/VerifyEmail/VerifyEmail";
 import Profile from "./components/Profile/Profile";
 import Billings from "./components/Profile/Billings/Billings";
 import YourProfile from "./components/Profile/YourProfile/YourProfile";
+import Order from "./components/Profile/Order/Order";
 
 
 export const GlobalCtx = React.createContext();
@@ -85,6 +86,7 @@ function App() {
               <Route path="profile" element={<Profile />} >
                 <Route path="/profile/billings" element={<Billings/>}/>
                 <Route path="/profile/your_profile" element={<YourProfile/>}/>
+                <Route path="/profile/order" element={<Order/>}/>
               </Route>
               )} 
 
