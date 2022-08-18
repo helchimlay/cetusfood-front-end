@@ -61,7 +61,7 @@ const RestList = () => {
         <List
             getDataFunc={getRestaurants}
             getDataByParamFunc={getRestaurantsByName}
-            dontShow={['id', 'logoUrl']}
+            dontShow={['id', 'logoUrl', 'createdAt', 'updatedAt']}
             deleteElFunc={deleteRestaurant}
             buttons={[
                 {text: 'Dodaj nowy element', onClick: () => navigate('add-new')}
