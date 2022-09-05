@@ -1,30 +1,8 @@
-import React from "react";
-import "./Footer.css";
-import { Link } from "react-router-dom";
-import Music from "../../assets/MuzykaChemia.mp3";
-import { Howl, Howler } from "howler";
+import React from "react"
+import "./Footer.css"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
-  //   const [musicIsPlaying, setMusicIsPlaying] = React.useState(true);
-  // var sound = new Howl({
-  //   src: Music,
-  //   autoplay: false,
-  //   loop: true,
-  //   volume: 0.25,
-  // });
-  // const togglePlay = () => {
-  //   if(sound.playing()){
-  //       sound.mute(false)
-  //       setMusicIsPlaying(false)
-  //   }else{
-  //       sound.mute(true)
-  //       setMusicIsPlaying(true)
-  //   }
-  //   console.log(sound.playing())
-  // }
-  // React.useEffect(() => {
-  //   sound.play()
-  // })
   return (
     <div className="Footer">
       <div className="footer-left">
@@ -51,7 +29,7 @@ const Footer = () => {
 
         <div>
           <i className="fa fa-phone"></i>
-          <p>+48 886 668 544</p>
+          <a href="tel:+48886668544">+48 886 668 544</a>
         </div>
 
         <div>
@@ -67,12 +45,9 @@ const Footer = () => {
           <span>Kim jesteśmy</span>
           jesteśmy firmą u której zamówisz swoje ulubione jedzenie
         </p>
-        {/* <button id="btn" onClick={togglePlay}>
-          <i className={musicIsPlaying?'bx bx-volume-full':'bx bx-volume-mute'}></i>
-        </button> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
