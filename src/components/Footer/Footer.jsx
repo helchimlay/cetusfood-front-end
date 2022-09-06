@@ -10,11 +10,11 @@ const Footer = () => {
           Cetus<span>Food</span>
         </h3>
 
-        <p className="footer-links">
+        <div className="footer-links">
           <Link to="/">Główna</Link>
           <Link to="/order">Zamów jedzenie</Link>
           <Link to="/log-in">Zaloguj się</Link>
-        </p>
+        </div>
 
         <p className="footer-company-name">CetusFood &copy; 2022</p>
       </div>
