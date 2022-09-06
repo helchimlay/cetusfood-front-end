@@ -21,19 +21,22 @@ const UserSubmenu = () => {
     })
     navigate("/log-in")
   }
-  const handleCloseDropdown = (e) => {
-    console.log(e)
-
-    if (
-      e.path[1] !== submenuBtnRef.current &&
-      e.path[0] !== submenuBtnRef.current
-    ) {
-      setSubmenuOn(false)
-    }
-  }
 
   useEffect(() => {
+    const handleCloseDropdown = (e) => {
+      console.log(e)
+
+      if (
+        e.path[1] !== submenuBtnRef.current &&
+        e.path[0] !== submenuBtnRef.current
+      ) {
+        setSubmenuOn(false)
+      }
+    }
+
     document.body.addEventListener("click", handleCloseDropdown)
+
+    return () => document.body.removeEventListener("click", handleCloseDropdown)
   }, [])
 
   return (
